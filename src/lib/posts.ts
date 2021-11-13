@@ -1,4 +1,9 @@
-// return some sample post titles for now
+import fs from "fs";
+import path from "path";
+
+// return the post filenames for now
 export const getPostTitles = (): string[] => {
-  return ["first-post", "second-post", "third-post", "fourth-post"];
+  const postsDirectory = path.join(process.cwd(), "src/posts");
+  const titles = fs.readdirSync(postsDirectory);
+  return titles;
 };
