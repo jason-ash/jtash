@@ -2,16 +2,20 @@
   import { base } from "$app/paths";
 
   export const load = async ({ fetch }) => {
-    const titles = await fetch(`${base}/index.json`).then((r) => r.json());
-    return { props: { titles } };
+    const posts = await fetch(`${base}/index.json`).then((r) => r.json());
+    return { props: { posts } };
   };
 </script>
 
 <script>
-  export let titles;
+  export let posts;
+  console.log(posts);
 </script>
 
 <h1>Hello World</h1>
-{#each titles as title}
-  <p>{title}</p>
+{#each posts as post}
+  <a href={`${base}/${post.slug}`}>
+    <h2 class="title">{post.metadata.title}</h2>
+    <p>{post.metadata.excerpt}</p>
+  </a>
 {/each}
