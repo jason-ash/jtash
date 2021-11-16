@@ -12,7 +12,11 @@
   console.log(posts);
 </script>
 
-<h1>Hello World</h1>
+<h1>Hello! I'm Jason.</h1>
+<p>
+  I created this site to write about things that I find interesting: probability &
+  Bayesian inference, data visualization, puzzles & games, finance, and books.
+</p>
 {#each posts as post}
   <a href={`${base}/${post.slug}`}>
     <h2 class="title">{post.metadata.title}</h2>
