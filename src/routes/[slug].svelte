@@ -1,19 +1,24 @@
-<script context="module">
+<script context="module" lang="ts">
+  import type { postType } from "$lib/posts";
   import { base } from "$app/paths";
 
-  export async function load({ page, fetch }) {
+  export const load = async ({
+    page,
+    fetch,
+  }): Promise<{ props: { post: postType } }> => {
     const slug = page.params.slug;
     const post = await fetch(`${base}/${slug}.json`).then((r) => r.json());
     return {
       props: { post },
     };
-  }
+  };
 </script>
 
-<script>
-  export let post;
+<script lang="ts">
+  export let post: postType;
+  console.log(post);
 </script>
 
-<h1 class="title">{post.metadata.title}</h1>
-<p class="info">{post.metadata.date}</p>
+<h1 class="title">{post.title}</h1>
+<p class="info">{post.date}</p>
 {@html post.content}

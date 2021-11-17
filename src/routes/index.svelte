@@ -1,14 +1,15 @@
 <script context="module" lang="ts">
+  import type { postType } from "$lib/posts";
   import { base } from "$app/paths";
 
-  export const load = async ({ fetch }) => {
+  export const load = async ({ fetch }): Promise<{ props: { posts: postType[] } }> => {
     const posts = await fetch(`${base}/index.json`).then((r) => r.json());
     return { props: { posts } };
   };
 </script>
 
-<script>
-  export let posts;
+<script lang="ts">
+  export let posts: postType[];
   console.log(posts);
 </script>
 
@@ -19,7 +20,7 @@
 </p>
 {#each posts as post}
   <a href={`${base}/${post.slug}`}>
-    <h2 class="title">{post.metadata.title}</h2>
-    <p>{post.metadata.excerpt}</p>
+    <h2 class="title">{post.title}</h2>
+    <p>{post.excerpt}</p>
   </a>
 {/each}

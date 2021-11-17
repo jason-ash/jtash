@@ -9,33 +9,16 @@ import frontmatter from "remark-frontmatter";
 import highlight from "rehype-highlight";
 import yaml from "js-yaml";
 
-export interface postType {
-  metadata: {
-    title: string;
-    date: string;
-    slug: string;
-    excerpt: string;
-  };
+export type postType = {
+  title: string;
+  date: string;
+  slug: string;
+  excerpt: string;
   content: string;
-  slug?: string;
-}
-
-export const getAllPosts = (): postType[] => {
-  const posts = fs
-    .readdirSync("src/posts")
-    .filter((fileName) => /.+\.md$/.test(fileName))
-    .map((fileName) => {
-      const { metadata, content } = process(`src/posts/${fileName}`);
-      return {
-        metadata,
-        content,
-        slug: fileName.slice(0, -3),
-      };
-    });
-  return posts;
 };
 
-export const process = (fileName: string): postType => {
+// process a single post by reading its contents and parsing its metadata
+export const processPost = (fileName: string): postType => {
   const parser = unified().use(parse).use(gfm).use(frontmatter, ["yaml"]);
   const runner = unified().use(remark2rehype).use(highlight).use(rehypeStringify);
   const tree = parser.parse(vfile.readSync(fileName));
@@ -45,5 +28,25 @@ export const process = (fileName: string): postType => {
     tree.children = tree.children.slice(1, tree.children.length);
   }
   const content = runner.stringify(runner.runSync(tree));
-  return { metadata, content };
+  return {
+    title: metadata.title,
+    date: metadata.date,
+    slug: metadata.slug,
+    excerpt: metadata.excerpt,
+    content,
+  };
+};
+
+// read all posts from the posts directory
+export const getAllPosts = (): postType[] => {
+  const posts = fs
+    .readdirSync("src/posts")
+    .filter((fileName) => /.+\.md$/.test(fileName))
+    .map((fileName) => processPost(`src/posts/${fileName}`));
+  return posts;
+};
+
+// return a single post by matching its slug
+export const getPostBySlug = (slug: string): postType | void => {
+  return getAllPosts().find((post) => post.slug == slug);
 };
