@@ -33,7 +33,6 @@
     "remark-math": "^4",
     "remark-parse": "^9.0.0",
     "remark-rehype": "^8.0.0",
-    "remark-stringify": "^10.0.1",
     "svelte": "^3.42.6",
     "svelte-check": "^2.2.6",
     "svelte-preprocess": "^4.9.4",
