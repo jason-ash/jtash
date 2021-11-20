@@ -1,33 +1,35 @@
 import fs from "fs";
-import vfile from "to-vfile";
-import unified from "unified";
-import parse from "remark-parse";
-import gfm from "remark-gfm";
-import remark2rehype from "remark-rehype";
+import matter from "gray-matter";
+import rehypeHighlight from "rehype-highlight";
+import rehypeKatex from "rehype-katex";
 import rehypeStringify from "rehype-stringify";
-import frontmatter from "remark-frontmatter";
-import highlight from "rehype-highlight";
-import yaml from "js-yaml";
+import remarkFrontmatter from "remark-frontmatter";
+import remarkMath from "remark-math";
+import remarkParse from "remark-parse";
+import remarkRehype from "remark-rehype";
+import unified from "unified";
 
-export type postType = {
+export interface postType {
   title: string;
   date: string;
   slug: string;
   excerpt: string;
   content: string;
-};
+}
 
 // process a single post by reading its contents and parsing its metadata
 export const processPost = (fileName: string): postType => {
-  const parser = unified().use(parse).use(gfm).use(frontmatter, ["yaml"]);
-  const runner = unified().use(remark2rehype).use(highlight).use(rehypeStringify);
-  const tree = parser.parse(vfile.readSync(fileName));
-  let metadata = null;
-  if (tree.children.length > 0 && tree.children[0].type == "yaml") {
-    metadata = yaml.load(tree.children[0].value);
-    tree.children = tree.children.slice(1, tree.children.length);
-  }
-  const content = runner.stringify(runner.runSync(tree));
+  const fileContents = fs.readFileSync(fileName, "utf-8");
+  const metadata = matter(fileContents).data;
+  const parser = unified()
+    .use(remarkParse)
+    .use(remarkMath)
+    .use(remarkFrontmatter)
+    .use(remarkRehype, { allowDangerousHtml: true })
+    .use(rehypeKatex)
+    .use(rehypeHighlight)
+    .use(rehypeStringify, { allowDangerousHtml: true });
+  const content = parser.processSync(fileContents).toString();
   return {
     title: metadata.title,
     date: metadata.date,
@@ -37,7 +39,7 @@ export const processPost = (fileName: string): postType => {
   };
 };
 
-// read all posts from the posts directory
+// return an array of posts by reading all files in the posts directory
 export const getAllPosts = (): postType[] => {
   const posts = fs
     .readdirSync("src/posts")
