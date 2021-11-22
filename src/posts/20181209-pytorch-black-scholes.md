@@ -3,6 +3,7 @@ title: Black Scholes in PyTorch
 slug: pytorch-black-scholes
 date: "2018-12-09"
 excerpt: I've been experimenting with several machine learning frameworks lately, including Tensorflow, PyTorch, and Chainer. I'm fascinated by the concept of automatic differentiation. It's incredible to me that these libraries can calculate millions of partial derivatives of virtually any function with only one extra pass through the code. Automatic differentiation is critical for deep learning models, but I wanted to see how it could be applied to value financial derivatives.
+status: published
 ---
 
 I've been experimenting with several machine learning frameworks lately, including <a href="https://www.tensorflow.org/">Tensorflow</a>, <a href="https://pytorch.org/">PyTorch</a>, and <a href="https://chainer.org/">Chainer</a>. I'm fascinated by the concept of automatic differentiation. It's incredible to me that these libraries can calculate potentially millions of partial derivatives of virtually any function with only one extra pass through the code.

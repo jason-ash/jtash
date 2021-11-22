@@ -3,6 +3,7 @@ title: Garmin goals
 slug: garmin-step-algorithm
 date: "2018-12-06"
 excerpt: I wrote yesterday about tracking my steps with a Garmin watch. Perhaps to keep me motivated and active, Garmin provides a daily step goal that moves up or down based on my activity. I've always been curious about how this algorithm works, but I couldn't find any resources that described it. Let's see if I can reverse engineer it instead.
+status: published
 ---
 
 <a href="puppy-steps">Yesterday</a> I wrote about using my Garmin Fenix 5 watch data to identify changes in my activity after getting a puppy. As part of that analysis I gathered several months of data, including my actual steps and a variable goal set by my watch each day. I've always been curious how this goal is calculated, but online searches haven't turned up any results. Now that I have the data, I'd like to try to reverse engineer Garmin's goal algorithm.

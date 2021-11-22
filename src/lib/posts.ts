@@ -14,6 +14,7 @@ export interface postType {
   date: string;
   slug: string;
   excerpt: string;
+  status: "draft" | "published";
   content: string;
 }
 
@@ -35,6 +36,7 @@ export const processPost = (fileName: string): postType => {
     date: metadata.date,
     slug: metadata.slug,
     excerpt: metadata.excerpt,
+    status: metadata.status,
     content,
   };
 };

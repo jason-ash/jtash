@@ -3,6 +3,7 @@ title: Puppy steps
 slug: puppy-steps
 date: "2018-12-05"
 excerpt: Without a doubt, getting a puppy changes your life for the better. But I wanted to quantify this somehow. I used Bayesian inference to identify whether I logged more steps in the days since our puppy arrived.
+status: published
 ---
 
 One of my recent favorite purchases was a <a href="https://www.amazon.com/Garmin-Fenix-Slate-Gray-Black/dp/B01N7J9APR">Garmin Fenix 5</a> watch. I bought it primarily to track a European cycling trip from <a href="https://www.strava.com/activities/1785505507">Regensburg, Germany</a> to <a href="https://www.strava.com/activities/1785507923">Vienna, Austria</a>. But I've also enjoyed keeping track of the steps I take each day. In particular, I wondered what inferences I could make about my life using the step data from the past few months.
