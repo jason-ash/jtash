@@ -43,11 +43,10 @@ export const processPost = (fileName: string): postType => {
 
 // return an array of posts by reading all files in the posts directory
 export const getAllPosts = (): postType[] => {
-  const posts = fs
-    .readdirSync("src/posts")
-    .filter((fileName) => /.+\.md$/.test(fileName))
-    .map((fileName) => processPost(`src/posts/${fileName}`));
-  return posts;
+  const posts = fs.readdirSync("src/posts");
+  const allPosts = posts.map((fileName) => processPost(`src/posts/${fileName}`));
+  const publishedPosts = allPosts.filter((post) => post.status === "published");
+  return publishedPosts;
 };
 
 // return a single post by matching its slug
