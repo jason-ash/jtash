@@ -53,3 +53,12 @@ export const getAllPosts = (): postType[] => {
 export const getPostBySlug = (slug: string): postType | void => {
   return getAllPosts().find((post) => post.slug == slug);
 };
+
+// return an array of posts by searching the post title, slug, and contents
+export const searchPosts = (searchTerm: string): postType[] => {
+  return getAllPosts().filter((post) => {
+    post.content.includes(searchTerm) ||
+      post.title.includes(searchTerm) ||
+      post.slug.includes(searchTerm);
+  });
+};
