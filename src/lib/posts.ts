@@ -41,12 +41,18 @@ export const processPost = (fileName: string): postType => {
   };
 };
 
-// return an array of posts by reading all files in the posts directory
+// return an array of posts by reading all files in the posts directory, sorted by date
 export const getAllPosts = (): postType[] => {
-  const posts = fs.readdirSync("src/posts");
-  const allPosts = posts.map((fileName) => processPost(`src/posts/${fileName}`));
-  const publishedPosts = allPosts.filter((post) => post.status === "published");
-  return publishedPosts;
+  const posts = fs
+    .readdirSync("src/posts")
+    .map((fileName) => processPost(`src/posts/${fileName}`))
+    .filter((post) => post.status === "published")
+    .sort((first, second) => {
+      const a = first.date.split("-").join("");
+      const b = second.date.split("-").join("");
+      return a > b ? -1 : a < b ? 1 : 0;
+    });
+  return posts;
 };
 
 // return a single post by matching its slug
