@@ -3,5 +3,7 @@
   import Nav from "../lib/components/Nav.svelte";
 </script>
 
-<Nav />
-<slot />
+<div class="container max-w-3xl mx-auto font-sans">
+  <Nav />
+  <slot />
+</div>
