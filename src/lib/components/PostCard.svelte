@@ -5,9 +5,12 @@
   export let post: postType;
 </script>
 
-<div class="bg-purple-100">
-  <a href={`${base}/${post.slug}`}>
-    <h2 class="title">{post.title}</h2>
-  </a>
+<div class="my-4 p-4">
+  <div class="mb-2 flex justify-between">
+    <a href={`${base}/${post.slug}`}>
+      <h2 class="title">{post.title}</h2>
+    </a>
+    <p>{post.date}</p>
+  </div>
   <p>{post.excerpt}</p>
 </div>

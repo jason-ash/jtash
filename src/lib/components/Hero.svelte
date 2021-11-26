@@ -1,4 +1,4 @@
-<div class="bg-red-200">
+<div class="my-4 p-4">
   <h1>Hello! I'm Jason.</h1>
   <p>
     I created this site to write about things that I find interesting: probability &
