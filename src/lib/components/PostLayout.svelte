@@ -1,26 +1,14 @@
-<script context="module" lang="ts">
-  import type { postType } from "$lib/posts";
-  import { base } from "$app/paths";
-
-  export const load = async ({
-    page,
-    fetch,
-  }): Promise<{ props: { post: postType } }> => {
-    const slug = page.params.slug;
-    const post = await fetch(`${base}/${slug}.json`).then((r) => r.json());
-    return {
-      props: { post },
-    };
-  };
-</script>
-
 <script lang="ts">
-  import PostLayout from "$lib/components/PostLayout.svelte";
+  import type { postType } from "$lib/posts";
+
   export let post: postType;
-  console.log(post);
 </script>
 
 <svelte:head>
+  <link
+    rel="stylesheet"
+    href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.1/styles/github.min.css"
+  />
   <link
     rel="stylesheet"
     href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css"
@@ -40,4 +28,12 @@
   </style>
 </svelte:head>
 
-<PostLayout {post} />
+<div class="container my-4 p-4">
+  <div class="mb-6 flex justify-between">
+    <h1>{post.title}</h1>
+    <p>{post.date}</p>
+  </div>
+  <div class="post">
+    {@html post.content}
+  </div>
+</div>
