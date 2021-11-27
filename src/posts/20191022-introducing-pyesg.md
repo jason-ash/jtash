@@ -34,17 +34,17 @@ The project is in its early stages, but I've recently implemented the Vasicek in
 ```python
 import pyesg
 
-# load a dataset of historical US Treasury rates, contained in pyesg.datasets
-# ust is a pandas dataframe of rates for various maturities, indexed by year and month
+# load a dataset of US Treasury rates, contained in pyesg.datasets, which is a
+# pandas dataframe of rates for various maturities, indexed by year and month
 ust = pyesg.datasets.load_ust_historical()
 
 # for this example, we'll train on the following data:
 # y - the 3-month US treasury rate
-# X - the time value of each observation, starting at zero, increasing by monthly steps
+# X - the time of each observation, starting at zero, in monthly steps
 y = ust.loc['3-month'].values
 X = np.full(len(y), 1/12).cumsum()
 
-# create a vasicek model object, just like you would create an estimator model from sklearn
+# create a vasicek model object, just like an estimator model from sklearn
 vasicek = pyesg.Vasicek()
 
 # fit the model by passing the X and y vectors; the model is now trained
