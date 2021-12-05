@@ -28,8 +28,8 @@
   </style>
 </svelte:head>
 
-<div class="container my-4 p-4">
-  <div class="mb-6 flex justify-between">
+<div>
+  <div>
     <h1>{post.title}</h1>
     <p>{post.date}</p>
   </div>

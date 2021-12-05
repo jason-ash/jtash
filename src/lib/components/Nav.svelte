@@ -1,9 +1,9 @@
-<div class="my-4">
-  <nav class="flex justify-between">
+<div>
+  <nav>
     <div>
       <a href="/">Jason Ash</a>
     </div>
-    <div class="flex space-x-4">
+    <div>
       <a href="/about">About</a>
       <a href="/resume">Resume</a>
     </div>
