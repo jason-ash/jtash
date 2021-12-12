@@ -29,11 +29,57 @@
 </svelte:head>
 
 <div>
-  <div>
+  <div class="title">
     <h1>{post.title}</h1>
     <p>{post.date}</p>
   </div>
+  <hr />
   <div class="post">
     {@html post.content}
   </div>
 </div>
+
+<style>
+  hr {
+    border: 0rem;
+    border-top: 0.1rem solid #d4d4d4;
+    margin-bottom: 2rem;
+  }
+  .title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1rem;
+  }
+  .title h1 {
+    margin-block-start: 0.1em;
+  }
+  .post :global(h1) {
+    font-size: 1.5em;
+  }
+  .post :global(blockquote) {
+    font-style: italic;
+    color: #404040;
+    border-left-width: 0.2rem;
+    border-left-style: solid;
+    border-left-color: #d4d4d4;
+    padding-left: 1rem;
+    max-width: 90%;
+    display: block;
+    margin: auto;
+  }
+  .post :global(pre) {
+    border-left-width: 0.2rem;
+    border-left-style: solid;
+    border-left-color: #d4d4d4;
+    display: block;
+    margin: auto;
+    max-width: 90%;
+  }
+  .post :global(img) {
+    display: block;
+    margin: auto;
+    max-width: 90%;
+    max-height: 100%;
+  }
+</style>
