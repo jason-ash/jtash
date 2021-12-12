@@ -5,3 +5,13 @@
     Bayesian inference, data visualization, puzzles & games, finance, and books.
   </p>
 </div>
+<hr />
+
+<style>
+  hr {
+    border: 0rem;
+    border-top: 0.1rem solid #d4d4d4;
+
+    margin-top: 2rem;
+  }
+</style>
