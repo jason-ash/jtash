@@ -48,7 +48,8 @@
     margin-top: 1rem;
   }
   .title h1 {
-    margin-block-start: 0.1em;
+    margin-block-end: 0.4rem;
+    margin-block-start: 0.4rem;
   }
   .post :global(h1) {
     font-size: 1.5em;
