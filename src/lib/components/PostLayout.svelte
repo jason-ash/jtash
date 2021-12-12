@@ -61,7 +61,7 @@
     border-left-style: solid;
     border-left-color: #d4d4d4;
     padding-left: 1rem;
-    max-width: 90%;
+    max-width: 95%;
     display: block;
     margin: auto;
   }
@@ -71,12 +71,12 @@
     border-left-color: #d4d4d4;
     display: block;
     margin: auto;
-    max-width: 90%;
+    max-width: 95%;
   }
   .post :global(img) {
     display: block;
     margin: auto;
-    max-width: 90%;
+    max-width: 95%;
     max-height: 100%;
   }
 </style>
