@@ -7,7 +7,8 @@
   <footer>
     <ul>
       <li>
-        Built with <a href="https://kit.svelte.dev/">SvelteKit</a> 😍
+        <a href="https://github.com/jason-ash/jtash">Open Source</a> and built with
+        <a href="https://kit.svelte.dev/">SvelteKit</a>.
         <br />
         &copy; {currentYear} Jason Ash. All rights reserved.
       </li>

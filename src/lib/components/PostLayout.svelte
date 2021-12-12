@@ -66,9 +66,9 @@
     margin: auto;
   }
   .post :global(pre) {
-    border-left-width: 0.2rem;
+    border-left-width: 0.25rem;
     border-left-style: solid;
-    border-left-color: #d4d4d4;
+    border-left-color: #e5e5e5;
     display: block;
     margin: auto;
     max-width: 95%;

@@ -6,15 +6,13 @@
   export let post: postType;
 </script>
 
-<div>
+<a href={`${base}/${post.slug}`}>
   <div class="title">
-    <a href={`${base}/${post.slug}`}>
-      <h2>{post.title}</h2>
-    </a>
+    <h2>{post.title}</h2>
     <p>{formatDateString(post.date)}</p>
   </div>
   <p class="excerpt">{post.excerpt}</p>
-</div>
+</a>
 
 <style>
   .title {
@@ -23,8 +21,9 @@
     justify-content: space-between;
     margin-top: 2rem;
   }
-  .title a {
+  a {
     text-decoration: none;
+    border-bottom: none;
   }
   .title h2 {
     margin-block-end: 0.4rem;

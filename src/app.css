@@ -4,7 +4,11 @@ body {
   font-family: "Source Sans Pro", sans-serif;
 }
 a {
-  color: #1d4ed8;
+  color: #171717;
+  text-decoration: none;
+  font-weight: 700;
+  border-bottom: 1px solid #171717;
+  padding-bottom: 1px;
 }
 hr {
   border: 0rem;

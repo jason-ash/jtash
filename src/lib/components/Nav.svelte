@@ -1,8 +1,6 @@
 <div>
   <nav>
-    <ul>
-      <li><a href="/">Jason Ash</a></li>
-    </ul>
+    <a href="/" class="home">Jason Ash</a>
     <ul>
       <li><a href="/about">About</a></li>
       <li><a href="/resume">Resume</a></li>
@@ -29,8 +27,5 @@
   }
   li:not(:last-child) {
     padding-right: 1.5rem;
-  }
-  li a {
-    text-decoration: none;
   }
 </style>
