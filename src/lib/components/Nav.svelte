@@ -1,12 +1,12 @@
-<div>
-  <nav>
-    <a href="/" class="home">Jason Ash</a>
-    <ul>
-      <li><a href="/about">About</a></li>
-      <li><a href="/resume">Resume</a></li>
-    </ul>
-  </nav>
-</div>
+<nav>
+  <ul>
+    <li><a href="/" class="home">Jason Ash</a></li>
+  </ul>
+  <ul>
+    <li><a href="/about">About</a></li>
+    <li><a href="/resume">Resume</a></li>
+  </ul>
+</nav>
 
 <style>
   nav {
@@ -18,7 +18,10 @@
   ul {
     list-style: none;
     margin: 0;
-    padding: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    padding-bottom: 0.5rem;
     overflow: hidden;
   }
   li {
