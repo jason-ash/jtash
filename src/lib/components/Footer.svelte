@@ -21,11 +21,6 @@
 </div>
 
 <style>
-  hr {
-    border: 0rem;
-    border-top: 0.1rem solid #d4d4d4;
-    margin-top: 2rem;
-  }
   footer {
     display: flex;
     justify-content: space-between;
