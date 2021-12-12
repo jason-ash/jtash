@@ -1,5 +1,6 @@
 <script lang="ts">
   import type { postType } from "$lib/posts";
+  import { formatDateString } from "$lib/posts";
   import { base } from "$app/paths";
 
   export let post: postType;
@@ -10,7 +11,7 @@
     <a href={`${base}/${post.slug}`}>
       <h2>{post.title}</h2>
     </a>
-    <p>{post.date}</p>
+    <p>{formatDateString(post.date)}</p>
   </div>
   <p class="excerpt">{post.excerpt}</p>
 </div>

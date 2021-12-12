@@ -18,6 +18,26 @@ export interface postType {
   content: string;
 }
 
+// reformat a date from "YYYY-MM-DD" to "month dd, YYYY"
+export const formatDateString = (date: string): string => {
+  const months = [
+    "Jan",
+    "Feb",
+    "Mar",
+    "Apr",
+    "May",
+    "Jun",
+    "Jul",
+    "Aug",
+    "Sep",
+    "Oct",
+    "Nov",
+    "Dec",
+  ];
+  const [year, month, day] = date.split("-");
+  return `${months[Number(month) - 1]} ${day}, ${year}`;
+};
+
 // process a single post by reading its contents and parsing its metadata
 export const processPost = (fileName: string): postType => {
   const fileContents = fs.readFileSync(fileName, "utf-8");
