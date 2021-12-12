@@ -25,6 +25,10 @@
   .title a {
     text-decoration: none;
   }
+  .title h2 {
+    margin-block-end: 0.4rem;
+    margin-block-start: 0.4rem;
+  }
   .excerpt {
     margin-block-start: 0rem;
   }

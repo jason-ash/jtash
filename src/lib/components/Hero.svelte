@@ -8,6 +8,12 @@
 <hr />
 
 <style>
+  h1 {
+    margin-block-end: 0.4rem;
+  }
+  p {
+    margin-block-start: 0rem;
+  }
   hr {
     border: 0rem;
     border-top: 0.1rem solid #d4d4d4;
