@@ -1,0 +1,51 @@
+<script>
+  export let currentYear = new Date().getFullYear();
+</script>
+
+<div>
+  <hr />
+  <footer>
+    <ul>
+      <li>
+        Built with <a href="https://kit.svelte.dev/">SvelteKit</a> 😍
+        <br />
+        &copy; {currentYear} Jason Ash. All rights reserved.
+      </li>
+    </ul>
+    <ul>
+      <li><a href="https://github.com/jason-ash">Github</a></li>
+      <li><a href="https://twitter.com/ashjasont">Twitter</a></li>
+      <li><a href="https://www.linkedin.com/in/jason-ash/">LinkedIn</a></li>
+    </ul>
+  </footer>
+</div>
+
+<style>
+  hr {
+    border: 0rem;
+    border-top: 0.1rem solid #d4d4d4;
+    margin-top: 2rem;
+  }
+  footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  li {
+    display: inline;
+    text-align: center;
+  }
+  li:not(:last-child) {
+    padding-right: 1.5rem;
+  }
+  li a {
+    text-decoration: none;
+  }
+</style>
