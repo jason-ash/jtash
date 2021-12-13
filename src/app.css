@@ -17,3 +17,7 @@ hr {
   border-top: 0.1rem solid #d4d4d4;
   margin-top: 2rem;
 }
+
+.katex {
+  font-size: 1.05em !important;
+}

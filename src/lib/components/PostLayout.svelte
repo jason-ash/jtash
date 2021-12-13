@@ -22,11 +22,6 @@
     integrity="sha384-z1fJDqw8ZApjGO3/unPWUPsIymfsJmyrDVWC8Tv/a1HeOtGmkwNd/7xUS0Xcnvsx"
     crossorigin="anonymous">
   </script>
-  <style>
-    .katex {
-      font-size: 1.05em !important;
-    }
-  </style>
 </svelte:head>
 
 <div>
