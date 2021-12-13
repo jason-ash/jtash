@@ -31,6 +31,7 @@
     "rehype-katex": "^5",
     "rehype-stringify": "^8.0.0",
     "remark-frontmatter": "^3.0.0",
+    "remark-gfm": "^1",
     "remark-math": "^4",
     "remark-parse": "^9.0.0",
     "remark-rehype": "^8.0.0",
