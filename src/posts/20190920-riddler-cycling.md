@@ -8,7 +8,7 @@ status: draft
 
 # Introduction
 
-This week's <a href="https://fivethirtyeight.com/features/can-you-win-the-tour-de-fivethirtyeight/" target="_blank">riddler</a> was an entertaining blend of probability and one of my favorite sports, cycling. We're asked to choose the ideal pace for a team time trial - trying to balance the rewards of a competitive time with the risks of pushing our riders too hard and having them crack due to the effort.
+This week's <a href="https://fivethirtyeight.com/features/can-you-win-the-tour-de-fivethirtyeight/">riddler</a> was an entertaining blend of probability and one of my favorite sports, cycling. We're asked to choose the ideal pace for a team time trial - trying to balance the rewards of a competitive time with the risks of pushing our riders too hard and having them crack due to the effort.
 
 > You are the coach for Team Riddler at the Tour de FiveThirtyEight, where there are 20 teams (including yours). Your objective is to win the Team Time Trial race, which has the following rules:
 > <br><br>

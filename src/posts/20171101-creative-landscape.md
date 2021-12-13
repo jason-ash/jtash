@@ -6,7 +6,7 @@ excerpt: I transitioned from a role as an actuarial consultant into the world of
 status: published
 ---
 
-I was extremely proud to be featured as the lead article in this issue of <u>The Actuary</u> magazine, titled "Creative Landscape". You can read my <a href="https://theactuarymagazine.org/creative-landscape/" target="_blank">full article here</a>, and read the <a href="https://theactuarymagazine.org/wp-content/uploads/2017/10/act-2017-vol15-iss5.pdf" target="_blank">entire issue here</a>.
+I was extremely proud to be featured as the lead article in this issue of <u>The Actuary</u> magazine, titled "Creative Landscape". You can read my <a href="https://theactuarymagazine.org/creative-landscape/">full article here</a>, and read the <a href="https://theactuarymagazine.org/wp-content/uploads/2017/10/act-2017-vol15-iss5.pdf">entire issue here</a>.
 
 This was an exciting issue of <u>The Actuary</u> because of the fintech and insurtech focus. The other authors in this issue represent a small but passionate group of actuaries and other professionals trying to push the limits of traditional insurance and banking, and this issue represents their perspectives well.
 

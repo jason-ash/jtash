@@ -6,7 +6,7 @@ excerpt: As the owner of a dominant team looking to establish a dynasty, how can
 status: draft
 ---
 
-This week's <a href="https://fivethirtyeight.com/features/can-you-eat-more-pizza-than-your-siblings/" target="_blank">Riddler Classic</a> challenges you to find a strategy that maximizes your team's winnings (though perhaps minimizes peoples' tolerance to sit through an absurdly long playoff season...)
+This week's <a href="https://fivethirtyeight.com/features/can-you-eat-more-pizza-than-your-siblings/">Riddler Classic</a> challenges you to find a strategy that maximizes your team's winnings (though perhaps minimizes peoples' tolerance to sit through an absurdly long playoff season...)
 
 > Congratulations! The Acme Axegrinders, which you own, are the regular season champions of the National Squishyball League (NSL). Your team will now play a championship series against the Boondocks Barbarians, which had the second-best regular season record. You feel good about Acme’s chances in the series because Acme won exactly 60 percent of the hundreds of games it played against Boondocks this season. (The NSL has an incredibly long regular season.) The NSL has two special rules for the playoffs:
 

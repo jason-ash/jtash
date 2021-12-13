@@ -8,7 +8,7 @@ status: draft
 
 # Introduction
 
-This week's <a href="https://fivethirtyeight.com/features/can-you-fool-the-bank-with-your-counterfeit-bills/" target="_blank">fivethirtyeight riddler</a> was created by yours truly! It was the first puzzle I've submitted to the riddler, and I hope you enjoyed it. This week we attempt to fool a bank with counterfeit hundred dollar bills. Here is the full text.
+This week's <a href="https://fivethirtyeight.com/features/can-you-fool-the-bank-with-your-counterfeit-bills/">fivethirtyeight riddler</a> was created by yours truly! It was the first puzzle I've submitted to the riddler, and I hope you enjoyed it. This week we attempt to fool a bank with counterfeit hundred dollar bills. Here is the full text.
 
 > You are an expert counterfeiter, and you specialize in forging one of the most ubiquitous notes in global circulation, the U.S. /$100 bill. You’ve been able to fool the authorities with your carefully crafted C-notes for some time, but you’ve learned that new security features will make it impossible for you to continue to avoid detection. As a result, you decide to deposit as many fake notes as you dare before the security features are implemented and then retire from your life of crime.
 > <br><br>

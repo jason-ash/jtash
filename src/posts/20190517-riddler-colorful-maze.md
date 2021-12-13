@@ -8,7 +8,7 @@ status: draft
 
 # Introduction
 
-This was a colorful <a href="https://fivethirtyeight.com/features/how-many-soldiers-do-you-need-to-beat-the-night-king/" target="_blank">Riddler Express</a>. We start with a maze comprised of edges of different colors. Our task is to identify the shortest path from start to finish using only edges of certain colors. This was a great opportunity to take python's `networkx` library for a spin! We can build the maze as a network, where each edge has a "color" attribute, and use powerful solvers to do the path-finding for us! Here's the full problem text, and the visual to go along with it.
+This was a colorful <a href="https://fivethirtyeight.com/features/how-many-soldiers-do-you-need-to-beat-the-night-king/">Riddler Express</a>. We start with a maze comprised of edges of different colors. Our task is to identify the shortest path from start to finish using only edges of certain colors. This was a great opportunity to take python's `networkx` library for a spin! We can build the maze as a network, where each edge has a "color" attribute, and use powerful solvers to do the path-finding for us! Here's the full problem text, and the visual to go along with it.
 
 > In grade school, you may have learned about the three primary colors — blue, yellow and red — and the three secondary colors — green (blue + yellow), purple (red + blue) and orange (yellow + red).
 > <br><br>

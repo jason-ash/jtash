@@ -8,7 +8,7 @@ status: draft
 
 # Introduction
 
-The <a href="https://fivethirtyeight.com/features/can-you-help-dakota-jones-raid-the-lost-arc/" target="_blank">fivethirtyeight riddler</a> this week asks us to make connections between states. Specifically, we want to map the connections between state abbreviations (e.g. CA for California). We've been tasked with finding the longest string of connections where the last letter from one state is the first letter from another, without repeating any states. With 59 state abbreviations to choose from, what is the longest string we can create?
+The <a href="https://fivethirtyeight.com/features/can-you-help-dakota-jones-raid-the-lost-arc/">fivethirtyeight riddler</a> this week asks us to make connections between states. Specifically, we want to map the connections between state abbreviations (e.g. CA for California). We've been tasked with finding the longest string of connections where the last letter from one state is the first letter from another, without repeating any states. With 59 state abbreviations to choose from, what is the longest string we can create?
 
 > The challenge is to find the longest string of letters in which (1) every pair of consecutive letters is a two-letter state or territory abbreviation, and (2) no state abbreviation occurs more than once. For example, Guam, Utah and Texas can be combined into the valid four-letter string GUTX. Another valid string is ALAK (Alabama, Louisiana and Alaska), while ALAL (Alabama, Louisiana and Alabama) is invalid because it includes the same state, Alabama, twice.
 
@@ -34,7 +34,7 @@ As it turns out, most paths tend to include at least 20 states, as shown by the 
 
 # Full Code
 
-The full code this week is fairly straightforward to read, but takes quite a while to calculate. The `model` function took well over an hour to run on my computer. Fortunately, I saved the <a href="state_connections.json" target="_blank">full results</a> if you want to skip the calculation and look at the raw output. Each state pair is represented here, with one example of the longest simple path you could take between the two.
+The full code this week is fairly straightforward to read, but takes quite a while to calculate. The `model` function took well over an hour to run on my computer. Fortunately, I saved the <a href="state_connections.json">full results</a> if you want to skip the calculation and look at the raw output. Each state pair is represented here, with one example of the longest simple path you could take between the two.
 
 ```python
 import json

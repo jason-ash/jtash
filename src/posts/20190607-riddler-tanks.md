@@ -8,7 +8,7 @@ status: draft
 
 # Introduction
 
-Based on actual statistics from World War II, this week's <a href="https://fivethirtyeight.com/features/youve-been-marooned-by-kidnappers-can-you-escape-at-dawn/" target="_blank">Riddler</a> asks us to estimate the number of German tanks given uncertain information about the tanks we've observed. Fortunately, despite the uncertainty in our observations, we can still provide reasonably accurate estimates for the total German tank population. We'll rely heavily on Bayesian analysis to solve this problem. Let's continue with the full problem.
+Based on actual statistics from World War II, this week's <a href="https://fivethirtyeight.com/features/youve-been-marooned-by-kidnappers-can-you-escape-at-dawn/">Riddler</a> asks us to estimate the number of German tanks given uncertain information about the tanks we've observed. Fortunately, despite the uncertainty in our observations, we can still provide reasonably accurate estimates for the total German tank population. We'll rely heavily on Bayesian analysis to solve this problem. Let's continue with the full problem.
 
 > Mathematician Dr. Lana Gurtin has a problem to solve. She was hired by British intelligence for a top-secret assignment, but things have not gone according to plan. The year is 1942 and the Germans are rolling out a new and powerful tank, the Uberpanzer. Prominently displayed on the back of each Uberpanzer is its serial number, which is simply the number of tanks that had been built when it rolled off the line. So the first tank built has the serial number 1, the second one built has a 2, and so on.
 > <br><br>

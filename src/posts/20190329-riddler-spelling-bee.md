@@ -88,7 +88,7 @@ The question asked us (as the fantastic 99% speller that we are) how our chances
 
 # Reference: Full Python Code
 
-Also can be found as a gist <a href="https://gist.github.com/ashanalytics/db09e8bb131f5bc856a018fa0856f2f0" target="_blank">here</a>.
+Also can be found as a gist <a href="https://gist.github.com/ashanalytics/db09e8bb131f5bc856a018fa0856f2f0">here</a>.
 
 ```python
 # -*- coding: utf-8 -*-

@@ -8,7 +8,7 @@ status: draft
 
 # Introduction
 
-Computers continue to fascinate me. The <a href="https://fivethirtyeight.com/features/can-you-win-the-loteria/" target="_blank">Riddler</a> this week deals with an explosion of combinations and math that is nearly impossible to grasp without the help of a computer. Specifically, we're interested in crafting an ideal strategy for the "numbers game" from the UK television show Countdown. The numbers game asks contestants to use four mathematical operations (addition, subtraction, multiplication, and division) with six numbers as inputs to solve for a single, three digit target. Most of the time, this can be quite difficult, especially with a 30-second time limit. However, with the help of a computer, we can solve for every possible combination of input and output to identify the strategy that gives the humans the best chance to win!
+Computers continue to fascinate me. The <a href="https://fivethirtyeight.com/features/can-you-win-the-loteria/">Riddler</a> this week deals with an explosion of combinations and math that is nearly impossible to grasp without the help of a computer. Specifically, we're interested in crafting an ideal strategy for the "numbers game" from the UK television show Countdown. The numbers game asks contestants to use four mathematical operations (addition, subtraction, multiplication, and division) with six numbers as inputs to solve for a single, three digit target. Most of the time, this can be quite difficult, especially with a 30-second time limit. However, with the help of a computer, we can solve for every possible combination of input and output to identify the strategy that gives the humans the best chance to win!
 
 Here is the complete problem text.
 
@@ -19,7 +19,7 @@ Here is the complete problem text.
 > For example, say you ask for one large and five smalls, and you get 2, 3, 7, 8, 9 and 75. Your target is 657. One way to solve this would be to say 7×8×9 = 504, 75×2 = 150, 504+150 = 654 and 654+3 = 657. You could also say 75+7 = 82, 82×8 = 656, 3-2 = 1 and 656+1 = 657.
 > <br><br> > **This riddle is twofold. One: What number of “large” cards is most likely to produce a solvable game and what number of “large” cards is least likely to be solvable? Two: What three-digit numbers are most or least likely to be solvable?**
 
-Thanks to Laurent Lessard who <a href="https://twitter.com/LaurentLessard/status/1135601818296365064?s=20" target="_blank">pointed out</a> a bug in an earlier version of my code. It's since been updated.
+Thanks to Laurent Lessard who <a href="https://twitter.com/LaurentLessard/status/1135601818296365064?s=20">pointed out</a> a bug in an earlier version of my code. It's since been updated.
 
 # Solution
 

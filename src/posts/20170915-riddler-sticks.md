@@ -7,7 +7,7 @@ status: draft
 ---
 
 Part of the fun of building a campfire is setting up the structure of the logs. I suppose that may have inspired this week's
-<a href="https://fivethirtyeight.com/features/will-you-be-a-ghostbuster-or-a-world-destroyer/" target="_blank">riddler classic</a>. Perhaps the logic is that if you find sticks that can form triangles, you are more likely to build an aesthetically pleasing pyre...?
+<a href="https://fivethirtyeight.com/features/will-you-be-a-ghostbuster-or-a-world-destroyer/">riddler classic</a>. Perhaps the logic is that if you find sticks that can form triangles, you are more likely to build an aesthetically pleasing pyre...?
 
 > This week’s Classic, from Spreck Rosekrans, continues our camping theme. Here are four questions of increasing difficulty about finding sticks in the woods, breaking them and making shapes:
 

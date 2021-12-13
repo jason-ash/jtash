@@ -6,11 +6,11 @@ excerpt: This week's riddler reminds me of a cross between sudoku or kakuro puzz
 status: draft
 ---
 
-I love sudoku puzzles, and I remember how excited I was to discover <a href="https://en.wikipedia.org/wiki/Kakuro" target="_blank">kakuro puzzles</a>. They combined the sudoku experience with math! This week, <a href="https://fivethirtyeight.com/features/how-do-you-like-these-rectangles/" target="_blank">fivethirtyeight's riddler</a> introduces what I think of as "geometric sudoku", because it combines the variable-finding elements of math puzzles with some good old fashioned geometry.
+I love sudoku puzzles, and I remember how excited I was to discover <a href="https://en.wikipedia.org/wiki/Kakuro">kakuro puzzles</a>. They combined the sudoku experience with math! This week, <a href="https://fivethirtyeight.com/features/how-do-you-like-these-rectangles/">fivethirtyeight's riddler</a> introduces what I think of as "geometric sudoku", because it combines the variable-finding elements of math puzzles with some good old fashioned geometry.
 
 > This week, we’ve got two puzzles from the forthcoming puzzle book “[The Original Area Mazes](https://theexperimentpublishing.com/catalogs/fall-2017/the-original-area-mazes/){:target="\_blank"},” by Alex Bellos, Naoki Inaba and Ryoichi Murakami. The goal of these puzzles, which are also known by the Japanese term “menseki meiro,” is to figure out what the “?” equals. The only math you’ll need to know is that length times width equals area. Keep in mind that the diagrams aren’t necessarily to scale — this is about logic, not measuring.
 
-Importantly, the figures may not be to scale, but I have it on <a href="https://twitter.com/ollie/status/911240547951693824" target="_blank">good authority</a> that we can trust the lines and edges.
+Importantly, the figures may not be to scale, but I have it on <a href="https://twitter.com/ollie/status/911240547951693824">good authority</a> that we can trust the lines and edges.
 
 ### Riddler Express
 

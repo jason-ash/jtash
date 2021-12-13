@@ -38,7 +38,7 @@ Under the simplified dice framework, we can treat the game of baseball like a ma
    - Dice roll (1,3): move from "1 strike, 1 out, runner on second" to "0 strikes, 1 out, bases empty". Reward of +1 for the single runner that scored.
    - Dice roll (6,6): move from "0 strikes, 2 outs, bases loaded" to "0 strikes, 2 outs, bases empty". Reward of +4 because this was a grand slam.
 
-Now that we have the tools to describe our game, we need to specify all possible states, all possible transitions between states, and the rewards associated with each move. We'll use python to do the heavy lifting. The full code can be found at the bottom of this article or as a <a href="https://gist.github.com/ashanalytics/7ec1ffccea90ca58c9d1613736eb5a81" target="_blank">github gist</a>.
+Now that we have the tools to describe our game, we need to specify all possible states, all possible transitions between states, and the rewards associated with each move. We'll use python to do the heavy lifting. The full code can be found at the bottom of this article or as a <a href="https://gist.github.com/ashanalytics/7ec1ffccea90ca58c9d1613736eb5a81">github gist</a>.
 
 # Creating States
 
@@ -153,7 +153,7 @@ def simulate_innings(trials):
 1.611836
 ```
 
-**Ignoring the small possibility of ties and extra innings, we see that the expected number of runs per inning is roughly 1.61, which means the expected number of runs per nine-inning game is roughly 14.5.** According to <a href="https://www.sportingcharts.com/articles/mlb/what-is-the-average-number-of-runs-scored-in-an-mlb-game.aspx", target="_blank">sportingcharts.com</a> the actual \_total score_ of MLB games from 1990 to 2016 hovered between 8-10, which means each team scored between 4 and 5 runs. Our dice game certainly gives the advantage to the sluggers!
+**Ignoring the small possibility of ties and extra innings, we see that the expected number of runs per inning is roughly 1.61, which means the expected number of runs per nine-inning game is roughly 14.5.** According to <a href="https://www.sportingcharts.com/articles/mlb/what-is-the-average-number-of-runs-scored-in-an-mlb-game.aspx",>sportingcharts.com</a> the actual \_total score\_ of MLB games from 1990 to 2016 hovered between 8-10, which means each team scored between 4 and 5 runs. Our dice game certainly gives the advantage to the sluggers!
 
 What's also interesting is that these results allow us to track not only the average number of runs scored per inning, but the full distribution: how many goose eggs (roughly 40% of the time) vs. quadruple-grand-slams (the highest inning recorded 22 runs). These results are best viewed as a histogram showing exactly how many simulated innings ended up with a given number of runs, which you can see below.
 
@@ -161,7 +161,7 @@ What's also interesting is that these results allow us to track not only the ave
 
 # Reference: Full Python Code
 
-The full code to replicate my results is below. Feel free to let me know if my baseball strategy should be adjusted. You can submit pull requests to the github gist, found <a href="https://gist.github.com/ashanalytics/7ec1ffccea90ca58c9d1613736eb5a81" target="_blank">here</a>.
+The full code to replicate my results is below. Feel free to let me know if my baseball strategy should be adjusted. You can submit pull requests to the github gist, found <a href="https://gist.github.com/ashanalytics/7ec1ffccea90ca58c9d1613736eb5a81">here</a>.
 
 ```python
 # -*- coding: utf-8 -*-

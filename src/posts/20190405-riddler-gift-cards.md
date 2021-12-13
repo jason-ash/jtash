@@ -53,13 +53,13 @@ The question asked us about the expected number of drinks remaining. Using our f
 
 $$\text{Expected Value} = \sum_{k=0}^n k\times{\binom{2n-k}{n}\left(\frac{1}{2}\right)^{2n-k}}$$
 
-Using a bit of mathematical horsepower from <a href="https://www.wolframalpha.com/input/?i=%5Csum_%7Bk%3D0%7D%5En+k%5Ctimes%7B%5Cbinom%7B2n-k%7D%7Bn%7D%5Cleft(%5Cfrac%7B1%7D%7B2%7D%5Cright)%5E%7B2n-k%7D%7D" target="_blank">WolframAlpha</a>, we can simplify this expression to:
+Using a bit of mathematical horsepower from <a href="https://www.wolframalpha.com/input/?i=%5Csum_%7Bk%3D0%7D%5En+k%5Ctimes%7B%5Cbinom%7B2n-k%7D%7Bn%7D%5Cleft(%5Cfrac%7B1%7D%7B2%7D%5Cright)%5E%7B2n-k%7D%7D">WolframAlpha</a>, we can simplify this expression to:
 
 $$4^{-n}(2n + 1)\binom{2n}{n}-1$$
 
 **When we substitute $n=50$, we calculate an expected value of $\approx7.0385$. This means that when either card runs out, we expect roughly 7 drinks to be available on the other card.**
 
-We were also asked about the probability that there were _any_ drinks available on the other card when the first card expires. We can answer this by taking the complement of the probability that both cards end with zero drinks. For this, we use values of $n=50$ and $k=0$, and subtract the value from 1, which <a href="https://www.wolframalpha.com/input/?i=(100+choose+50)+%2F+2%5E100" target="_blank">gives us</a> **roughly 92% odds**.
+We were also asked about the probability that there were _any_ drinks available on the other card when the first card expires. We can answer this by taking the complement of the probability that both cards end with zero drinks. For this, we use values of $n=50$ and $k=0$, and subtract the value from 1, which <a href="https://www.wolframalpha.com/input/?i=(100+choose+50)+%2F+2%5E100">gives us</a> **roughly 92% odds**.
 
 # Simulated Solution
 

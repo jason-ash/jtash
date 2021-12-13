@@ -8,7 +8,7 @@ status: draft
 
 # Introduction
 
-The <a href="https://fivethirtyeight.com/features/what-comes-after-840-the-answer-may-surprise-you/" target="_blank">Riddler</a> this week asks us about random points on the edge of a circle. Specifically, if we generate $n$ random points around the circumference of a circle, how likely are those points to fall on only one side? Our answer should be a function of $n$. Here is the full text.
+The <a href="https://fivethirtyeight.com/features/what-comes-after-840-the-answer-may-surprise-you/">Riddler</a> this week asks us about random points on the edge of a circle. Specifically, if we generate $n$ random points around the circumference of a circle, how likely are those points to fall on only one side? Our answer should be a function of $n$. Here is the full text.
 
 > If N points are generated at random places on the perimeter of a circle, what is the probability that you can pick a diameter such that all of those points are on only one side of the newly halved circle?
 

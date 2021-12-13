@@ -8,7 +8,7 @@ status: draft
 
 # Introduction
 
-This week's <a href="https://fivethirtyeight.com/features/how-many-soldiers-do-you-need-to-beat-the-night-king/" target="_blank">Riddler</a> pits the army of the dead vs. the army of the living. As the two armies battle, any fallen soldiers from the living army rise to fight with the dead. How many soldiers would each side need to make it a fair fight? Here's the full problem text:
+This week's <a href="https://fivethirtyeight.com/features/how-many-soldiers-do-you-need-to-beat-the-night-king/">Riddler</a> pits the army of the dead vs. the army of the living. As the two armies battle, any fallen soldiers from the living army rise to fight with the dead. How many soldiers would each side need to make it a fair fight? Here's the full problem text:
 
 > At a pivotal moment in an epic battle between the living and the dead, the Night King, head of the army of the dead, raises all the fallen (formerly) living soldiers to join his ranks. This ability obviously presents a huge military advantage, but how big an advantage exactly?
 > <br><br>
