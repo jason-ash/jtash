@@ -22,27 +22,42 @@
 <ul>
   <li>
     <label for="stock">Stock Price</label>
-    <input name="stock" type="number" bind:value={optionParams.stock} />
+    <input name="stock" type="number" step="1" bind:value={optionParams.stock} />
   </li>
   <li>
     <label for="strike">Strike Price</label>
-    <input name="strike" type="number" bind:value={optionParams.strike} />
+    <input name="strike" type="number" step="1" bind:value={optionParams.strike} />
   </li>
   <li>
     <label for="rate">Interest Rate</label>
-    <input name="rate" type="number" bind:value={optionParams.rate} />
+    <input name="rate" type="number" step="0.0025" bind:value={optionParams.rate} />
   </li>
   <li>
     <label for="dividendRate">Dividend Rate</label>
-    <input name="dividendRate" type="number" bind:value={optionParams.dividendRate} />
+    <input
+      name="dividendRate"
+      type="number"
+      step="0.0025"
+      bind:value={optionParams.dividendRate}
+    />
   </li>
   <li>
     <label for="volatility">Volatility</label>
-    <input name="volatility" type="number" bind:value={optionParams.volatility} />
+    <input
+      name="volatility"
+      type="number"
+      step="0.005"
+      bind:value={optionParams.volatility}
+    />
   </li>
   <li>
     <label for="timeToExpiry">Time to Expiry</label>
-    <input name="timeToExpiry" type="number" bind:value={optionParams.timeToExpiry} />
+    <input
+      name="timeToExpiry"
+      type="number"
+      step="0.25"
+      bind:value={optionParams.timeToExpiry}
+    />
   </li>
   <li>
     <label for="optionType">Option Type</label>
