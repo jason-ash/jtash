@@ -1,9 +1,9 @@
 ---
 title: Riddler State Superstrings
 slug: riddler-superstrings
-date: 2019-09-13
+date: "2019-09-13"
 excerpt: The fivethirtyeight riddler this week asks us to make connections between states. Specifically, we want to map the connections between state abbreviations (e.g. CA for California). We've been tasked with finding the longest string of connections where the last letter from one state is the first letter from another, without repeating any states. With 59 state abbreviations to choose from, what is the longest string we can create?
-status: draft
+status: published
 ---
 
 # Introduction
@@ -22,7 +22,7 @@ In the spirit of several prior problems, I elected to tackle this problem with a
 
 Between the 59 states there are 168 connections, which we represent in a graph that looks something like this.
 
-<img class="img-fluid mx-auto d-block" src="../images/20190913-riddler1.png">
+<img class="img-fluid mx-auto d-block" src="src/assets/img/riddler-superstrings1.png">
 
 As it turns out, computing the longest path from any starting node to any other node is not an easy problem. It is especially difficult because this graph is _cyclical_, meaning that you can find yourself in loops of repeating patterns if you're not careful. For example, a loop occurs between CA -> AS -> SC -> CA. Obviously we don't want loops in our result because we're not allowed to repeat states. Therefore, we want _simple paths_ through the graph: paths that visit a node at most one time.
 
@@ -30,7 +30,7 @@ Fortunately, algorithms exist to calculate simple paths through cyclical graphs,
 
 As it turns out, most paths tend to include at least 20 states, as shown by the chart below. On the other hand, several starting-ending state pairs have no connections, such as Kentucky, that can't connect outward to any other state. The chart below shows a histogram of all the longest paths between each pair of states.
 
-<img class="img-fluid mx-auto d-block" src="../images/20190913-riddler2.png">
+<img class="img-fluid mx-auto d-block" src="src/assets/img/riddler-superstrings2.png">
 
 # Full Code
 
