@@ -9,12 +9,14 @@
     volatility: 0.16,
     timeToExpiry: 1.0,
     dividendRate: 0.01,
-    optionType: "put",
+    optionType: "call",
   };
   $: console.log(optionParams);
-  export let output: blackScholesOutput;
-  $: output = blackScholesResult(optionParams);
-  console.log(output);
+  export let callOption: blackScholesOutput;
+  export let putOption: blackScholesOutput;
+  $: callOption = blackScholesResult(optionParams);
+  $: putOption = blackScholesResult({ ...optionParams, optionType: "put" });
+  console.log(putOption);
 </script>
 
 <h1>Option Calculator</h1>
@@ -69,39 +71,48 @@
   <thead>
     <tr>
       <th>Name</th>
-      <th>Value</th>
+      <th>Call Option Value</th>
+      <th>Put Option Value</th>
     </tr>
   </thead>
   <tr>
     <td>Option Value</td>
-    <td>{output.value}</td>
+    <td>{callOption.value}</td>
+    <td>{putOption.value}</td>
   </tr>
   <tr>
     <td>Delta</td>
-    <td>{output.delta}</td>
+    <td>{callOption.delta}</td>
+    <td>{putOption.delta}</td>
   </tr>
   <tr>
     <td>Gamma</td>
-    <td>{output.gamma}</td>
+    <td>{callOption.gamma}</td>
+    <td>{putOption.gamma}</td>
   </tr>
   <tr>
     <td>Strike Greek</td>
-    <td>{output.strikeGreek}</td>
+    <td>{callOption.strikeGreek}</td>
+    <td>{putOption.strikeGreek}</td>
   </tr>
   <tr>
     <td>Rho</td>
-    <td>{output.rho}</td>
+    <td>{callOption.rho}</td>
+    <td>{putOption.rho}</td>
   </tr>
   <tr>
     <td>Vega</td>
-    <td>{output.vega}</td>
+    <td>{callOption.vega}</td>
+    <td>{putOption.vega}</td>
   </tr>
   <tr>
     <td>Epsilon</td>
-    <td>{output.epsilon}</td>
+    <td>{callOption.epsilon}</td>
+    <td>{putOption.epsilon}</td>
   </tr>
   <tr>
     <td>Theta</td>
-    <td>{output.theta}</td>
+    <td>{callOption.theta}</td>
+    <td>{putOption.theta}</td>
   </tr>
 </table>
