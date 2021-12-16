@@ -1,9 +1,9 @@
 ---
 title: Riddler Bacteria
 slug: riddler-bacteria
-date: 2020-06-12
+date: "2020-06-12"
 excerpt: We're studying simulated petri dishes in this week's Riddler! We want to figure out how likely a colony of bacteria is to survive, given what we know about how often its cells divide. This is a classic problem that can be modeled with a stochastic process, but we'll try a different approach with very large markov transition matrices built in python and numpy.
-status: draft
+status: published
 ---
 
 # Introduction
@@ -24,7 +24,7 @@ If you start with a single R. classicum bacterium, what is the probability that 
 
 The survival rate is highly dependent on the doubling rate, as the chart below shows. For doubling rates less than 50%, a colony of bacteria will surely go extinct, but for doubling rates above 50%, the survival odds improve substantially.
 
-<img class="img-fluid mx-auto d-block" src="../images/20200612-riddler.png">
+<img class="img-fluid mx-auto d-block" src="src/assets/img/riddler-bacteria.png">
 
 This class of problem, called a "birth-death process", can get very complicated, but for this simple case of cells doubling or dying, there is a formula for the survival rate as a function of $p$:
 
