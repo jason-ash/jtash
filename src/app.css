@@ -1,8 +1,8 @@
 :root {
   --background-color: #fafafa;
   --text-color-primary: #171717;
-  --text-color-secondary: #737373;
-  --text-color-tertiary: #e5e5e5;
+  --link-bottom-border: #737373;
+  --hr-color: #e5e5e5;
 }
 
 body {
@@ -14,15 +14,15 @@ a {
   color: var(--text-color-primary);
   text-decoration: none;
   font-weight: 400;
-  border-bottom: 1px solid var(--text-color-secondary);
+  border-bottom: 1px solid var(--link-bottom-border);
 }
 a:hover {
   font-weight: 600;
-  border-bottom: 2px solid var(--text-color-primary);
+  border-bottom: 2px solid var(--link-bottom-border);
 }
 hr {
   border: 0rem;
-  border-top: 0.1rem solid var(--text-color-tertiary);
+  border-top: 0.1rem solid var(--hr-color);
   margin-top: 2rem;
 }
 code {
@@ -37,7 +37,7 @@ table {
   font-size: 0.9em;
 }
 thead {
-  border-bottom: 1px solid var(--text-color-secondary);
+  border-bottom: 1px solid #737373;
 }
 tr,
 th,
