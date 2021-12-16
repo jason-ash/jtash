@@ -1,9 +1,9 @@
 ---
 title: Riddler Video Call
 slug: riddler-video-call
-date: 2020-05-29
+date: "2020-05-29"
 excerpt: Suppose everyone in the United States wanted to join the same video call? If each of the 330 million participants joins and drops at a random time, how likely is it that at least one person overlaps with everyone else? This problem easily exceeds the limits of a practical simulation, but we'll write some code to develop intuition about the results before attempting to solve it analytically.
-status: draft
+status: published
 ---
 
 # Introduction
@@ -28,7 +28,7 @@ The following image helped me think about the probability distributions involved
 
 These two people set the boundary on the minimum overlap time. In order to overlap with everyone, at least one person must _join_ the call before the first person leaves, and must _stay_ on the call until the last person joins. If those two conditions are met, then we're guaranteed to have at least one overlap.
 
-<img class="img-fluid mx-auto d-block" src="../images/20200529-riddler.png">
+<img class="img-fluid mx-auto d-block" src="src/assets/img/riddler-video-call.png">
 
 <!-- # Methodology
 
