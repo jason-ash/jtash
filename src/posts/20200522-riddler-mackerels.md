@@ -1,9 +1,9 @@
 ---
 title: Riddler Mackerels
 slug: riddler-mackerels
-date: 2020-05-22
+date: "2020-05-22"
 excerpt: This week's Riddler starts with a peculiar fact - "Ohio" doesn't share any letters with the word "mackerel", and it's the only state for which that is true. How many other state/word combinations can we find, and which states match with the longest words? We'll use python's super efficient sets, lists, and dictionaries to crunch millions of combinations in under two seconds to find the answer.
-status: draft
+status: published
 ---
 
 # Introduction
@@ -22,9 +22,9 @@ What is the longest “mackerel?” That is, what is the longest word that doesn
 
 # Solution
 
-Fortunately I have a <a href="https://www.jtash.com/riddler-state-superstrings">list of the US states</a> handy from a prior Riddler, so that should save a bit of time :)
+Fortunately I have a list of US states handy from a <a href="riddler-state-superstrings">prior Riddler</a>, so that should save a bit of time :)
 
-First, a comment on the word list: it contains 263,533 words, including such vernacular staples as "aa" (a form of lava flow), and "zzz" (a snoring sound), which are both valid in Scrabble. If there's a better validation of a word than its inclusion in the Scrabble dictionary, I'm not aware of it!
+First, a comment on the word list: it contains 263,533 words, including such vernacular staples as "aa" (a form of lava flow), and "zzz" (a snoring sound), both of which are valid in Scrabble. If there's a better validation of a word than its inclusion in the Scrabble dictionary, I'm not aware of it!
 
 Of those 263,533 words, the longest "mackerel" is a tie between the 23-letter powerhouses **counterproductivenesses**, which belongs to Alabama, and **hydrochlorofluorocarbon**, which belongs to Mississippi. (Sorry _pneumonoultramicroscopicsilicovolcanoconiosis_, your 45 letters were claimed by all 50 states.)
 
