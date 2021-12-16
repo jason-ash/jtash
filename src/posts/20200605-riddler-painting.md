@@ -1,9 +1,9 @@
 ---
 title: Riddler Painting
 slug: riddler-painting
-date: 2020-06-05
+date: "2020-06-05"
 excerpt: We are carefully coloring a poster in this week's Riddler. We want to draw horizontal lines with a marker in order to fill the poster with ink as evenly as possible. How far apart should each marker line be? We'll use numpy for a computational approach that minimizes the standard deviation of our coloring scheme.
-status: draft
+status: published
 ---
 
 # Introduction
@@ -15,7 +15,7 @@ Some friends have invited you to a protest, and you’ll be making a sign with l
 <br><br>
 Since the diameter of the marker’s tip is 2 centimeters, you decide to fill in the letters by drawing lines every 2 centimeters. However, this is the pattern you get:
 <br><br>
-<img src="https://fivethirtyeight.com/wp-content/uploads/2020/06/poster.png" width=300 />
+<img src="https://fivethirtyeight.com/wp-content/uploads/2020/06/poster.png" width=30% />
 <br><br>
 The shading doesn’t look very uniform — each stroke is indeed 2 centimeters wide, but there appear to be gaps between the strokes. Of course, if you drew many, many lines all bunched together, you’d have a rather uniform shading.
 <br><br>
@@ -34,7 +34,7 @@ But you don’t have all day to make this sign. If the lines can’t overlap by 
 
 The chart below illustrates how the standard deviation changes as a function of the marker spacing. The dark wavy line in the middle represents the standard deviation for a given spacing on the x-axis. This line is minimized when spacing is 1.7cm, and is maximized at 1.07cm. The insets in the chart show a vertical cross section of ink for a slice of the poster. Standard deviation at each point is calculated based on the values in the inset charts. We can see that the values of the upper right inset chart are more consistent overall, which is reflected in the lower standard deviation. The other inset chart has more variance in the ink values, so its standard deviation is higher.
 
-<img class="img-fluid mx-auto d-block" src="../images/20200605-riddler.png">
+<img class="img-fluid mx-auto d-block" src="src/assets/img/riddler-painting.png">
 
 # Full Code
 
