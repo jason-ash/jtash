@@ -1,20 +1,22 @@
 ---
 title: Riddler Thrones
 slug: riddler-thrones
-date: 2019-05-17
+date: "2019-05-17"
 excerpt: This week's Riddler pits the army of the dead vs. the army of the living. As the two armies battle, any fallen soldiers from the living army rise to fight with the dead. How many soldiers would each side need to make it a fair fight?
-status: draft
+status: published
 ---
 
 # Introduction
 
 This week's <a href="https://fivethirtyeight.com/features/how-many-soldiers-do-you-need-to-beat-the-night-king/">Riddler</a> pits the army of the dead vs. the army of the living. As the two armies battle, any fallen soldiers from the living army rise to fight with the dead. How many soldiers would each side need to make it a fair fight? Here's the full problem text:
 
-> At a pivotal moment in an epic battle between the living and the dead, the Night King, head of the army of the dead, raises all the fallen (formerly) living soldiers to join his ranks. This ability obviously presents a huge military advantage, but how big an advantage exactly?
-> <br><br>
-> Forget the Battle of Winterfell and model our battle as follows. Each army lines up single file, facing the other army. One soldier steps forward from each line and the pair duels — half the time the living soldier wins, half the time the dead soldier wins. If the living soldier wins, he goes to the back of his army’s line, and the dead soldier is out (the living army uses dragonglass weapons, so the dead soldier is dead forever this time). If the dead soldier wins, he goes to the back of their army’s line, but this time the (formerly) living soldier joins him there. (Reanimation is instantaneous for this Night King.) The battle continues until one army is entirely eliminated.
-> <br><br>
-> What starting sizes of the armies, living and dead, give each army a 50-50 chance of winning?
+<blockquote>
+At a pivotal moment in an epic battle between the living and the dead, the Night King, head of the army of the dead, raises all the fallen (formerly) living soldiers to join his ranks. This ability obviously presents a huge military advantage, but how big an advantage exactly?
+<br><br>
+Forget the Battle of Winterfell and model our battle as follows. Each army lines up single file, facing the other army. One soldier steps forward from each line and the pair duels — half the time the living soldier wins, half the time the dead soldier wins. If the living soldier wins, he goes to the back of his army’s line, and the dead soldier is out (the living army uses dragonglass weapons, so the dead soldier is dead forever this time). If the dead soldier wins, he goes to the back of their army’s line, but this time the (formerly) living soldier joins him there. (Reanimation is instantaneous for this Night King.) The battle continues until one army is entirely eliminated.
+<br><br>
+What starting sizes of the armies, living and dead, give each army a 50-50 chance of winning?
+</blockquote>
 
 # Setup
 
@@ -90,7 +92,7 @@ We now have a function that solves for the probability of the living army winnin
 
 As usual, graphing the results can help to understand the dynamics of this problem. We know the dead army has a significant advantage, but exactly how much? We can use the function from the prior section to map all combinations of army sizes to try to understand the probability surface.
 
-<img class="img-fluid mx-auto d-block" src="../images/20190517-riddler.png">
+<img class="img-fluid mx-auto d-block" src="src/assets/img/riddler-thrones.png">
 
 As we can see, the dead army's advantage compounds as it grows. In other words, each additional dead army soldier requires an increasing number of additional living army soldiers to fight. When the dead army has 10 soldiers, it requires 106 living soldiers just to keep the odds fair and square. I've also plotted the soldiers required for different battle probabilities. For example, if the living army wants to win with 60% certainty instead of 50%, it needs even more soldiers.
 
