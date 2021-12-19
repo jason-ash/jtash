@@ -1,16 +1,18 @@
 ---
 title: Riddler Circles
 slug: riddler-circles
-date: 2019-04-19
+date: "2019-04-19"
 excerpt: The Riddler this week asks us about random points on the edge of a circle. Specifically, if we generate $n$ random points around the circumference of a circle, how likely are those points to fall on only one side?
-status: draft
+status: published
 ---
 
 # Introduction
 
 The <a href="https://fivethirtyeight.com/features/what-comes-after-840-the-answer-may-surprise-you/">Riddler</a> this week asks us about random points on the edge of a circle. Specifically, if we generate $n$ random points around the circumference of a circle, how likely are those points to fall on only one side? Our answer should be a function of $n$. Here is the full text.
 
-> If N points are generated at random places on the perimeter of a circle, what is the probability that you can pick a diameter such that all of those points are on only one side of the newly halved circle?
+<blockquote>
+If N points are generated at random places on the perimeter of a circle, what is the probability that you can pick a diameter such that all of those points are on only one side of the newly halved circle?
+</blockquote>
 
 # Starting with intuition
 
@@ -32,15 +34,15 @@ In order to solve this problem through simulation, we need to define our program
 
 **Calculating the criteria** - we can imagine each point of the circle defining two different halves for us to check. If we find that every other point is contained in one of those halves, then we know our criteria is satisfied. To simplify this, we can imagine "cutting" our circle at the "3 o'clock" position and stretching it out into a number line.
 
-<img class="img-fluid mx-auto d-block" src="../images/20190419-riddler1.png">
-<img class="img-fluid mx-auto d-block" src="../images/20190419-riddler2.png">
+<img class="img-fluid mx-auto d-block" src="src/assets/img/riddler-circles1.png">
+<img class="img-fluid mx-auto d-block" src="src/assets/img/riddler-circles2.png">
 
 You can see that the points we generated around the edge are simply transposed onto the number line. Next, we generate both sides of each point, shown in grey, keeping in mind that we can wrap around each side of the number line, just like we would on the circle. Thankfully, we can use modular arithmetic to do this "wrapping" automatically. The next several images show the two halves we generate from two of our random points. We see that in at least one case, we found a single region that contained each of the three points, so we consider this simulation a success.
 
-<img class="img-fluid mx-auto d-block" src="../images/20190419-riddler3.png">
-<img class="img-fluid mx-auto d-block" src="../images/20190419-riddler4.png">
-<img class="img-fluid mx-auto d-block" src="../images/20190419-riddler5.png">
-<img class="img-fluid mx-auto d-block" src="../images/20190419-riddler6.png">
+<img class="img-fluid mx-auto d-block" src="src/assets/img/riddler-circles3.png">
+<img class="img-fluid mx-auto d-block" src="src/assets/img/riddler-circles4.png">
+<img class="img-fluid mx-auto d-block" src="src/assets/img/riddler-circles5.png">
+<img class="img-fluid mx-auto d-block" src="src/assets/img/riddler-circles6.png">
 
 Because this is a simulation, we want to generate many trials and count the number of successes. If we divide the number of successes by the total number of trials, we get an approximation of the true rate of success. Here is the Python function that implements our simulation.
 
@@ -101,4 +103,4 @@ As usual, we can also visualize these probabilities in a histogram, shown below.
 
 This was another interesting, and deceptively complex problem. It's one that I'd like to come back to and attempt to find an analytical solution later.
 
-<img class="img-fluid mx-auto d-block" src="../images/20190419-riddler7.png">
+<img class="img-fluid mx-auto d-block" src="src/assets/img/riddler-circles7.png">
