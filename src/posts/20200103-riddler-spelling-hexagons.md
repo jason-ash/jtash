@@ -1,9 +1,9 @@
 ---
 title: Riddler Spelling Hexagons
 slug: riddler-spelling-hexagons
-date: 2020-01-03
+date: "2020-01-03"
 excerpt: This week's Riddler Classic was a fun way to welcome the new year. We're asked to find seven letters that maximize the score from the New York Times Spelling Bee puzzle. I use pure Python (lists, sets, and dictionaries only) to find the optimum pool of seven words.
-status: draft
+status: published
 ---
 
 # Introduction
