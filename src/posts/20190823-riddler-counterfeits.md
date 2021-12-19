@@ -1,28 +1,30 @@
 ---
 title: Riddler Counterfeits
 slug: riddler-counterfeits
-date: 2019-08-23
+date: "2019-08-23"
 excerpt: This week's fivethirtyeight riddler was created by yours truly! It was the first puzzle I've submitted to the riddler, and I hope you enjoyed it. This week we attempt to fool a bank with counterfeit hundred dollar bills.
-status: draft
+status: published
 ---
 
 # Introduction
 
 This week's <a href="https://fivethirtyeight.com/features/can-you-fool-the-bank-with-your-counterfeit-bills/">fivethirtyeight riddler</a> was created by yours truly! It was the first puzzle I've submitted to the riddler, and I hope you enjoyed it. This week we attempt to fool a bank with counterfeit hundred dollar bills. Here is the full text.
 
-> You are an expert counterfeiter, and you specialize in forging one of the most ubiquitous notes in global circulation, the U.S. /$100 bill. You’ve been able to fool the authorities with your carefully crafted C-notes for some time, but you’ve learned that new security features will make it impossible for you to continue to avoid detection. As a result, you decide to deposit as many fake notes as you dare before the security features are implemented and then retire from your life of crime.
-> <br><br>
-> You know from experience that the bank can only spot your fakes 25 percent of the time, and trying to deposit only counterfeit bills would be a ticket to jail. However, if you combine fake and real notes, there’s a chance the bank will accept your money. You have /$2,500 in bona fide hundreds, plus a virtually unlimited supply of counterfeits. The bank scrutinizes cash deposits carefully: They randomly select 5 percent of the notes they receive, rounded up to the nearest whole number, for close examination. If they identify any note in a deposit as fake, they will confiscate the entire sum, leaving you only enough time to flee.
-> <br><br>
-> How many fake notes should you add to the /$2,500 in order to maximize the expected value of your bank account? How much free money are you likely to make from your strategy?
+<blockquote>
+You are an expert counterfeiter, and you specialize in forging one of the most ubiquitous notes in global circulation, the U.S. $100 bill. You’ve been able to fool the authorities with your carefully crafted C-notes for some time, but you’ve learned that new security features will make it impossible for you to continue to avoid detection. As a result, you decide to deposit as many fake notes as you dare before the security features are implemented and then retire from your life of crime.
+<br><br>
+You know from experience that the bank can only spot your fakes 25 percent of the time, and trying to deposit only counterfeit bills would be a ticket to jail. However, if you combine fake and real notes, there’s a chance the bank will accept your money. You have $2,500 in bona fide hundreds, plus a virtually unlimited supply of counterfeits. The bank scrutinizes cash deposits carefully: They randomly select 5 percent of the notes they receive, rounded up to the nearest whole number, for close examination. If they identify any note in a deposit as fake, they will confiscate the entire sum, leaving you only enough time to flee.
+<br><br>
+How many fake notes should you add to the $2,500 in order to maximize the expected value of your bank account? How much free money are you likely to make from your strategy?
+</blockquote>
 
 # Solution
 
 The counterfeiter wants to strike the optimum balance between profitability and risk. The ideal strategy will include as many fake notes as possible to maximize the size of the deposit, but not so many that the bank becomes aware of the fraud and seizes everything.
 
-The ideal strategy is to **add 55 fake notes to the 25 real notes** for a total deposit of /$8000. **The expected gain from this strategy is /$1256**&#8224;, which is the weighted average of expected profit from successful deposits and expected losses from bank seizures. With 55 fake notes, there is a 47% chance we avoid detection and collect a profit of /$5500 - the value of the fake notes we were able to sneak into circulation. (Remember we started with /$2500, so only the fake notes count as profit.) There is a 53% chance we are caught by the bank and lose the /$2500 in real dollars we used as decoys.
+The ideal strategy is to **add 55 fake notes to the 25 real notes** for a total deposit of \$8000. **The expected gain from this strategy is \$1256**&#8224;, which is the weighted average of expected profit from successful deposits and expected losses from bank seizures. With 55 fake notes, there is a 47% chance we avoid detection and collect a profit of \$5500 - the value of the fake notes we were able to sneak into circulation. (Remember we started with \$2500, so only the fake notes count as profit.) There is a 53% chance we are caught by the bank and lose the \$2500 in real dollars we used as decoys.
 
-&#8224; A note on interpreting the results: I intended the problem to include the risk of _losing_ /$2500 if we are caught, and _gaining_ the value of the fake notes if we are not. Therefore, the expected value would be $47\%\times5500-53\%\times2500=1256$. However, potentially to avoid some ambiguity, the problem was rewritten to ask "how much **free money** are you likely **to make** from your strategy?" I believe with that criteria, the answer should be $47\%\times5500=2582$, which includes only the value of the fake notes, and doesn't penalize losing the real ones. Another interpretation could count the original /$2500 as free money as well (perhaps because it may have been the product of fraud at one point or another too!), for an answer of $47\%\times8000=3756$. I think all three are reasonable interpretations of the problem, but the first method is my favorite, so I'll continue that way.
+&#8224; A note on interpreting the results: I intended the problem to include the risk of _losing_ \$2500 if we are caught, and _gaining_ the value of the fake notes if we are not. Therefore, the expected value would be $47\%\times5500-53\%\times2500=1256$. However, potentially to avoid some ambiguity, the problem was rewritten to ask "how much **free money** are you likely **to make** from your strategy?" I believe with that criteria, the answer should be $47\%\times5500=2582$, which includes only the value of the fake notes, and doesn't penalize losing the real ones. Another interpretation could count the original \$2500 as free money as well (perhaps because it may have been the product of fraud at one point or another too!), for an answer of $47\%\times8000=3756$. I think all three are reasonable interpretations of the problem, but the first method is my favorite, so I'll continue that way.
 
 How can we be sure no other strategy produces a higher profit? For example, suppose we combine 30 fake notes with 25 real notes instead. The bank will select three notes for its audit, which is 5% of 55, rounded up to the nearest whole number. Depending on our luck, the bank could choose all three fake notes, all three real notes, or some combination in between.
 
@@ -30,7 +32,7 @@ Let’s assume the bank randomly chooses two fake notes and one real note for it
 
 For the 30 fake, 25 real strategy, the probability of success is 64.3%, and the probability of detection is 35.7%. Therefore, the expected profit is $64.3\%\times3000-35.7\%\times2500=1038$. That’s a decent payday, but we can do better. The chart below shows the profit for strategies with up to 200 fake notes, and it confirms the maximum is achieved when we use 55.
 
-<img class="img-fluid mx-auto d-block" src="../images/20190823-riddler.png">
+<img class="img-fluid mx-auto d-block" src="src/assets/img/riddler-counterfeits.png">
 
 We can see two patterns above. First, as we move to the right, we enter the “greedy danger zone,” where the bank becomes more likely to discover our fraud and seize the starting capital, resulting in larger and larger expected losses. Second, we see a sawtooth behavior caused by the bank’s practice of auditing 5% of deposited notes. The effect is significant: 55 is the ideal answer because we deposit 80 total notes, resulting in the bank auditing four. If we use 56 fake notes for a total of 81, then the bank audits five instead, which cuts the expected gain in half! A life of crime only pays if you’re good with numbers.
 
