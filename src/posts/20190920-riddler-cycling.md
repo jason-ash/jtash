@@ -1,27 +1,29 @@
 ---
 title: Riddler Cycling
 slug: riddler-cycling
-date: 2019-09-20
+date: "2019-09-20"
 excerpt: This week's riddler was an entertaining blend of probability and one of my favorite sports, cycling. We're asked to choose the ideal pace for a team time trial - trying to balance the rewards of a competitive time with the risks of pushing our riders too hard and having them crack due to the effort. Plus, there's a bonus extra credit problem!
-status: draft
+status: published
 ---
 
 # Introduction
 
 This week's <a href="https://fivethirtyeight.com/features/can-you-win-the-tour-de-fivethirtyeight/">riddler</a> was an entertaining blend of probability and one of my favorite sports, cycling. We're asked to choose the ideal pace for a team time trial - trying to balance the rewards of a competitive time with the risks of pushing our riders too hard and having them crack due to the effort.
 
-> You are the coach for Team Riddler at the Tour de FiveThirtyEight, where there are 20 teams (including yours). Your objective is to win the Team Time Trial race, which has the following rules:
-> <br><br>
+<blockquote>
+You are the coach for Team Riddler at the Tour de FiveThirtyEight, where there are 20 teams (including yours). Your objective is to win the Team Time Trial race, which has the following rules:
 
 - Each team rides as a group throughout the course at some fixed pace, specified by that team’s coach. Teams that can’t maintain their pace are said to have “cracked,” and don’t finish the course.<br>
 - The team that finishes the course with the fastest pace is declared the winner.<br>
 - Teams ride the course one at a time. After each team completes its attempt, the next team quickly consults with its coach (who assigns a pace) and then begins its ride. Coaches are aware of the results of all previous teams when choosing their own team’s pace.
-  <br><br>
-  Assume that all teams are of equal ability: At any given pace, they have the exact same probability of cracking, and the faster the pace, the greater the probability of cracking. Teams’ chances of cracking are independent, and each team’s coach knows exactly what a team’s chances of cracking are for each pace.
-  <br><br>
-  Team Riddler is the first team to attempt the course. To maximize your chances of winning, what’s the probability that your team will finish the course? What’s the probability you’ll ultimately win?
-  <br><br>
-  **Extra Credit:** If Team Riddler is the last team to attempt the course (rather than the first), what are its chances of victory?
+
+Assume that all teams are of equal ability: At any given pace, they have the exact same probability of cracking, and the faster the pace, the greater the probability of cracking. Teams’ chances of cracking are independent, and each team’s coach knows exactly what a team’s chances of cracking are for each pace.
+<br><br>
+Team Riddler is the first team to attempt the course. To maximize your chances of winning, what’s the probability that your team will finish the course? What’s the probability you’ll ultimately win?
+<br><br>
+**Extra Credit:** If Team Riddler is the last team to attempt the course (rather than the first), what are its chances of victory?
+
+</blockquote>
 
 # Solution
 
@@ -62,7 +64,7 @@ $$p=\frac{19}{20}$$
 
 **Therefore, the value of $p$ that maximizes our odds of winning is $\frac{19}{20}=95\%$. When we choose 95% for $p$, our overall chances of winning the event are $f(0.95)>(1-0.95)\times 0.95^{19}=1.89\%$.** In other words, we should pick an extremely risky strategy with a low probability of success in order to have the best odds of winning the entire event. Our odds of completing the time trial are low, but so are everyone else's! As we can see in the chart below, the function hits a maximum value at 95%.
 
-<img class="img-fluid mx-auto d-block" src="../images/20190920-riddler1.png">
+<img class="img-fluid mx-auto d-block" src="src/assets/img/riddler-cycling1.png">
 
 # Extra Credit
 
@@ -71,17 +73,17 @@ There's a nice feature of our answer above. The value of $p=\frac{19}{20}$ corre
 In our race, with 20 teams, the table below shows the values of $p$ that each team would select, as long as no prior team has completed the race. For example, the fifth team would select a value of $p=93.75\%$ if no prior team had finished. If a prior team had finished, the fifth team would select the value of $p$ set by that prior team. The final team, with the advantage of seeing everyone's scores before competing, could potentially select a value of $p=0\%$ if nobody had successfully finished the race - guaranteeing a finish and a win. Otherwise, they would select the value of $p$ from the last team that finished.
 
 | Team (n/20) | Ideal $p$ | ... | Team (n/20) | Ideal $p$ |
-| :---------- | :-------- | :-- | :---------- | :-------- | --- |
-| 1           | 95.00%    |     | 11          | 90.00%    |     |
-| 2           | 94.74%    |     | 12          | 88.89%    |     |
-| 3           | 94.44%    |     | 13          | 87.50%    |     |
-| 4           | 94.12%    |     | 14          | 85.71%    |     |
-| 5           | 93.75%    |     | 15          | 83.33%    |     |
-| 6           | 93.33%    |     | 16          | 80.00%    |     |
-| 7           | 92.86%    |     | 17          | 75.00%    |     |
-| 8           | 92.31%    |     | 18          | 66.67%    |     |
-| 9           | 91.67%    |     | 19          | 50.00%    |     |
-| 10          | 90.91%    |     | 20          | 00.00%    |     |
+| :---------- | :-------- | :-- | :---------- | :-------- |
+| 1           | 95.00%    |     | 11          | 90.00%    |
+| 2           | 94.74%    |     | 12          | 88.89%    |
+| 3           | 94.44%    |     | 13          | 87.50%    |
+| 4           | 94.12%    |     | 14          | 85.71%    |
+| 5           | 93.75%    |     | 15          | 83.33%    |
+| 6           | 93.33%    |     | 16          | 80.00%    |
+| 7           | 92.86%    |     | 17          | 75.00%    |
+| 8           | 92.31%    |     | 18          | 66.67%    |
+| 9           | 91.67%    |     | 19          | 50.00%    |
+| 10          | 90.91%    |     | 20          | 00.00%    |
 
 Now we have the tools we need to answer the extra credit problem. Suppose team 1 completes the race, which happens 5% of the time. Every subsequent team would be forced to attempt (almost exactly) the same pace, and team 20 would win the overall competition only if they are able to complete the course as well with the same value of $p$, which occurs (almost exactly) 5% of the time. The total odds of this happening are $(\frac{1}{20})^2$. If team 1 fails their attempt, then we would move to team 2, which would choose a value of $p=94.74\%$. If they succeed, every subsequent team would attempt the same pace, all the way until team 20. This pattern continues for all teams.
 
@@ -112,4 +114,4 @@ def model(teams=20):
 
 Finally, we can plot the win percentages for the team going last among a competition with $n$ competitors. It's a remarkable advantage to go last!
 
-<img class="img-fluid mx-auto d-block" src="../images/20190920-riddler2.png">
+<img class="img-fluid mx-auto d-block" src="src/assets/img/riddler-cycling2.png">
