@@ -1,18 +1,20 @@
 ---
 title: Riddler Gift Cards
 slug: riddler-gift-cards
-date: 2019-04-05
+date: "2019-04-05"
 excerpt: Another weekly Riddler, this time with both an analytical and simulated solution!
-status: draft
+status: published
 ---
 
 # Introduction
 
 This week's Riddler falls into one of my favorite categories: a problem that can be solved analytically and via simulation. It's great to be able to solve the same problem in two different ways! Here's the full problem text.
 
-> Lucky you! You’ve won two gift cards, each loaded with 50 free drinks from your favorite coffee shop, Riddler Caffei-Nation. The cards look identical, and because you’re not one for record-keeping, you randomly pick one of the cards to pay with each time you get a drink. One day, the clerk tells you that he can’t accept the card you presented to him because it doesn’t have any drink credits left on it.
-> <br><br>
-> What is the probability that the other card still has free drinks on it? How many free drinks can you expect are still available?
+<blockquote>
+Lucky you! You’ve won two gift cards, each loaded with 50 free drinks from your favorite coffee shop, Riddler Caffei-Nation. The cards look identical, and because you’re not one for record-keeping, you randomly pick one of the cards to pay with each time you get a drink. One day, the clerk tells you that he can’t accept the card you presented to him because it doesn’t have any drink credits left on it.
+<br><br>
+What is the probability that the other card still has free drinks on it? How many free drinks can you expect are still available?
+</blockquote>
 
 # Analytical Solution
 
@@ -90,6 +92,6 @@ print((results > 0).sum() / trials)
 
 Our result based on one million trials is **7.038671**, which is remarkably close to our analytical solution above! Looks like everything worked out the way it should. In addition to the expected value, we can also plot the full distribution of results, shown below.
 
-<img class="img-fluid mx-auto d-block" title="Histogram" src="../images/20190405-riddler.png">
+<img class="img-fluid mx-auto d-block" src="src/assets/img/riddler-gift-cards.png">
 
 Overall I was surprised the expected value is so low. There's a nearly a 50% chance that you end up with no more than 5 drinks on one of the cards using this approach! It looks like organizing and tracking gift cards may not be quite as important as one might think. Could this be a new life-hack? I doubt it, but it was a fun problem regardless.
