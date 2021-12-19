@@ -1,27 +1,30 @@
 ---
 title: Riddler Dowries
 slug: riddler-dowries
-date: 2019-11-01
+date: "2019-11-01"
 excerpt: A small twist on a classic problem is this week's challenge from the Riddler. We're going to tackle an extension of the secretary problem - also known as the Sultan's Dowry problem. This classic puzzle has led to fascinating research in optimal stopping theory, which we will use to help our Sultan choose the best possible suitor. Let's dive in!
-status: draft
+status: published
 ---
 
-##### Introduction
+# Introduction
 
 A small twist on a classic problem is this week's challenge from the <a href="https://fivethirtyeight.com/features/how-long-is-the-snails-slimy-trail/">Riddler</a>. We're going to tackle an extension of the <a href="https://en.wikipedia.org/wiki/Secretary_problem">secretary problem</a> - also known as the Sultan's Dowry problem. This classic puzzle has led to fascinating research in <a href="https://en.wikipedia.org/wiki/Optimal_stopping">optimal stopping theory</a>, which we will use to determine how effective our Sultan is at choosing a suitor. Let's dive in!
 
-> The sultan has asked her vizier to present her with 10 candidates for marriage. The vizier has searched the kingdom for the 10 most desirable partners, but he does not know whom the sultan will prefer. If she saw them all at the same time, she would easily be able to rank them from 1 (the best partner) to 10 (the worst partner). But the vizier can only present the candidates one at a time — very hard to sync everybody’s calendars, even back then — and in a random order. Upon seeing each candidate, the sultan must reject or accept him. If a candidate is rejected, the sultan cannot pick him again. But on seeing each new candidate, she knows exactly where he’d stack up relative to the candidates she has rejected. **If she strategizes, what’s the highest rank she can expect her chosen candidate to have on average?** > <br><br>
-> For example, if she simply accepted the first candidate presented to her, his rank could be anywhere from 1 to 10 with equal probability, averaging to 5.5. Surely she can do better…
+<blockquote>
+The sultan has asked her vizier to present her with 10 candidates for marriage. The vizier has searched the kingdom for the 10 most desirable partners, but he does not know whom the sultan will prefer. If she saw them all at the same time, she would easily be able to rank them from 1 (the best partner) to 10 (the worst partner). But the vizier can only present the candidates one at a time — very hard to sync everybody’s calendars, even back then — and in a random order. Upon seeing each candidate, the sultan must reject or accept him. If a candidate is rejected, the sultan cannot pick him again. But on seeing each new candidate, she knows exactly where he’d stack up relative to the candidates she has rejected. <strong>If she strategizes, what’s the highest rank she can expect her chosen candidate to have on average?</strong>
+<br><br>
+For example, if she simply accepted the first candidate presented to her, his rank could be anywhere from 1 to 10 with equal probability, averaging to 5.5. Surely she can do better…
+</blockquote>
 
 As an aside, I recently read <a href="https://www.amazon.com/Algorithms-Live-Computer-Science-Decisions-ebook-dp-B015CKNWJI/dp/B015CKNWJI/ref=mt_kindle?_encoding=UTF8&me=&qid=">Algorithms to Live By</a>, which covered how puzzles like these might be applied to real-life situations as well. It was a fun read discussing how computer science algorithms can help us make better decisions, from folding socks as efficiently as possible to deciding whether to return to our favorite restaurant or try a new one. Highly recommended!
 
-##### Solution
+# Solution
 
 Thanks to some <a href="https://twitter.com/bradleyalbrecht/status/1191793941458239488">helpful suggestions</a>, I revised my original answer, in which I used the proven strategy for the _original_ problem, rather than devising a new strategy for the specific problem we are trying to solve this week. In short, if we apply the strategy from the original problem - where we try to choose the single best suitor - the expected result is 3.025. On the other hand, if we devise a new strategy, we can improve the results by roughly half a rank. The following is what I believe to be the ideal strategy and answer. Thanks again for the helpful nudge in the right direction, Riddler Nation twitter!
 
 **If the Sultan chooses optimally, her suitor will have an average rank of roughly 2.56.**
 
-##### Methodology
+# Methodology
 
 We'll solve this problem using <a href="https://en.wikipedia.org/wiki/Dynamic_programming">Dynamic Programming</a>. I'll create a data structure called "State" that keeps track of everything we know about the world at each point in time. "State" is comprised of three variables.
 
@@ -37,9 +40,9 @@ The following code creates the `State` class by subclassing `namedtuple`, then a
 
 Furthermore, now that we have a framework with flexible inputs, we can also solve for different values of `N` - if the Sultan had a pool of 50 applicants, for example. We can plot the expected rank as the value of `N` changes, and we see a curve that quickly approaches ~3.7, though there has been interesting discussions about the actual <a href="https://twitter.com/dfranke/status/1190710221435473921">limiting behavior</a> of this process.
 
-<img class="img-fluid mx-auto d-block" src="../images/20191101-riddler.png">
+<img class="img-fluid mx-auto d-block" src="src/assets/img/riddler-dowries.png">
 
-##### Full Code
+# Full Code
 
 This code is used for the ideal strategy I outline above.
 
