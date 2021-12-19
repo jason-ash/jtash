@@ -1,9 +1,9 @@
 ---
 title: Riddler Spam
 slug: riddler-spam
-date: 2020-04-10
+date: "2020-04-10"
 excerpt: We're tracking spam messages in this week's Riddler. Spammers post messages on the column's comment board, and they also reply to each other's messages. Over a three-day time period, how many spam messages and replies should we expect to see? It turns out there are some fascinating connections with continuously compounding interest rates, which we'll derive from the differential equation. I'll also write a simulation using numpy and poisson distributions to verify our analytical approach.
-status: draft
+status: published
 ---
 
 # Introduction
