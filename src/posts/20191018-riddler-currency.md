@@ -1,9 +1,9 @@
 ---
 title: Riddler Currency Conversion
 slug: riddler-currency
-date: 2019-10-18
+date: "2019-10-18"
 excerpt: This was a clever version of a classic problem for this week's Riddler Classic. With just two denominations of currency, what is the largest amount we can't create from a combination of bills?
-status: draft
+status: published
 ---
 
 # Introduction
@@ -17,7 +17,7 @@ This was a clever version of a classic problem for this week's <a href="https://
 
 # Solution
 
-**The largest amount we could fail to create is &#36;9665.**
+**The largest amount we could fail to create is \$9665.**
 
 It turns out this is a fivethirtyeight twist on a classic: the <a href="https://en.wikipedia.org/wiki/Coin_problem">coin problem</a>. It is also known as the Diophantine Frobenius Problem - hence the clever names for our two currencies, the "Dio" and "Phantus".
 
