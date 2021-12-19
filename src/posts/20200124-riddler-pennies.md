@@ -1,9 +1,9 @@
 ---
 title: Riddler Pennies
 slug: riddler-pennies
-date: 2020-01-24
+date: "2020-01-24"
 excerpt: This week's Riddler Classic explores ideal strategy in a two-player game. We take turns removing coins from two piles, and the last one to remove a coin wins. I'll use pen and paper to sketch out the logical framework, then code a flexible solution using python and dynamic programming.
-status: draft
+status: published
 ---
 
 # Introduction
@@ -51,7 +51,7 @@ If we continue this process by hand, we can build a small diagram of optimal dec
 
 Suppose we start at (3, 7) on our turn. Our best move is to remove 2 coins from pile $b$, putting our opponent in the unwinnable state (3, 5). The opponent may choose to remove one coin from pile $b$, giving us the state (3, 4). We will remove 2 coins from both piles, giving our opponent the unwinnable (1, 2) state, from which we've shown we will eventually win.
 
-<img class="img-fluid mx-auto d-block" src="../images/20200124-riddler.png">
+<img class="img-fluid mx-auto d-block" src="src/assets/img/riddler-pennies.png">
 
 As the diagram shows, this process quickly becomes complicated for larger numbers of coins. At this point I turned to the computer. In python I created a class called `GameState` that tracks the number of coins in each pile and allows us to simulate potential moves and calculate expected values using the steps listed above. For example, we can verify the expected values we calculated by hand earlier, and test states with much higher values.
 
