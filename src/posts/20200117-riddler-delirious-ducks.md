@@ -1,9 +1,9 @@
 ---
 title: Riddler Delirious Ducks
 slug: riddler-delirious-ducks
-date: 2020-01-17
+date: "2020-01-17"
 excerpt: This week's Riddler Classic is a delightful diversion - tracking delirious ducks as they randomly swim from rock to rock in a pond. How long will it take them to end up on the same rock? We'll use markov chains in Python to solve it.
-status: draft
+status: published
 ---
 
 # Introduction
@@ -27,7 +27,7 @@ We can use <a href="https://en.wikipedia.org/wiki/Markov_chain">Markov Chains</a
 
 Because there are two ducks, each state will need to encode both ducks' positions. We can exploit the rotational symmetry of the problem and cover all possible positions with just five states, shown below. Each blue box represents the position of one duck (it doesn't matter which duck.)
 
-<img class="img-fluid mx-auto d-block" src="../images/20200117-riddler.png">
+<img class="img-fluid mx-auto d-block" src="src/assets/img/riddler-delirious-ducks.png">
 
 Note that the ducks will never be in adjacent squares (for example, the top left square and the top middle square) because of the _parity_ of this problem. The ducks can't move diagonally, so they shift between the diamond squares (middle of each edge) and the other squares each time they swim. This vastly simplifies the number of states we need to model. (If the ducks could randomly decide _not_ to swim and to stay on their current rock, then the problem loses this parity and becomes more complex.)
 
