@@ -1,9 +1,9 @@
 ---
 title: Riddler Birthdays
 slug: riddler-birthdays
-date: 2019-10-04
+date: "2019-10-04"
 excerpt: This week's Riddler is a twist on the classic birthday problem. The birthday problem tells us that among a group of just 23 people, we are 50% likely to find at least one pair of matching birthdays. But what if we want to find three matching birthdays instead?
-status: draft
+status: published
 ---
 
 # Introduction
@@ -58,4 +58,4 @@ The function tracks the number of occurrences of each birthday in the group. In 
 
 The chart below shows the cumulative curves for two, three, and four matching birthdays. As we know from the classic problem, we reach 50% cumulative likelihood with a group of 23. For three birthdays, we need 88, and for four birthdays we need 188! Therefore the House of Representatives is more likely than not to have at least four matching birthdays.
 
-<img class="img-fluid mx-auto d-block" src="../images/20191004-riddler.png">
+<img class="img-fluid mx-auto d-block" src="src/assets/img/riddler-birthdays.png">
