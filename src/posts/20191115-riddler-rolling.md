@@ -1,9 +1,9 @@
 ---
 title: Riddler Rolling
 slug: riddler-rolling
-date: 2019-11-15
+date: "2019-11-15"
 excerpt: This week's Riddler tested our ability to think recursively, but surprisingly not of the coding variety. Instead, we'll use a series of equations to solve the problem analytically. Brings back memories of high school proofs... which I may or may not remember with complete fidelity.
-status: draft
+status: published
 ---
 
 # Introduction
@@ -68,4 +68,4 @@ Therefore we have proven by mathematical induction that $E(N)=\frac{N}{19}$. Our
 
 Because LaTeX is not my specialty, I also wrote an old-fashioned proof as well. Enjoy!
 
-<img class="img-fluid mx-auto d-block" src="../images/20191115-riddler.png">
+<img class="img-fluid mx-auto d-block" src="src/assets/img/riddler-rolling.png">
