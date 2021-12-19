@@ -1,19 +1,22 @@
 ---
 title: Riddler Colorful Maze
 slug: riddler-colorful-maze
-date: 2019-05-17
+date: "2019-05-17"
 excerpt: This was a colorful Riddler Express. We start with a maze comprised of edges of different colors. Our task is to identify the shortest path from start to finish using only edges of certain colors. This was a great opportunity to take python's networkx library for a spin! We can build the maze as a network, where each edge has a "color" attribute, and use powerful solvers to do the path-finding for us!
-status: draft
+status: published
 ---
 
 # Introduction
 
 This was a colorful <a href="https://fivethirtyeight.com/features/how-many-soldiers-do-you-need-to-beat-the-night-king/">Riddler Express</a>. We start with a maze comprised of edges of different colors. Our task is to identify the shortest path from start to finish using only edges of certain colors. This was a great opportunity to take python's `networkx` library for a spin! We can build the maze as a network, where each edge has a "color" attribute, and use powerful solvers to do the path-finding for us! Here's the full problem text, and the visual to go along with it.
 
-> In grade school, you may have learned about the three primary colors — blue, yellow and red — and the three secondary colors — green (blue + yellow), purple (red + blue) and orange (yellow + red).
-> <br><br>
-> And now it’s time to put that knowledge to use. Try to get through the maze below, a nine-by-nine grid of lines, three times: once as blue, once as yellow, and once as red. If you are blue, you may only travel on lines that include the color blue. So you may travel on lines that are blue, green, purple or white (which contains all colors). You may not travel on orange, yellow, red or black (which contains no colors). The analogous rules hold for your trips as yellow and red.
-> <br><br> > <img class="img-fluid mx-auto d-block" height=50%, width=50%, src="https://fivethirtyeight.com/wp-content/uploads/2019/05/roeder-RIDDLER-0517-01-1.png?w=575">
+<blockquote>
+In grade school, you may have learned about the three primary colors — blue, yellow and red — and the three secondary colors — green (blue + yellow), purple (red + blue) and orange (yellow + red).
+<br><br>
+And now it’s time to put that knowledge to use. Try to get through the maze below, a nine-by-nine grid of lines, three times: once as blue, once as yellow, and once as red. If you are blue, you may only travel on lines that include the color blue. So you may travel on lines that are blue, green, purple or white (which contains all colors). You may not travel on orange, yellow, red or black (which contains no colors). The analogous rules hold for your trips as yellow and red.
+<br><br>
+<img class="img-fluid mx-auto d-block" height=50%, width=50%, src="https://fivethirtyeight.com/wp-content/uploads/2019/05/roeder-RIDDLER-0517-01-1.png?w=575">
+</blockquote>
 
 # Coding the maze
 
@@ -39,7 +42,7 @@ Building the graph is the most time-consuming part of the problem. We have to ma
 
 After all that work, we can verify everything is correct by visualizing the graph. The helper function `plot_maze` takes care of this for us, and produces the image below. It bears a striking resemblance to the original!
 
-<img class="img-fluid mx-auto d-block" height=50%, width=50%, src="../images/20190517-riddler1.png">
+<img class="img-fluid mx-auto d-block" src="src/assets/img/riddler-colorful-maze1.png">
 
 # Solving the problem
 
@@ -57,12 +60,9 @@ subgraph = nx.Graph()
 
 All we need to do now is call `nx.shortest_path` on our subgraph and we have our answer! Along with our plotting function from before, we can illustrate the paths to check our work. Here they are!
 
-<img class="img-fluid mx-auto d-block" height=50%, width=50%, src="../images/20190517-riddler2.png">
-<br><br>
-<img class="img-fluid mx-auto d-block" height=50%, width=50%, src="../images/20190517-riddler3.png">
-<br><br>
-<img class="img-fluid mx-auto d-block" height=50%, width=50%, src="../images/20190517-riddler4.png">
-<br><br>
+<img class="img-fluid mx-auto d-block" src="src/assets/img/riddler-colorful-maze2.png">
+<img class="img-fluid mx-auto d-block" src="src/assets/img/riddler-colorful-maze3.png">
+<img class="img-fluid mx-auto d-block" src="src/assets/img/riddler-colorful-maze4.png">
 
 # Full Code
 
