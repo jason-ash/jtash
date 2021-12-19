@@ -1,9 +1,9 @@
 ---
 title: Riddler Countdown
 slug: riddler-countdown
-date: 2019-05-31
+date: "2019-05-31"
 excerpt: Computers continue to fascinate me. The Riddler this week deals with an explosion of combinations and math that is nearly impossible to grasp without the help of a computer. Specifically, we're interested in crafting an ideal strategy for the "numbers game" from the UK television show Countdown. The numbers game asks contestants to use four mathematical operations (addition, subtraction, multiplication, and division) with six numbers as inputs to solve for a single, three digit target. Most of the time, this can be quite difficult, especially with a 30-second time limit. However, with the help of a computer, we can solve for every possible combination of input and output to identify the strategy that gives the humans the best chance to win!
-status: draft
+status: published
 ---
 
 # Introduction
@@ -44,7 +44,7 @@ The second part of the question asked us to identify which three-digit numbers w
 2. Higher target numbers are harder to solve for. In fact, several values, like 967 and 863 are more difficult to solve, regardless of the number of large cards we choose.
 3. "Round" numbers, like 200, 250, 300, etc. are much easier to solve consistently when we choose more large cards. This makes sense, given that we're more likely to find the 50 or 100 card when we select more from that pool, but isn't enough of an incentive to sacrifice the valuable "small" numbers that help us fill in the gaps.
 
-<img class="img-fluid mx-auto d-block" src="../images/20190531-riddler.png">
+<img class="img-fluid mx-auto d-block" src="src/assets/img/riddler-countdown.png">
 
 Here is a table of the most difficult numbers to solve, given a starting number of large cards. For example, if we choose 1 large card and 5 small cards, and our target number is 941, then across all the different combinations of numbers we could be given, we will be able to solve the puzzle just 84% of the time.
 
@@ -81,7 +81,7 @@ Here's an example using the numbers $4$ and $5$. Our function should return:
 - $\frac{4}{5},\text{excluded because not a whole number}$
 - $\frac{5}{4},\text{excluded because not a whole number}$
 
-We also need a way to store each of these values. For this problem, I used one of python's default data structures: sets. Sets are similar to arrays, except they are ordered collections of unique elements, such as `{1,3,5,7}`. If we attempt to add another `5` to this set, it will remain unchanged. This becomes very useful for our purposes here. For example, we can reproduce the logic above using this python function. (Note, I called the function `two` because it takes two numbers as inputs; later we'll have functions for three, four, five, and six. The naming conventions leave something to be desired, and probably deserve to be refactored later...)
+We also need a way to store each of these values. For this problem, I used one of python's default data structures: sets. Sets are similar to arrays, except they are unordered collections of unique elements, such as `{1,3,5,7}`. If we attempt to add another `5` to this set, it will remain unchanged. This becomes very useful for our purposes here. For example, we can reproduce the logic above using this python function. (Note, I called the function `two` because it takes two numbers as inputs; later we'll have functions for three, four, five, and six. The naming conventions leave something to be desired, and probably deserve to be refactored later...)
 
 The function is relatively straightforward. We always include a, b, addition, subtraction, and multiplication. We only include $\frac{a}{b}$ or $\frac{b}{a}$ if it is a whole number.
 
@@ -200,7 +200,8 @@ And this function, built slowly from its humble roots of comparing two numbers, 
 
 The second part of the question asked us to identify the target values that were most likely to be solvable. Up to this point, we didn't particularly care "how solvable" a target value was; we only cared that there was a way to solve it. But using our functions from above, we can tally the number of target values that are most and least likely to occur given our starting number pools, and our work here is done. The full code is available below.
 
-<h5 id="full-code">Full Code</h5>
+# Full Code
+
 This was an extremely fun problem to work on, and finding a way to explore the hundreds of millions of combinations simply and quickly was a challenge. There are certainly further optimizations to explore, such as simplifying the code for the four, five and six functions, now that I know how everything should work. But the process of building this was extremely enjoyable. Let me know if you find ways to improve this!
 
 ```python
