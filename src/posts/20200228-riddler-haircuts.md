@@ -1,9 +1,9 @@
 ---
 title: Riddler Haircuts
 slug: riddler-haircuts
-date: 2020-02-28
+date: "2020-02-28"
 excerpt: This week's Riddler asks us to estimate how long it takes to get a haircut with our favorite barber. Rather than scheduling an appointment, we roll the dice and hope we won't have to wait too long if we drop by unannounced. How long exactly? We'll use probability distributions and monte carlo simulation to estimate our idle time.
-status: draft
+status: published
 ---
 
 # Introduction
@@ -43,7 +43,7 @@ The analytical work, on the other hand, was much more complicated, and, forgive 
 
 In any case, when we sum each of the possibilities together, we get the chart on the far right, which lets us calculate the probability of being seated within some range of times, such as "between 10 and 15 minutes" or "between 10:00 and 10:01 minutes".
 
-<img class="img-fluid mx-auto d-block" src="../images/20200228-riddler.png">
+<img class="img-fluid mx-auto d-block" src="src/assets/img/riddler-haircuts.png">
 
 # Full Code
 
