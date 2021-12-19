@@ -1,9 +1,9 @@
 ---
 title: Riddler Tanks
 slug: riddler-tanks
-date: 2019-06-07
+date: "2019-06-07"
 excerpt: Based on an actual statistical analysis problem from World War II, this week's Riddler asks us to estimate the population of German tanks given uncertain information about the tanks we've observed. Fortunately, despite the uncertainty in our observations, we can still provide reasonably accurate estimates for the total German tank population. We'll rely heavily on Bayesian analysis to solve this problem.
-status: draft
+status: published
 ---
 
 # Introduction
@@ -20,7 +20,7 @@ Based on actual statistics from World War II, this week's <a href="https://fivet
 
 # The German Tank Problem
 
-Because of this problem's fame, it is commonly referred to as the <a href="https://en.wikipedia.org/wiki/German_tank_problem", target="\_blank">German Tank Problem</a>. It also shares elements with <a href="https://en.wikipedia.org/wiki/Mark_and_recapture", target="\_blank">capture-recapture</a> problems. In both problems, we attempt to estimate a total population size, given some knowledge about samples from the population.
+Because of this problem's fame, it is commonly referred to as the <a href="https://en.wikipedia.org/wiki/German_tank_problem">German Tank Problem</a>. It also shares elements with <a href="https://en.wikipedia.org/wiki/Mark_and_recapture">capture-recapture</a> problems. In both problems, we attempt to estimate a total population size, given some knowledge about samples from the population.
 
 Problems like these are perfect for Bayesian techniques, because these techniques allow us to express uncertainty and confidence levels around the variable we are trying to measure. Specifically, a Bayesian analysis lets us calculate the probability distribution of population size. Before we solve this week's Riddler, let's review the Bayesian solution to the classic German Tank Problem.
 
@@ -44,7 +44,7 @@ For example, if $K=2$, then the likelihood that $N=114$ is $0.88\%$, because hav
 
 Therefore, despite the best efforts of the courageous German spy, it seems that probability theory is still enough to give the Allies an advantage.
 
-<img class="img-fluid mx-auto d-block" src="../images/20190607-riddler.png">
+<img class="img-fluid mx-auto d-block" src="src/assets/img/riddler-tanks.png">
 
 # Full Code
 
