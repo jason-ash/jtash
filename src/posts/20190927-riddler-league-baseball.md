@@ -1,9 +1,9 @@
 ---
 title: Riddler League Baseball
 slug: riddler-league-baseball
-date: 2019-09-27
+date: "2019-09-27"
 excerpt: What happens when you create a baseball league from three teams with peculiar specialties? That's the objective of this week's Riddler. We're asked to determine whether it's better to specialize in home runs, doubles, or walks as a strategy to tally the most wins from a season of baseball in the Riddler League.
-status: draft
+status: published
 ---
 
 # Introduction
@@ -82,7 +82,7 @@ def game_score(team, innings=9, games=1000000):
     return np.maximum(0, team.rvs((games, innings))).sum(1)
 ```
 
-<img class="img-fluid mx-auto d-block" src="../images/20190927-riddler.png">
+<img class="img-fluid mx-auto d-block" src="src/assets/img/riddler-league-baseball.png">
 
 Now that we can sample from the distribution of runs scored per game, we can pit the teams against one another. Adding a bit of extra logic to handle ties, we are able to calculate the win percentages we showed above. I was also interested in testing how well the teams performed in sudden death. Was any team able to sneak wins from a better opponent if they had just one inning? The percentages suggest not - each team performs roughly the same whether it's a full 9-inning game or a sudden death tiebreaker.
 
