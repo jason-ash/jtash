@@ -1,9 +1,9 @@
 ---
 title: Riddler Monty Hall
 slug: riddler-monty-hall
-date: 2020-04-24
+date: "2020-04-24"
 excerpt: The original Monty Hall Show featured three doors, two goats, and a brand new car. Contestants choose a door, Monty reveals a goat behind another door, and contestants are offered the chance to switch their original choice. After heated debate among probability nerds, it was eventually agreed that switching is the optimal strategy, which wins two out of three games. In this week's Riddler, we examine a variation of this game in which the number of goats is random. Does it change the decision to switch?
-status: draft
+status: published
 ---
 
 # Introduction
