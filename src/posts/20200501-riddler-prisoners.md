@@ -1,9 +1,9 @@
 ---
 title: Riddler Prisoners
 slug: riddler-prisoners
-date: 2020-05-01
+date: "2020-05-01"
 excerpt: This week's Riddler uses probability to design the ultimate jailbreak. Prisoners are given the opportunity to flip coins, and if all flipped coins are heads, each prisoner is released. Without communicating, what strategy should the prisoners use to maximize their odds of success?
-status: draft
+status: published
 ---
 
 # Introduction
@@ -30,7 +30,7 @@ Why the threshold of 0.34? This maximizes the overall probability of success. Th
 
 We also see that larger groups of prisoners should choose smaller thresholds, because they want to keep the total number of coins low. Ultimately, large groups of N prisoners should expect roughly 25% odds of success.
 
-<img class="img-fluid mx-auto d-block" src="../images/20200501-riddler.png">
+<img class="img-fluid mx-auto d-block" src="src/assets/img/riddler-prisoners.png">
 
 # Methodology
 
