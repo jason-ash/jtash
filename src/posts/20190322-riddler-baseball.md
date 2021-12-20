@@ -1,9 +1,9 @@
 ---
 title: Riddler Baseball
 slug: riddler-baseball
-date: 2019-03-22
+date: "2019-03-22"
 excerpt: This week's riddler asks us to simulate a game of baseball using rolls of a dice. To solve this problem, we're going to treat the game of Baseball like a markov chain. Under the simplified dice framework, we identify various states of the game, a set of transition probabilities to subsequent states, and associated payoffs (runs scored) when certain states are reached as a result of game events. Using this paradigm, we can simulate innings probabilistically, count the runs scored by each team, and determine the winner.
-status: draft
+status: published
 ---
 
 # Introduction
@@ -12,13 +12,19 @@ This week's riddler asks us to simulate a game of baseball using rolls of a dice
 
 Here's the problem we're given. Next, we'll outline the steps to solve it.
 
-> Over the years, people have invented many games that simulate baseball using two standard dice. In these games, each dice roll corresponds with a baseball event. Two players take turns rolling dice and tracking what happens on the field. Suppose you happen to be an ardent devotee of one of these simulated games from the late 19th century, called Our National Ball Game, which assigns rolls to baseball outcomes like so:
-> <br>1, 1: double
-> <br>1, 2: single
-> <br>1, 3: single
-> <br> ... _other rolls... we'll examine the full list later_ > <br>5, 6: triple
-> <br>6, 6: home run
-> <br>Given those rules, what’s the average number of runs that would be scored in nine innings of this dice game? What’s the distribution of the number of runs scored? (Histograms welcome.) You can assume some standard baseball things, like runners scoring from second on singles and runners scoring from third on fly outs.
+<blockquote>
+Over the years, people have invented many games that simulate baseball using two standard dice. In these games, each dice roll corresponds with a baseball event. Two players take turns rolling dice and tracking what happens on the field. Suppose you happen to be an ardent devotee of one of these simulated games from the late 19th century, called Our National Ball Game, which assigns rolls to baseball outcomes like so:
+
+- 1, 1: double
+- 1, 2: single
+- 1, 3: single
+- ... other rolls... we'll examine the full list later
+- 5, 6: triple
+- 6, 6: home run
+
+Given those rules, what’s the average number of runs that would be scored in nine innings of this dice game? What’s the distribution of the number of runs scored? (Histograms welcome.) You can assume some standard baseball things, like runners scoring from second on singles and runners scoring from third on fly outs.
+
+</blockquote>
 
 # Markov Chain Baseball
 
@@ -38,7 +44,7 @@ Under the simplified dice framework, we can treat the game of baseball like a ma
    - Dice roll (1,3): move from "1 strike, 1 out, runner on second" to "0 strikes, 1 out, bases empty". Reward of +1 for the single runner that scored.
    - Dice roll (6,6): move from "0 strikes, 2 outs, bases loaded" to "0 strikes, 2 outs, bases empty". Reward of +4 because this was a grand slam.
 
-Now that we have the tools to describe our game, we need to specify all possible states, all possible transitions between states, and the rewards associated with each move. We'll use python to do the heavy lifting. The full code can be found at the bottom of this article or as a <a href="https://gist.github.com/ashanalytics/7ec1ffccea90ca58c9d1613736eb5a81">github gist</a>.
+Now that we have the tools to describe our game, we need to specify all possible states, all possible transitions between states, and the rewards associated with each move. We'll use python to do the heavy lifting. The full code can be found at the bottom of this article.
 
 # Creating States
 
@@ -153,18 +159,15 @@ def simulate_innings(trials):
 1.611836
 ```
 
-**Ignoring the small possibility of ties and extra innings, we see that the expected number of runs per inning is roughly 1.61, which means the expected number of runs per nine-inning game is roughly 14.5.** According to <a href="https://www.sportingcharts.com/articles/mlb/what-is-the-average-number-of-runs-scored-in-an-mlb-game.aspx",>sportingcharts.com</a> the actual \_total score\_ of MLB games from 1990 to 2016 hovered between 8-10, which means each team scored between 4 and 5 runs. Our dice game certainly gives the advantage to the sluggers!
+**Ignoring the small possibility of ties and extra innings, we see that the expected number of runs per inning is roughly 1.61, which means the expected number of runs per nine-inning game is roughly 14.5.** According to <a href="https://www.sportingcharts.com/articles/mlb/what-is-the-average-number-of-runs-scored-in-an-mlb-game.aspx">sportingcharts.com</a> the actual _total score_ of MLB games from 1990 to 2016 hovered between 8-10, which means each team scored between 4 and 5 runs. Our dice game certainly gives the advantage to the sluggers!
 
 What's also interesting is that these results allow us to track not only the average number of runs scored per inning, but the full distribution: how many goose eggs (roughly 40% of the time) vs. quadruple-grand-slams (the highest inning recorded 22 runs). These results are best viewed as a histogram showing exactly how many simulated innings ended up with a given number of runs, which you can see below.
 
-<img class="img-fluid mx-auto d-block" title="Baseball Histogram" src="../images/20190322-riddler.png">
+<img class="img-fluid mx-auto d-block" src="src/assets/img/riddler-baseball.png">
 
 # Reference: Full Python Code
 
-The full code to replicate my results is below. Feel free to let me know if my baseball strategy should be adjusted. You can submit pull requests to the github gist, found <a href="https://gist.github.com/ashanalytics/7ec1ffccea90ca58c9d1613736eb5a81">here</a>.
-
 ```python
-# -*- coding: utf-8 -*-
 """
 Solves the fivethirtyeight Riddler problem from March 22, 2019
 
