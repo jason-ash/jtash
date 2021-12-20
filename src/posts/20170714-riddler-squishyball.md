@@ -1,21 +1,24 @@
 ---
 title: National Squishyball League
 slug: riddler-squishyball
-date: 2017-07-14
+date: "2017-07-14"
 excerpt: As the owner of a dominant team looking to establish a dynasty, how can you stack the odds against your opponent? This week's fivethirtyeight Riddler Classic has a heavy dose of combinatorics.
-status: draft
+status: published
 ---
 
 This week's <a href="https://fivethirtyeight.com/features/can-you-eat-more-pizza-than-your-siblings/">Riddler Classic</a> challenges you to find a strategy that maximizes your team's winnings (though perhaps minimizes peoples' tolerance to sit through an absurdly long playoff season...)
 
-> Congratulations! The Acme Axegrinders, which you own, are the regular season champions of the National Squishyball League (NSL). Your team will now play a championship series against the Boondocks Barbarians, which had the second-best regular season record. You feel good about Acme’s chances in the series because Acme won exactly 60 percent of the hundreds of games it played against Boondocks this season. (The NSL has an incredibly long regular season.) The NSL has two special rules for the playoffs:
+<blockquote>
+Congratulations! The Acme Axegrinders, which you own, are the regular season champions of the National Squishyball League (NSL). Your team will now play a championship series against the Boondocks Barbarians, which had the second-best regular season record. You feel good about Acme’s chances in the series because Acme won exactly 60 percent of the hundreds of games it played against Boondocks this season. (The NSL has an incredibly long regular season.) The NSL has two special rules for the playoffs:
 
-> 1. The owner of the top-seeded team (i.e., you) gets to select the length of the championship series in advance of the first game, so you could decide to play a single game, a best two out of three series, a three out of five series, etc., all the way up to a 50 out of 99 series.
-> 2. The owner of the winning team gets 1 million minus 10,000 for each of the victories required to win the series, regardless of how many games the series lasts in total. Thus, if the top-seeded team’s owner selects a single-game championship, the winning owner will collect 990,000. If he or she selects a 4 out of 7 series, the winning team’s owner will collect 960,000. The owner of the losing team gets nothing.
+1. The owner of the top-seeded team (i.e., you) gets to select the length of the championship series in advance of the first game, so you could decide to play a single game, a best two out of three series, a three out of five series, etc., all the way up to a 50 out of 99 series.
+2. The owner of the winning team gets 1 million minus 10,000 for each of the victories required to win the series, regardless of how many games the series lasts in total. Thus, if the top-seeded team’s owner selects a single-game championship, the winning owner will collect 990,000. If he or she selects a 4 out of 7 series, the winning team’s owner will collect 960,000. The owner of the losing team gets nothing.
 
-> Since Acme has a 60 percent chance of winning any individual game against Boondocks, Rule 1 encourages you to opt for a very long series to improve Acme’s chances of winning the series. But Rule 2 means that a long series will mean less winnings for you if Acme does take the series.
+Since Acme has a 60 percent chance of winning any individual game against Boondocks, Rule 1 encourages you to opt for a very long series to improve Acme’s chances of winning the series. But Rule 2 means that a long series will mean less winnings for you if Acme does take the series.
 
-> How long a series should you select in order to maximize your expected winnings? And how much money do you expect to win?
+How long a series should you select in order to maximize your expected winnings? And how much money do you expect to win?
+
+</blockquote>
 
 Let's go for an easy win right away: it's trivial to calculate the prize pool for a given series length: $ prize = 1,000,000 - 10,000n$, where $n$ is the number of wins required to win the series. A series of length 7, for example, requires 4 wins, and in general, a series of $z$ requires $\lfloor{z/2}\rfloor+1$ wins, which we can implement in python as `n = z//2+1`.
 
@@ -69,4 +72,4 @@ def win_pct(series_length, p=0.6):
 
 Once we calculate the probability of winning series with lengths 1 through 99, we simply multiply by the prize amount for that series. We then select the series length that maximizes the expected winnings. In this case, a series of length 25, which requires 13 wins, will earn $870,000. The Acme Axegrinders will win a 25 game series 84.6% of the time, which translates to an expected value of **$736,222**.
 
-<img class="img-fluid mx-auto d-block" alt="chart" src="../images/20170714-riddler.png">
+<img class="img-fluid mx-auto d-block" src="src/assets/img/riddler-squishyball.png">
