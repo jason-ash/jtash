@@ -1,9 +1,9 @@
 ---
 title: Riddler Card Collecting
 slug: riddler-card-collecting
-date: 2019-03-01
+date: "2019-03-01"
 excerpt: The Riddler Express this week asks us about collecting sets of cards. In particular, we're interested in collecting a complete set of 144 unique cards. We purchase one random card at a time for $5 each. How many purchases should we expect to make - and how much money should we expect to spend - in order to collect at least one of every card?
-status: draft
+status: published
 ---
 
 # Introduction
@@ -123,6 +123,6 @@ Good news! Our simulated result is very close to our analytical result above, at
 13725
 ```
 
-<img class="img-fluid mx-auto d-block" title="Histogram" src="../images/20190301-riddler.png">
+<img class="img-fluid mx-auto d-block" src="src/assets/img/riddler-card-collecting.png">
 
 You'll notice in the chart that the most likely amount we'll pay to assemble the entire set is around 3500. However, the average amount we expect to pay is around 4000. Why are the numbers different? The average amount includes those tail scenarios where it takes us nearly 10,000 to collect the entire set, which moves it higher than the single most likely amount we would expect to pay. This is part of the reason why seeing the entire distribution, rather than just a single metric like the average, can be helpful in understanding the problem.
