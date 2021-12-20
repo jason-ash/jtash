@@ -1,9 +1,9 @@
 ---
 title: Riddler Spelling Bee
 slug: riddler-spelling-bee
-date: 2019-03-29
+date: "2019-03-29"
 excerpt: I have a distinct memory of participating in my elementary school's spelling bee when I was in second grade. I was the unlikely runner-up, even though I was competing against children in third and fourth grade. What was the secret to my over-performance? Not my natural spelling ability, but rather the rules of the game - a participant is eliminated from the spelling bee after failing to spell a word correctly, which means that going last is an advantage. I was lucky enough to be the near the tail-end of the participants in my spelling bee, which surely improved my final ranking. This week's Riddler asks us to quantify that advantage.
-status: draft
+status: published
 ---
 
 # Introduction
@@ -12,9 +12,11 @@ I have a distinct memory of participating in my elementary school's spelling bee
 
 This week's riddler asks us to quantify the "going last" advantage. Fortunately we can solve it with python, which is perhaps easier than competing in a spelling bee itself. Here's the full question text:
 
-> You are competing in a spelling bee alongside nine other contestants. You can each spell words perfectly from a certain portion of the dictionary but will misspell any word not in that portion of the book. Specifically, you have 99 percent of the dictionary down cold, and your opponents have 98 percent, 97 percent, 96 percent, and so on down to 90 percent memorized. The bee’s rules are simple: The contestants take turns spelling in some fixed order, which then restarts with the first surviving speller at the end of a round. Miss a word and you’re out, and the last speller standing wins. The bee words are chosen randomly from the dictionary.
-> <br><br>
-> First, say the contestants go in decreasing order of their knowledge, so that you go first. What are your chances of winning the spelling bee? Second, say the contestants go in increasing order of knowledge, so that you go last. What are your chances of winning now?
+<blockquote>
+You are competing in a spelling bee alongside nine other contestants. You can each spell words perfectly from a certain portion of the dictionary but will misspell any word not in that portion of the book. Specifically, you have 99 percent of the dictionary down cold, and your opponents have 98 percent, 97 percent, 96 percent, and so on down to 90 percent memorized. The bee’s rules are simple: The contestants take turns spelling in some fixed order, which then restarts with the first surviving speller at the end of a round. Miss a word and you’re out, and the last speller standing wins. The bee words are chosen randomly from the dictionary.
+<br><br>
+First, say the contestants go in decreasing order of their knowledge, so that you go first. What are your chances of winning the spelling bee? Second, say the contestants go in increasing order of knowledge, so that you go last. What are your chances of winning now?
+</blockquote>
 
 # Problem Setup
 
@@ -87,8 +89,6 @@ The question asked us (as the fantastic 99% speller that we are) how our chances
 | **0.99** | **0.519383**  | **0.525287**  | **-0.005904** |
 
 # Reference: Full Python Code
-
-Also can be found as a gist <a href="https://gist.github.com/ashanalytics/db09e8bb131f5bc856a018fa0856f2f0">here</a>.
 
 ```python
 # -*- coding: utf-8 -*-
