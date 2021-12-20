@@ -1,20 +1,22 @@
 ---
-title: Sticks and stones
+title: Riddler Sticks
 slug: riddler-sticks
-date: 2017-09-15
-excerpt: Just kidding, no stones in this week's riddler puzzle. But before you build your campfire, what shapes can you make with the sticks?
-status: draft
+date: "2017-09-15"
+excerpt: Before you build your campfire, what shapes can you make by breaking the sticks?
+status: published
 ---
 
 Part of the fun of building a campfire is setting up the structure of the logs. I suppose that may have inspired this week's
 <a href="https://fivethirtyeight.com/features/will-you-be-a-ghostbuster-or-a-world-destroyer/">riddler classic</a>. Perhaps the logic is that if you find sticks that can form triangles, you are more likely to build an aesthetically pleasing pyre...?
 
-> This week’s Classic, from Spreck Rosekrans, continues our camping theme. Here are four questions of increasing difficulty about finding sticks in the woods, breaking them and making shapes:
+<blockquote>
+This week’s Classic, from Spreck Rosekrans, continues our camping theme. Here are four questions of increasing difficulty about finding sticks in the woods, breaking them and making shapes:
 
-> 1. If you break a stick in two places at random, forming three pieces, what is the probability of being able to form a triangle with the pieces?
-> 2. If you select three sticks, each of random length (between 0 and 1), what is the probability of being able to form a triangle with them?
-> 3. If you break a stick in two places at random, what is the probability of being able to form an acute triangle — where each angle is less than 90 degrees — with the pieces?
-> 4. If you select three sticks, each of random length (between 0 and 1), what is the probability of being able to form an acute triangle with the sticks?
+1. If you break a stick in two places at random, forming three pieces, what is the probability of being able to form a triangle with the pieces?
+2. If you select three sticks, each of random length (between 0 and 1), what is the probability of being able to form a triangle with them?
+3. If you break a stick in two places at random, what is the probability of being able to form an acute triangle — where each angle is less than 90 degrees — with the pieces?
+4. If you select three sticks, each of random length (between 0 and 1), what is the probability of being able to form an acute triangle with the sticks?
+</blockquote>
 
 As is my tendency, I solved this problem through simulation. However, the calculus behind the analytical solution is interesting as well. I'll likely return to this and augment my answer to walk through both methods. However, from a programming perspective, I liked the structure of this problem. For example, I identified four key functions we need to be able to perform:
 
@@ -119,7 +121,7 @@ pd.DataFrame.from_dict(data)
 
 After a few seconds, running 50 million trials, this code returns a DataFrame with the following output. These numbers represent the probabilities in question. For example, the probability that you can form a triangle by breaking a single stick is roughly 25%. The probability that you can form an acute triangle from three sticks that you gather is roughly 21.4%. Something to keep in mind for your next camping trip!
 
-|            | $Broken\ Sticks$ | $Gathered\ Sticks$ |
-| ---------- | ---------------- | ------------------ |
-| $Triangle$ | $0.250117$       | $0.499860$         |
-| $Acute$    | $0.079432$       | $0.214616$         |
+|          | Broken Sticks | Gathered Sticks |
+| -------- | ------------- | --------------- |
+| Triangle | 0.250117      | 0.499860        |
+| Acute    | 0.079432      | 0.214616        |
