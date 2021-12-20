@@ -3,14 +3,17 @@ title: Riddler hot potato
 slug: riddler-hot-potato
 date: "2017-08-04"
 excerpt: A classroom game of hot potato based on random walks; plus, my first recognition on fivethirtyeight as a solver - my chart explaining a non-intuitive puzzle result was featured in the solutions!
-status: draft
+status: published
 ---
 
 By far my favorite puzzles are those that can be solved through simulation. I'll be the first to admit that I default to that approach even when the problem doesn't require a programmatic solution. This puzzle, from <a href="https://fivethirtyeight.com/features/is-this-bathroom-occupied/">fivethirtyeight riddler</a> is a perfect example. It can be solved analytically by identifying the puzzle's symmetry, and indeed a featured solver did just that. However, I found it incredibly fun to explore different visualizations of this puzzle and to optimize my simulation algorithm to run more trials faster and faster.
 
-> A class of 30 children is playing a game where they all stand in a circle along with their teacher. The teacher is holding two things: a coin and a potato. The game progresses like this: The teacher tosses the coin. Whoever holds the potato passes it to the left if the coin comes up heads and to the right if the coin comes up tails. The game ends when every child except one has held the potato, and the one who hasn’t is declared the winner.
+<blockquote>
+A class of 30 children is playing a game where they all stand in a circle along with their teacher. The teacher is holding two things: a coin and a potato. The game progresses like this: The teacher tosses the coin. Whoever holds the potato passes it to the left if the coin comes up heads and to the right if the coin comes up tails. The game ends when every child except one has held the potato, and the one who hasn’t is declared the winner.
 
-> How do a child’s chances of winning change depending on where they are in the circle? In other words, what is each child’s win probability?
+How do a child’s chances of winning change depending on where they are in the circle? In other words, what is each child’s win probability?
+
+</blockquote>
 
 For completeness, I'll briefly describe the analytical solution, which is quite elegant. A student wins the game if the person to her left and the person to her right hold the potato. In order for that to happen without our example student holding the potato herself, the potato must must traverse the entire circle - either from right to left or left to right. Each student's perspective is identical, regardless of the position the student occupies (even if the student starts right next to the teacher). Therefore, because each student has a symmetrical win condition, the probability of winning must be equal among them. With 30 students, that means the probability is $ \frac{1}{30} $ each.
 
@@ -22,9 +25,9 @@ In addition to optimizing the speed of my simulation, I really enjoyed testing d
 
 Finally, I wondered how I might illustrate a single game, showing the potato swinging randomly back and forth across the circle. With a little matplotlib hackery I traced the path of the potato from the edge of the plot moving inward. I think this part of the visualization made the entire thing come together nicely.
 
-Luckily - or perhaps due to a bit of [self-promotion](https://twitter.com/ashjasont/status/894411668465131520){:target="\_blank"} - my work paid off and my visualization was [featured in the solution](https://fivethirtyeight.com/features/can-you-plug-the-white-house-leak/){:target="\_blank"} the next week!
+Luckily - or perhaps due to a bit of <a href="https://twitter.com/ashjasont/status/894411668465131520">self-promotion</a> - my work paid off and my visualization was <a href="https://fivethirtyeight.com/features/can-you-plug-the-white-house-leak/">featured in the solution</a> the next week!
 
-<img class="img-fluid mx-auto d-block" alt="radial" src="../images/20170804-riddler.png">
+<img class="img-fluid mx-auto d-block" src="src/assets/img/riddler-hot-potato.png">
 
 ```python
 import random
