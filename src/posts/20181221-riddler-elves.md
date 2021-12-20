@@ -1,20 +1,22 @@
 ---
 title: Riddler Elves
 slug: riddler-elves
-date: 2018-12-21
+date: "2018-12-21"
 excerpt: This week's holiday Riddler is a twist on the classic "birthday problem". The birthday problem asks us to calculate the probability that at least two people at a party have the same birthday. Most people hearing this problem for the first time are surprised at how few people you need - roughly 23 people results in 50% odds of finding at least one pair of birthdays! For this problem, we're interested in calculating how likely we are to hear the same song more than once from a shuffled playlist. Moreover, what can we infer about the size of the playlist, given that we hear repeats roughly half the time?
-status: draft
+status: published
 ---
 
 # Introduction
 
 This week's holiday <a href="https://fivethirtyeight.com/features/santa-needs-some-help-with-math/">Riddler</a> is a twist on the classic "<a href="https://en.wikipedia.org/wiki/Birthday_problem">birthday problem</a>". The birthday problem asks us to calculate the probability that at least two people at a party have the same birthday. Most people hearing this problem for the first time are surprised at how few people you need - roughly 23 people results in 50% odds of finding at least one pair of birthdays! For this problem, we're interested in calculating how likely we are to hear the same song more than once from a shuffled playlist. Moreover, what can we infer about the size of the playlist, given that we hear repeats roughly half the time? Here is the exact problem we'll solve.
 
-> In Santa’s workshop, elves make toys during a shift each day. On the overhead radio, Christmas music plays, with a program randomly selecting songs from a large playlist.
-> <br><br>
-> During any given shift, the elves hear 100 songs. A cranky elf named Cranky has taken to throwing snowballs at everyone if he hears the same song twice. This has happened during about half of the shifts. One day, a mathematically inclined elf named Mathy tires of Cranky’s sodden outbursts. So Mathy decides to use what he knows to figure out how large Santa’s playlist actually is.
-> <br><br>
-> Help Mathy out: How large is Santa’s playlist?
+<blockquote>
+In Santa’s workshop, elves make toys during a shift each day. On the overhead radio, Christmas music plays, with a program randomly selecting songs from a large playlist.
+<br><br>
+During any given shift, the elves hear 100 songs. A cranky elf named Cranky has taken to throwing snowballs at everyone if he hears the same song twice. This has happened during about half of the shifts. One day, a mathematically inclined elf named Mathy tires of Cranky’s sodden outbursts. So Mathy decides to use what he knows to figure out how large Santa’s playlist actually is.
+<br><br>
+Help Mathy out: How large is Santa’s playlist?
+</blockquote>
 
 # The Birthday Problem
 
@@ -73,4 +75,4 @@ If the playlist has 7175 songs in it and we listen to 100 randomly chosen songs,
 
 The chart below plots the expected probability of hearing a repeat for various playlist sizes.
 
-<img class="img-fluid mx-auto d-block" src="../images/20181221-riddler.png">
+<img class="img-fluid mx-auto d-block" src="src/assets/img/riddler-elves.png">
