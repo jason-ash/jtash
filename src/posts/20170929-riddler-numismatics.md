@@ -1,17 +1,20 @@
 ---
 title: Numismatic statistics
 slug: riddler-numismatics
-date: 2017-09-29
+date: "2017-09-29"
 excerpt: It turns out you can identify a doctored coin with a fairly high degree of certainty... It just takes lots and lots of trials.
-status: draft
+status: published
 ---
 
 If a puzzle involves flipping coins, then it is typically a good candidate for "solution by simulation". This problem, from the weekly
 <a href="https://fivethirtyeight.com/features/rock-paper-scissors-double-scissors/">fivethirtyeight riddler classic</a> was fun because it involved equal parts probability theory and computation.
 
-> On the table in front of you are two coins. They look and feel identical, but you know one of them has been doctored. The fair coin comes up heads half the time while the doctored coin comes up heads 60 percent of the time. How many flips — you must flip both coins at once, one with each hand — would you need to give yourself a 95 percent chance of correctly identifying the doctored coin?
+<blockquote>
+On the table in front of you are two coins. They look and feel identical, but you know one of them has been doctored. The fair coin comes up heads half the time while the doctored coin comes up heads 60 percent of the time. How many flips — you must flip both coins at once, one with each hand — would you need to give yourself a 95 percent chance of correctly identifying the doctored coin?
 
-> Extra credit: What if, instead of 60 percent, the doctored coin came up heads some P percent of the time? How does that affect the speed with which you can correctly detect it?
+Extra credit: What if, instead of 60 percent, the doctored coin came up heads some P percent of the time? How does that affect the speed with which you can correctly detect it?
+
+</blockquote>
 
 Let's start with the base case, in which a single coin has a 60% probability of landing on heads. Let's define two probability functions for each coin, $c_1$ and $c_2$.
 
@@ -49,7 +52,7 @@ np.where((X > 0).sum(0) > 0)[0][0] + 1
 
 Why do we check our distribution against the zero line? As long as there is a meaningful probability of $X\leq{0}$, we can't rule out the likelihood that the coins have equal probabilities. However, as soon as 95% of our simulations lie above zero, we can be 95% confident that one of the coins is biased.
 
-<img class="img-fluid mx-auto d-block" title="results1" alt="results1" src="../images/20170929-riddler.png">
+<img class="img-fluid mx-auto d-block" src="src/assets/img/riddler-numismatics.png">
 
 We can also extend this problem to test coins with different biases. With $p=60\%$, it takes 143 flips to detect the doctored coin. With higher values of $p$, we can detect the doctored coin sooner. With lower values of $p$ it takes many more trials. In general, we can use the normal approximation of our distribution, with mean $n\times{(p_1-p_2)}$ and variance $n[p_1(1-p_1) + p_2(1-p_2)]$. Using a confidence test at 95%, we can solve for the number of flips it would take to identify a doctored coin with any $p>50\%$.
 
