@@ -23,6 +23,7 @@
   }
   .header p {
     margin-block-start: 0.5rem;
+    color: var(--text-color-secondary);
   }
   .title {
     display: flex;
@@ -48,5 +49,6 @@
   .excerpt {
     font-weight: 400;
     margin-block-start: 0rem;
+    hyphens: auto;
   }
 </style>

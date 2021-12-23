@@ -39,5 +39,6 @@
   .excerpt {
     font-weight: 400;
     margin-block-start: 0rem;
+    hyphens: auto;
   }
 </style>

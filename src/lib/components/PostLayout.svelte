@@ -46,6 +46,9 @@
     margin-block-end: 0.4rem;
     margin-block-start: 0.4rem;
   }
+  .title p {
+    color: var(--text-color-secondary);
+  }
   .post :global(h1) {
     font-size: 1.5em;
   }
