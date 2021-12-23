@@ -1,9 +1,9 @@
 ---
 title: Riddler Game of Life
 slug: riddler-game-of-life
-date: 2020-04-17
+date: "2020-04-17"
 excerpt: In memory of John Conway, we explore a modified version of the famous "Game of Life" in this week's Riddler. I implemented the Game in python, which ended up being so much fun that many of the features aren't strictly required to solve the problem. Instead, they were amusing diversions that helped me explored this surprisingly nuanced game. It's probably just as Conway would have intended.
-status: draft
+status: published
 ---
 
 # Introduction
@@ -28,27 +28,8 @@ Now suppose we were to replace the infinite grid with a finite grid that has per
 
 **The smallest grid with an oscillation has just three rows and four columns, and there are two variations.** Each of these grids oscillates every other evolution, as shown in the gifs below.
 
-<div class="container">
-    <div class="row">
-        <div class="col-sm">
-            ⬜⬜⬛⬛<br>⬜⬜⬛⬛<br>⬜⬜⬛⬛
-        </div>
-        <div class="col-sm">
-            ⬜⬛⬛⬜<br>⬜⬛⬛⬜<br>⬜⬛⬛⬜
-        </div>
-    </div>
-</div>
-
-<div class="container, mt-3">
-    <div class="row">
-        <div class="col-sm">
-            <img class="img-fluid mx-auto d-block" height=200 src="../images/20200417-riddler1.gif">
-        </div>
-        <div class="col-sm">
-            <img class="img-fluid mx-auto d-block" height=200 src="../images/20200417-riddler2.gif">
-        </div>
-    </div>
-</div>
+<img class="img-fluid mx-auto d-block" src="src/assets/img/riddler-game-of-life1.gif">
+<img class="img-fluid mx-auto d-block" src="src/assets/img/riddler-game-of-life2.gif">
 
 # Methodology
 
@@ -96,7 +77,7 @@ There are a few other convenience methods, like plotting the `Grid` and creating
 
 For example, it can be fun to view the evolution of a larger grid to see what patterns emerge. This code generates a 30x30 cell array and lets it run for 100 iterations. You can see several static clumps of cells, and a few oscillators - notably the <a href="https://www.conwaylife.com/wiki/Blinker">"blinker"</a>.
 
-<img class="img-fluid mx-auto d-block" src="../images/20200417-riddler3.gif">
+<img class="img-fluid mx-auto d-block" src="src/assets/img/riddler-game-of-life3.gif">
 
 However, my favorite feature, which has very little to do with the original problem, is a special constructor. You may have seen the <a href="https://xkcd.com/2293/">xkcd tribute to John Conway</a>. Calling `Grid.conway()` creates a Grid that follows this pattern.
 
@@ -128,7 +109,7 @@ Grid.conway()
 
 And the .gif of this Grid's evolution matches the original comic. It was a fantastic tribute.
 
-<img class="img-fluid mx-auto d-block" src="../images/20200417-riddler4.gif">
+<img class="img-fluid mx-auto d-block" src="src/assets/img/riddler-game-of-life4.gif">
 
 # Full Code
 
