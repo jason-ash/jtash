@@ -9,8 +9,8 @@
 </script>
 
 <script lang="ts">
-  import PostCard from "$lib/components/PostCard.svelte";
   import Hero from "../lib/components/Hero.svelte";
+  import PostCardColumn from "$lib/components/PostCardColumn.svelte";
 
   export let posts: postType[];
   console.log(posts);
@@ -18,5 +18,5 @@
 
 <Hero />
 {#each posts as post}
-  <PostCard {post} />
+  <PostCardColumn {post} />
 {/each}
