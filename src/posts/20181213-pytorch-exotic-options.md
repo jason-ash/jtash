@@ -1,5 +1,5 @@
 ---
-title: Pricing exotic options in PyTorch
+title: Pricing Exotic Options in PyTorch
 slug: pytorch-exotic-options
 date: "2018-12-13"
 excerpt: As a follow up to my prior article on Black-Scholes in PyTorch, I wanted to explore more complex applications of automatic differentiation. As I showed before, automatic differentiation can be used to calculate the sensitivities, or "greeks", of a stock option, even if we use monte carlo techniques to calculate option price. Many exotic options can only be priced using monte carlo techniques, so automatic differentiation may be able to provide more accurate sensitivities in less time than traditional methods.

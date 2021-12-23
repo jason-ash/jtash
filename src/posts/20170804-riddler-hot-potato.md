@@ -1,5 +1,5 @@
 ---
-title: Riddler hot potato
+title: Riddler Hot Potato
 slug: riddler-hot-potato
 date: "2017-08-04"
 excerpt: A classroom game of hot potato based on random walks; plus, my first recognition on fivethirtyeight as a solver - my chart explaining a non-intuitive puzzle result was featured in the solutions!
