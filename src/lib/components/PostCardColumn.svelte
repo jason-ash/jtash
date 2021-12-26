@@ -21,7 +21,11 @@
     flex: 0 0 20%;
     margin-right: 2rem;
   }
+  .header h2 {
+    font-size: 1.25em;
+  }
   .header p {
+    font-size: 0.9em;
     margin-block-start: 0.5rem;
     color: var(--text-color-secondary);
   }
