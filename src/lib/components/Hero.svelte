@@ -7,10 +7,10 @@
   </p>
   <p>
     I created this site to share the things I'm interested in. You'll find posts
-    explaining how I built this site, how I solved programming puzzles using Python, and
-    how I use math to understand the world - like using Bayesian inference to analyze my
-    daily step count before and after I got a German Shepherd puppy. You can find me on
-    Twitter or Github - let's start a conversation!
+    explaining how I built this site, how I write code and solve puzzles using Python,
+    and how I use math to understand the world - like using Bayesian inference to analyze
+    my daily step count before and after I got a German Shepherd puppy. You can find me
+    on Twitter or Github - let's start a conversation!
   </p>
 </div>
 <hr />
