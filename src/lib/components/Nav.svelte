@@ -3,7 +3,7 @@
     <li><a href="/" class="home">Jason Ash</a></li>
   </ul>
   <ul>
-    <li><a href="/resume">Resume</a></li>
+    <li><a href="/about">About</a></li>
   </ul>
 </nav>
 
