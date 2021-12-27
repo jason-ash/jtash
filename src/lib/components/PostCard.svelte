@@ -8,16 +8,30 @@
 
 <a href={`${base}/${post.slug}`}>
   <div class="title">
-    <h2>{post.title}</h2>
-    <p>{formatDateString(post.date)}</p>
+    <div class="header">
+      <h2>{post.title}</h2>
+      <p>{formatDateString(post.date)}</p>
+    </div>
+    <p class="excerpt">{@html post.excerpt}</p>
   </div>
-  <p class="excerpt">{@html post.excerpt}</p>
 </a>
 
 <style>
+  .header {
+    flex: 0 0 20%;
+    margin-right: 2rem;
+  }
+  .header h2 {
+    font-size: 1.25em;
+  }
+  .header p {
+    font-size: 0.9em;
+    margin-block-start: 0.5rem;
+    color: var(--text-color-secondary);
+  }
   .title {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
     margin-top: 2rem;
     margin-bottom: 0.5rem;
@@ -37,6 +51,7 @@
     font-weight: 400;
   }
   .excerpt {
+    color: var(--text-color-secondary);
     font-weight: 400;
     margin-block-start: 0rem;
     hyphens: auto;

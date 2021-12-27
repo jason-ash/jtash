@@ -50,7 +50,7 @@
     color: var(--text-color-secondary);
   }
   .post :global(h1) {
-    font-size: 1.5em;
+    font-size: 1.35em;
   }
   .post :global(blockquote) {
     font-style: italic;
@@ -76,5 +76,8 @@
     margin: auto;
     max-width: 95%;
     max-height: 100%;
+  }
+  .post :global(p) {
+    line-height: 1.5;
   }
 </style>
