@@ -1,6 +1,6 @@
 <div>
   <p>
-    <mark>Hello! I'm Jason.</mark> I'm a data scientist, actuary, and self-taught software
+    <strong>Hello! I'm Jason.</strong> I'm a data scientist, actuary, and self-taught software
     engineer based in San Francisco. Currently I lead the enterprise data & analytics team
     at Symetra, an insurance company.
   </p>
@@ -18,15 +18,5 @@
   p {
     line-height: 1.5;
     margin-block-start: 0rem;
-    hyphens: auto;
-  }
-  mark {
-    margin: 0 -0.4em;
-    padding: 0.1em 0.4em;
-    border-radius: 0.8em 0.3em;
-    background: transparent;
-    background-image: linear-gradient(to right, #fef08a, #fde68a, #fffbeb);
-    -webkit-box-decoration-break: clone;
-    box-decoration-break: clone;
   }
 </style>

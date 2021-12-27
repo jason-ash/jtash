@@ -8,7 +8,7 @@
 <svelte:head>
   <link
     rel="stylesheet"
-    href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.1/styles/github.min.css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/styles/github.min.css"
   />
   <link
     rel="stylesheet"
@@ -51,17 +51,6 @@
   }
   .post :global(h1) {
     font-size: 1.35em;
-  }
-  .post :global(blockquote) {
-    font-style: italic;
-    color: #404040;
-    border-left-width: 0.2rem;
-    border-left-style: solid;
-    border-left-color: #d4d4d4;
-    padding-left: 1rem;
-    max-width: 95%;
-    display: block;
-    margin: auto;
   }
   .post :global(pre) {
     border-left-width: 0.25rem;
