@@ -53,10 +53,10 @@ I notice that the data has a `transaction_date` column. It appears to be a strin
 I would rather work with a Series of datetimes instead of strings, so I've identified a useful cleaning function. I convert the sample rows above into the datetime objects I know I'll want at the end.
 
 ```console
-datetime(2021, 11, 1, 20, 45, 32, 425364),
-datetime(2021, 11, 2, 14, 18, 36, 874524),
-datetime(2021, 11, 3, 8, 56, 44, 966523),
-datetime(2021, 11, 3, 9, 28, 11, 113297),
+datetime(2021, 11, 1, 20, 45, 32, 425364)
+datetime(2021, 11, 2, 14, 18, 36, 874524)
+datetime(2021, 11, 3, 8, 56, 44, 966523)
+datetime(2021, 11, 3, 9, 28, 11, 113297)
 ```
 
 Now I know what I want my cleaning function to do, and what the data inputs and outputs should be. I open `cleaning.py` and start writing the function name and some documentation, without worrying about writing the actual implementation yet.
