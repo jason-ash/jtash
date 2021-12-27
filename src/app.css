@@ -11,6 +11,35 @@ body {
   color: var(--text-color-primary);
   font-family: "Source Sans Pro", sans-serif;
 }
+
+.container {
+  width: 100%;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (min-width: 576px) {
+  .container {
+    width: 100%;
+  }
+}
+@media (min-width: 640px) {
+  .container {
+    width: 600px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    width: 720px;
+  }
+}
+@media (min-width: 1024px) {
+  .container {
+    width: 840px;
+  }
+}
+
 a {
   color: var(--text-color-primary);
   text-decoration: none;
