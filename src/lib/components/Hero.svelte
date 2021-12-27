@@ -1,9 +1,8 @@
 <div>
-  <h1>Hello! I'm Jason.</h1>
   <p>
-    I'm a data scientist, actuary, and self-taught software engineer based in San
-    Francisco. Currently I lead a 40-person data & analytics team at Symetra, an
-    insurance company.
+    <mark>Hello! I'm Jason.</mark> I'm a data scientist, actuary, and self-taught software
+    engineer based in San Francisco. Currently I lead the enterprise data & analytics team
+    at Symetra, an insurance company.
   </p>
   <p>
     I created this site to share the things I'm interested in. You'll find posts
@@ -16,11 +15,18 @@
 <hr />
 
 <style>
-  h1 {
-    margin-block-end: 0.4rem;
-  }
   p {
+    line-height: 1.5;
     margin-block-start: 0rem;
     hyphens: auto;
+  }
+  mark {
+    margin: 0 -0.4em;
+    padding: 0.1em 0.4em;
+    border-radius: 0.8em 0.3em;
+    background: transparent;
+    background-image: linear-gradient(to right, #fef08a, #fde68a, #fffbeb);
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
   }
 </style>
