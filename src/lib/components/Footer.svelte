@@ -9,7 +9,7 @@
       <a href="https://github.com/jason-ash/jtash">Open Source</a> and built with
       <a href="https://kit.svelte.dev/">SvelteKit</a>.
       <br />
-      &copy; {currentYear} Jason Ash. All rights reserved.
+      <span class="copyright">&copy; {currentYear} Jason Ash. All rights reserved.</span>
     </li>
   </ul>
   <ul>
@@ -38,5 +38,8 @@
   }
   li:not(:last-child) {
     padding-right: 1.5rem;
+  }
+  .copyright {
+    color: var(--text-color-secondary);
   }
 </style>
