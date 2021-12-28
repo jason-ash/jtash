@@ -35,8 +35,9 @@ export const formatDateString = (date: string): string => {
     "Nov",
     "Dec",
   ];
-  const [year, month, day] = date.split("-");
-  return `${months[Number(month) - 1]} ${Number(day)}, ${year}`;
+  // const [year, month, day] = date.split("-");
+  // return `${months[Number(month) - 1]} ${Number(day)}, ${year}`;
+  return date;
 };
 
 // process a single post by reading its contents and parsing its metadata
