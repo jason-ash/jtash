@@ -1,9 +1,9 @@
 <nav>
   <ul>
-    <li>
+    <!-- <li>
       <a href="/" class="home"><img alt="home" src="src/assets/favicon-32x32.png" /></a>
-    </li>
-    <!-- <li><a href="/" class="home">Jason Ash</a></li> -->
+    </li> -->
+    <li><a href="/">Jason Ash</a></li>
   </ul>
   <ul>
     <li><a href="/about">About</a></li>
@@ -16,9 +16,6 @@
     justify-content: space-between;
     margin-top: 1rem;
     margin-bottom: 1rem;
-  }
-  .home {
-    border: none;
   }
   ul {
     list-style: none;
