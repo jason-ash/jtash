@@ -20,7 +20,7 @@ I'll use the excellent <a href="https://docs.pymc.io/">`pymc3`</a> library to co
 
 # The data:
 
-The first step was to gather the data from my Garmin watch. Unsurprisingly, this was not a very exciting process, but I eventually collected several months of step data, starting from the end of July. As data goes, it's quite simple: a column for the actual steps logged each day, and a column for that day's goal. (Garmin uses an algorithm to set an adjustable daily step goal. I was curious about the logic behind the algorithm, but I'll save it for <a href="garmin-goals">another post</a>.) The data looks something like this:
+The first step was to gather the data from my Garmin watch. Unsurprisingly, this was not a very exciting process, but I eventually collected several months of step data, starting from the end of July. As data goes, it's quite simple: a column for the actual steps logged each day, and a column for that day's goal. (Garmin uses an algorithm to set an adjustable daily step goal. I was curious about the logic behind the algorithm, but I'll save it for <a href="/garmin-step-algorithm">another post</a>.) The data looks something like this:
 
 ```python
              actual    goal

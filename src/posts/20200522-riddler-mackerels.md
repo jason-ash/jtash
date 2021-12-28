@@ -22,7 +22,7 @@ What is the longest “mackerel?” That is, what is the longest word that doesn
 
 # Solution
 
-Fortunately I have a list of US states handy from a <a href="riddler-state-superstrings">prior Riddler</a>, so that should save a bit of time :)
+Fortunately I have a list of US states handy from a <a href="/riddler-state-superstrings">prior Riddler</a>, so that should save a bit of time :)
 
 First, a comment on the word list: it contains 263,533 words, including such vernacular staples as "aa" (a form of lava flow), and "zzz" (a snoring sound), both of which are valid in Scrabble. If there's a better validation of a word than its inclusion in the Scrabble dictionary, I'm not aware of it!
 

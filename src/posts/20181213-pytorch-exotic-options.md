@@ -6,9 +6,7 @@ excerpt: As a follow up to my prior article on Black-Scholes in PyTorch, I wante
 status: published
 ---
 
-As a follow up to my <a href="black-scholes-in-pytorch">prior article on Black-Scholes in PyTorch</a>, I wanted to explore more complex applications of automatic differentiation. As I showed before, automatic differentiation can be used to calculate the sensitivities, or "greeks", of a stock option, even if we use monte carlo techniques to calculate option price. As it turns out, many exotic options can only be priced using monte carlo methods. Many exotic options are "path dependent", meaning their payoff depends not only on the final price of the underlying but also the behavior of the underlying throughout the time period. This often makes it impossible to use closed-form equations to calculate their price.
-
-<a href="www.wikipedia.org">test</a>
+As a follow up to my <a href="pytorch-black-scholes">prior article on Black-Scholes in PyTorch</a>, I wanted to explore more complex applications of automatic differentiation. As I showed before, automatic differentiation can be used to calculate the sensitivities, or "greeks", of a stock option, even if we use monte carlo techniques to calculate option price. As it turns out, many exotic options can only be priced using monte carlo methods. Many exotic options are "path dependent", meaning their payoff depends not only on the final price of the underlying but also the behavior of the underlying throughout the time period. This often makes it impossible to use closed-form equations to calculate their price.
 
 The traditional approach to value these options is to generate thousands of scenarios of stock prices and calculate the option payoff under each scenario. This is the essence of the monte carlo simulation. Often, to calculate option greeks, we re-run the monte carlo simulation several times with small differences in model inputs to see how the price changes. This process can be time-consuming when the number of inputs is large, or when the model is computationally intensive. Automatic differentiation may be able to provide more accurate sensitivities in less time than traditional methods.
 
@@ -57,7 +55,7 @@ discount = torch.exp(discount)
 
 # The Vanilla European option
 
-For the sake of comparison, we'll calculate the value of a standard European put option. This should be very close to <a href="black-scholes-in-pytorch">the Black-Scholes value we calculated in the prior article</a>. (Note that the prior article used 100,000 scenarios instead of 1 million, so the option prices are slightly different.) We'll also illustrate a single scenario to show how the option payoff is calculated.
+For the sake of comparison, we'll calculate the value of a standard European put option. This should be very close to <a href="pytorch-black-scholes">the Black-Scholes value we calculated in the prior article</a>. (Note that the prior article used 100,000 scenarios instead of 1 million, so the option prices are slightly different.) We'll also illustrate a single scenario to show how the option payoff is calculated.
 
 ```python
 # european put option payoff
