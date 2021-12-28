@@ -1,8 +1,9 @@
 <script context="module" lang="ts">
+  import type { Load } from "@sveltejs/kit";
   import type { postType } from "$lib/posts";
   import { base } from "$app/paths";
 
-  export const load = async ({
+  export const load: Load = async ({
     page,
     fetch,
   }): Promise<{ props: { post: postType } }> => {

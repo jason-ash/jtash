@@ -1,8 +1,11 @@
 <script context="module" lang="ts">
+  import type { Load } from "@sveltejs/kit";
   import type { postType } from "$lib/posts";
   import { base } from "$app/paths";
 
-  export const load = async ({ fetch }): Promise<{ props: { posts: postType[] } }> => {
+  export const load: Load = async ({
+    fetch,
+  }): Promise<{ props: { posts: postType[] } }> => {
     const posts = await fetch(`${base}/index.json`).then((r) => r.json());
     return { props: { posts } };
   };
