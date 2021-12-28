@@ -17,7 +17,6 @@
 <script lang="ts">
   import PostLayout from "$lib/components/PostLayout.svelte";
   export let post: postType;
-  console.log(post);
 </script>
 
 <PostLayout {post} />

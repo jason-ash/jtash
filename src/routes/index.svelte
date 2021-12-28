@@ -13,7 +13,6 @@
   import PostCard from "$lib/components/PostCard.svelte";
 
   export let posts: postType[];
-  console.log(posts);
 </script>
 
 <Hero />
