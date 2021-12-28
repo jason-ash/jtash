@@ -1,4 +1,5 @@
-import { normal } from "jstat";
+import jStat from "jstat";
+const { normal } = jStat;
 
 export interface blackScholesParameters {
   stock: number;
