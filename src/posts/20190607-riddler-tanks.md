@@ -44,7 +44,7 @@ For example, if $K=2$, then the likelihood that $N=114$ is $0.88\%$, because hav
 
 Therefore, despite the best efforts of the courageous German spy, it seems that probability theory is still enough to give the Allies an advantage.
 
-<img src="src/assets/img/riddler-tanks.png">
+<img src="/img/riddler-tanks.png">
 
 # Full Code
 

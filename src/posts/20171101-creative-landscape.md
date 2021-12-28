@@ -10,4 +10,4 @@ I was extremely proud to be featured as the lead article in this issue of <u>The
 
 This was an exciting issue of <u>The Actuary</u> because of the fintech and insurtech focus. The other authors in this issue represent a small but passionate group of actuaries and other professionals trying to push the limits of traditional insurance and banking, and this issue represents their perspectives well.
 
-<img src="src/assets/img/creative-landscape-cover.jpg">
+<img src="/img/creative-landscape-cover.jpg">

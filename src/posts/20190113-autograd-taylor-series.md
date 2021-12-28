@@ -57,17 +57,17 @@ The hyperbolic tangent function is sometimes used in neural networks to classify
 
 This first example shows a fourth degree function, meaning we use up to the fourth derivative of our original function. We evaluate the Taylor Series at the point $f(0.5)$, and it looks like we could use our new function to estimate points from roughly zero to 1.5. This is the section of the chart where both lines are nearly on top of one another. Note that I intentionally hid most axis ticks and lines in an effort to emphasize the function lines themselves.
 
-<img title="Taylor Series" alt="taylor series" src="src/assets/img/taylor-series1.png">
+<img title="Taylor Series" alt="taylor series" src="/img/taylor-series1.png">
 
 On the other hand, perhaps we can increase our accuracy if we use a Taylor Series with degree 6. This time we'll evaluate at a different point, $f(-1.0)$. Here it looks as if our results are pretty good from -2 through 0, which is perhaps a slightly larger range than we had for our polynomial of degree 4.
 
-<img title="Taylor Series" alt="taylor series" src="src/assets/img/taylor-series2.png">
+<img title="Taylor Series" alt="taylor series" src="/img/taylor-series2.png">
 
 I think it is interesting to see how the Taylor Series polynomial changes as we change the degree and incorporate more and more derivatives of our original function. The table below shows the same original function with Taylor Series polynomials of increasing degree from 0 through 7.
 
 Note that with degree 0 our guess for any point on the function is equal to $f(a)$, which is hardly reasonable. When we use the tangent line our guesses are good for regions close to $a$, but we quickly improve our approximation by using Series with degree 4 or higher.
 
-<img title="Taylor Series" alt="taylor series" src="src/assets/img/taylor-series3.png">
+<img title="Taylor Series" alt="taylor series" src="/img/taylor-series3.png">
 
 # Other functions
 
@@ -75,15 +75,15 @@ Here is the same set of charts for a few other functions: $sin(x)$, $e^x$, and $
 
 # $sin(x)$
 
-<img title="Taylor Series" alt="taylor series" src="src/assets/img/taylor-series4.png">
+<img title="Taylor Series" alt="taylor series" src="/img/taylor-series4.png">
 
 # $e^x$
 
-<img title="Taylor Series" alt="taylor series" src="src/assets/img/taylor-series5.png">
+<img title="Taylor Series" alt="taylor series" src="/img/taylor-series5.png">
 
 # $\sqrt{x}$
 
-<img title="Taylor Series" alt="taylor series" src="src/assets/img/taylor-series6.png">
+<img title="Taylor Series" alt="taylor series" src="/img/taylor-series6.png">
 
 # Conclusions
 

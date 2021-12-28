@@ -27,7 +27,7 @@ Finally, I wondered how I might illustrate a single game, showing the potato swi
 
 Luckily - or perhaps due to a bit of <a href="https://twitter.com/ashjasont/status/894411668465131520">self-promotion</a> - my work paid off and my visualization was <a href="https://fivethirtyeight.com/features/can-you-plug-the-white-house-leak/">featured in the solution</a> the next week!
 
-<img src="src/assets/img/riddler-hot-potato.png">
+<img src="/img/riddler-hot-potato.png">
 
 ```python
 import random

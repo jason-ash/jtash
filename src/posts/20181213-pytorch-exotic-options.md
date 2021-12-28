@@ -51,7 +51,7 @@ discount = -torch.cumsum(rate.repeat(step), dim=0) / step
 discount = torch.exp(discount)
 ```
 
-<img title="Monte Carlo" alt="monte carlo" src="src/assets/img/exotic-options1.png">
+<img title="Monte Carlo" alt="monte carlo" src="/img/exotic-options1.png">
 
 # The Vanilla European option
 
@@ -66,7 +66,7 @@ ov = torch.mean(discount[-1] * payoff)
 5.0827
 ```
 
-<img title="Monte Carlo" alt="monte carlo" src="src/assets/img/exotic-options2.png">
+<img title="Monte Carlo" alt="monte carlo" src="/img/exotic-options2.png">
 
 # Asian option
 
@@ -81,7 +81,7 @@ ov = torch.mean(discount[-1] * payoff)
 3.0117
 ```
 
-<img title="Monte Carlo" alt="monte carlo" src="src/assets/img/exotic-options3.png">
+<img title="Monte Carlo" alt="monte carlo" src="/img/exotic-options3.png">
 
 # Lookback option
 
@@ -98,7 +98,7 @@ ov = torch.mean(discount[-1] * payoff)
 10.2009
 ```
 
-<img title="Monte Carlo" alt="monte carlo" src="src/assets/img/exotic-options4.png">
+<img title="Monte Carlo" alt="monte carlo" src="/img/exotic-options4.png">
 
 # Barrier options
 
@@ -149,7 +149,7 @@ ov = ov.sum(dim=1).mean()
 20.7419
 ```
 
-<img title="Monte Carlo" alt="monte carlo" src="src/assets/img/exotic-options5.png">
+<img title="Monte Carlo" alt="monte carlo" src="/img/exotic-options5.png">
 
 # Comparison
 

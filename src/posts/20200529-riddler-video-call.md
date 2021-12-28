@@ -28,7 +28,7 @@ The following image helped me think about the probability distributions involved
 
 These two people set the boundary on the minimum overlap time. In order to overlap with everyone, at least one person must _join_ the call before the first person leaves, and must _stay_ on the call until the last person joins. If those two conditions are met, then we're guaranteed to have at least one overlap.
 
-<img src="src/assets/img/riddler-video-call.png">
+<img src="/img/riddler-video-call.png">
 
 <!-- # Methodology
 

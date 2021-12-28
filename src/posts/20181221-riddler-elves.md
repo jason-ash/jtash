@@ -75,4 +75,4 @@ If the playlist has 7175 songs in it and we listen to 100 randomly chosen songs,
 
 The chart below plots the expected probability of hearing a repeat for various playlist sizes.
 
-<img src="src/assets/img/riddler-elves.png">
+<img src="/img/riddler-elves.png">

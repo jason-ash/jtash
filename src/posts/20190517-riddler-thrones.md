@@ -92,7 +92,7 @@ We now have a function that solves for the probability of the living army winnin
 
 As usual, graphing the results can help to understand the dynamics of this problem. We know the dead army has a significant advantage, but exactly how much? We can use the function from the prior section to map all combinations of army sizes to try to understand the probability surface.
 
-<img src="src/assets/img/riddler-thrones.png">
+<img src="/img/riddler-thrones.png">
 
 As we can see, the dead army's advantage compounds as it grows. In other words, each additional dead army soldier requires an increasing number of additional living army soldiers to fight. When the dead army has 10 soldiers, it requires 106 living soldiers just to keep the odds fair and square. I've also plotted the soldiers required for different battle probabilities. For example, if the living army wants to win with 60% certainty instead of 50%, it needs even more soldiers.
 

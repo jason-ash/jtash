@@ -34,7 +34,7 @@ But you don’t have all day to make this sign. If the lines can’t overlap by 
 
 The chart below illustrates how the standard deviation changes as a function of the marker spacing. The dark wavy line in the middle represents the standard deviation for a given spacing on the x-axis. This line is minimized when spacing is 1.7cm, and is maximized at 1.07cm. The insets in the chart show a vertical cross section of ink for a slice of the poster. Standard deviation at each point is calculated based on the values in the inset charts. We can see that the values of the upper right inset chart are more consistent overall, which is reflected in the lower standard deviation. The other inset chart has more variance in the ink values, so its standard deviation is higher.
 
-<img src="src/assets/img/riddler-painting.png">
+<img src="/img/riddler-painting.png">
 
 # Full Code
 

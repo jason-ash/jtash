@@ -82,7 +82,7 @@ def game_score(team, innings=9, games=1000000):
     return np.maximum(0, team.rvs((games, innings))).sum(1)
 ```
 
-<img src="src/assets/img/riddler-league-baseball.png">
+<img src="/img/riddler-league-baseball.png">
 
 Now that we can sample from the distribution of runs scored per game, we can pit the teams against one another. Adding a bit of extra logic to handle ties, we are able to calculate the win percentages we showed above. I was also interested in testing how well the teams performed in sudden death. Was any team able to sneak wins from a better opponent if they had just one inning? The percentages suggest not - each team performs roughly the same whether it's a full 9-inning game or a sudden death tiebreaker.
 

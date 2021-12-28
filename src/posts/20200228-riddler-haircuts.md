@@ -43,7 +43,7 @@ The analytical work, on the other hand, was much more complicated, and, forgive 
 
 In any case, when we sum each of the possibilities together, we get the chart on the far right, which lets us calculate the probability of being seated within some range of times, such as "between 10 and 15 minutes" or "between 10:00 and 10:01 minutes".
 
-<img src="src/assets/img/riddler-haircuts.png">
+<img src="/img/riddler-haircuts.png">
 
 # Full Code
 

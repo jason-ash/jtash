@@ -31,7 +31,7 @@ ax.scatter(x=data.difference, y=data.goal_delta)
 plt.show()
 ```
 
-<img title="Daily Step Count" alt="step count" src="src/assets/img/garmin-steps1.png">
+<img title="Daily Step Count" alt="step count" src="/img/garmin-steps1.png">
 
 Two trend lines were apparent in the data. It looked as if the new goal was based on some fraction of the prior day's difference in a very specific way: it was roughly 10% or 20% of the prior day's difference. My next step was to try to figure out the pattern behind the multiplicative factor for each day. The easiest way to start was to look through the data with the naked eye. While it's not the most scientific approach, in this case, the quick scan was enough to discern a pattern.
 
@@ -72,7 +72,7 @@ data['error'] = data.goal - data.goal_guess
 data.error.plot();
 ```
 
-<img title="Daily Step Count" alt="step count" src="src/assets/img/garmin-steps2.png">
+<img title="Daily Step Count" alt="step count" src="/img/garmin-steps2.png">
 
 This is an ugly chart, but it helped me visualize how close I was getting to the real algorithm. What was most interesting in this chart was that virtually all my errors were positive: I was overshooting the step goal consistently. This suggested to me that there might be some kind of flooring function or rounding that I wasn't incorporating.
 
@@ -93,7 +93,7 @@ data['error'] = data.goal - data.goal_guess
 data.error.plot();
 ```
 
-<img title="Daily Step Count" alt="step count" src="src/assets/img/garmin-steps3.png">
+<img title="Daily Step Count" alt="step count" src="/img/garmin-steps3.png">
 
 Note the new floor function on line 2. While this doesn't appear to make a huge difference, it turns out this is a key part of the algorithm. The chart looks similar to earlier, but the few negative values I had seen earlier are now "solved". Now all my errors were strictly between 0 and 10, which was a great result! That gave me a clue that a ceiling function could be involved, and indeed scanning through the sample values suggested that all I needed to do was round up to the nearest 10!
 
@@ -113,7 +113,7 @@ data['goal_guess'] = np.ceil(data.goal_guess / 10) * 10
 data['error'] = data.goal - data.goal_guess
 ```
 
-<img title="Daily Step Count" alt="step count" src="src/assets/img/garmin-steps4.png">
+<img title="Daily Step Count" alt="step count" src="/img/garmin-steps4.png">
 
 There we have it: perfect predictions of my new daily step goal for every day in the time period. Let's summarize the whole thing from the beginning, in math and code:
 

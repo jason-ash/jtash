@@ -208,7 +208,7 @@ The fourth method is unlike the first three in that it doesn't use the Black-Sch
 
 Once we have several thousand randomly drawn future stock values, we simply calculate the option payoff under each scenario. We then discount the future payoffs to today and take the average value of all the scenarios we ran. If we run enough scenarios, then the average should converge to the Black-Scholes price of the option.
 
-<img title="Monte Carlo" alt="monte carlo" src="src/assets/img/black-scholes.png">
+<img title="Monte Carlo" alt="monte carlo" src="/img/black-scholes.png">
 
 ```python
 # geometric brownian motion (single time step)

@@ -97,7 +97,7 @@ for s in ['top', 'right', 'left']:
 plt.show()
 ```
 
-<img src="src/assets/img/pyesg.png" />
+<img src="/img/pyesg.png" />
 
 # Progress
 

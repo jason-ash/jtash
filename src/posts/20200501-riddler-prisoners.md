@@ -30,7 +30,7 @@ Why the threshold of 0.34? This maximizes the overall probability of success. Th
 
 We also see that larger groups of prisoners should choose smaller thresholds, because they want to keep the total number of coins low. Ultimately, large groups of N prisoners should expect roughly 25% odds of success.
 
-<img src="src/assets/img/riddler-prisoners.png">
+<img src="/img/riddler-prisoners.png">
 
 # Methodology
 

@@ -163,7 +163,7 @@ def simulate_innings(trials):
 
 What's also interesting is that these results allow us to track not only the average number of runs scored per inning, but the full distribution: how many goose eggs (roughly 40% of the time) vs. quadruple-grand-slams (the highest inning recorded 22 runs). These results are best viewed as a histogram showing exactly how many simulated innings ended up with a given number of runs, which you can see below.
 
-<img src="src/assets/img/riddler-baseball.png">
+<img src="/img/riddler-baseball.png">
 
 # Reference: Full Python Code
 

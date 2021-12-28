@@ -22,13 +22,13 @@ This week's answer is not perfectly precise, as I used a monte carlo simulation.
 
 Of course, because the process is random, each apple will be eaten differently. I've illustrated one scenario in the gif below. The apple is projected onto 2-dimensions (just like a map of the globe). Each red dot represents a point of skin on the apple's surface. At each step, the toddler chooses a random location, takes a bite, and the points in a nearby circle turn yellow. This gif shows just the first 150 bites, and it's not nearly enough to finish the apple. In fact this particular simulation doesn't finish until the 557th bite!
 
-<img src="src/assets/img/riddler-apples.gif">
+<img src="/img/riddler-apples.gif">
 
 (I also found it fascinating to note how each bite is projected in two dimensions. Obviously each bite is a perfect circle on the 3-dimensional apple, but in this 2-dimensional projection, the bites can becomes distorted. Bites near the equator are nearly circular in shape, but bites near the poles become increasingly stretched out, owing to this particular method of projecting the globe into two dimensions. This is the exact same phenomena that makes Greenland look enormous on some maps of the world.)
 
 In addition to this single scenario, we can also view the distribution of all 10,000 simulations. This chart shows a histogram of the number of bites it took for every apple to be eaten. The results range from roughly 200 minutes (3+ hours), to 1200 minutes (20 hours!)
 
-<img src="src/assets/img/riddler-apples.png">
+<img src="/img/riddler-apples.png">
 
 # Methodology
 

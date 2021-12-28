@@ -8,7 +8,7 @@ status: published
 
 One of my recent favorite purchases was a <a href="https://www.amazon.com/Garmin-Fenix-Slate-Gray-Black/dp/B01N7J9APR">Garmin Fenix 5</a> watch. I bought it primarily to track a European cycling trip from <a href="https://www.strava.com/activities/1785505507">Regensburg, Germany</a> to <a href="https://www.strava.com/activities/1785507923">Vienna, Austria</a>. But I've also enjoyed keeping track of the steps I take each day. In particular, I wondered what inferences I could make about my life using the step data from the past few months.
 
-<img title="Follow Darcy on Instagram: @prideandprejudog" alt="Darcy" src="src/assets/img/darcy.jpg" />
+<img title="Follow Darcy on Instagram: @prideandprejudog" alt="Darcy" src="/img/darcy.jpg" />
 
 My wife and I recently got a puppy, Darcy. She's an energetic five-month-old, and to say our daily routines have changed as a result would be an understatement. My intuition was that I walked much more each day since Darcy arrived, and I wondered if the data, plus some Bayesian inference, would support my hypothesis. I was inspired by an example from <a href="https://nbviewer.jupyter.org/github/CamDavidsonPilon/Probabilistic-Programming-and-Bayesian-Methods-for-Hackers/blob/master/Chapter1_Introduction/Ch1_Introduction_PyMC3.ipynb">Bayesian Methods for Hackers</a>, by Cam Davidson-Pilon, where he examined text message patterns over a period of time.
 
@@ -34,9 +34,9 @@ The first step was to gather the data from my Garmin watch. Unsurprisingly, this
 2018-11-24    11999    8670
 ```
 
-<img title="Daily Step Count" alt="step count" src="src/assets/img/puppy-steps1.png" />
+<img title="Daily Step Count" alt="step count" src="/img/puppy-steps1.png" />
 
-You can find the complete data - all 119 days of it - <a href="src/assets/step-data.txt">here</a>. Please feel free to replicate or expand this analysis as you wish, but I'd love to hear about what you do. Find me on <a href="https://twitter.com/ashjasont">Twitter</a> or <a href="mailto:jason@ashanalytics.com">email me</a> your results!
+You can find the complete data - all 119 days of it - <a href="/step-data.txt">here</a>. Please feel free to replicate or expand this analysis as you wish, but I'd love to hear about what you do. Find me on <a href="https://twitter.com/ashjasont">Twitter</a> or <a href="mailto:jason@ashanalytics.com">email me</a> your results!
 
 # The priors:
 
@@ -76,7 +76,7 @@ with pm.Model() as model:
 
 We can use the built-in visualization tools provided by `pymc3` to examine the posterior distribution parameters. For example, the most likely value for tau is slightly less than 40 days, but appears to range anywhere from 30 to 50 days from the beginning of the time period. This suggests that the model did indeed identify a point at which my step data switched distributions.
 
-<img title="PYMC3 traceplot" alt="pymc3 traceplot" src="src/assets/img/puppy-steps2.png" />
+<img title="PYMC3 traceplot" alt="pymc3 traceplot" src="/img/puppy-steps2.png" />
 
 More interesting, I think, are the parameters of the two normal distributions. The green lines represent mean and standard deviation of $N_1$, while red lines represent $N_2$. I noticed the $N_2$ mean appears to be slightly higher than $N_1$, but it doesn't look to be a significant difference. In fact, the average sampled means from $N_1$ and $N_2$ are 8335 and 8735 - a difference of just 400 steps per day.
 
@@ -104,4 +104,4 @@ I was impressed by the ability of the model to pinpoint the timing of this shift
 
 Therefore, though I wasn't able to prove that I walked _more_ each day, I can say with confidence that the model accurately identified the timing and effect of Darcy on my activity level. Here's to many more years of walks with our puppy!
 
-<img title="Final Results" alt="step count results" src="src/assets/img/puppy-steps3.png">
+<img title="Final Results" alt="step count results" src="/img/puppy-steps3.png">
