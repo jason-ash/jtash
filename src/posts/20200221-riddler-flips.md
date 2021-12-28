@@ -51,7 +51,7 @@ Finally, we solve the problem by calculating the expected value of the game befo
 
 In addition, we can also plot the various states of the game and their associated winning probabilities using a heatmap. In the figure below, each `GameState` is plotted as a point: the x-axis is the number of flips we've completed, and the y-axis is our cumulative score. The color of the point represents how likely we are to win from that position, where yellow means almost a sure thing, and purple means we're virtually certain to lose. (I omitted many of the points that have more than 99% or less than 1% chances of winning to simplify the plot.)
 
-<img class="img-fluid mx-auto d-block" src="src/assets/img/riddler-flips.png">
+<img src="src/assets/img/riddler-flips.png">
 
 The extra credit this week asked how the game changes if we vary the probability that each coin turns up heads. In python we can run any number of scenarios by changing the class attributes `p_a` and `p_b`, which set the likelihood of winning and losing each flip for each coin. As expected, when coin A becomes more of a sure thing, our odds of winning the game increase, but I'll leave it as an exercise for the motivated reader to adjust the code and calculate the exact values!
 

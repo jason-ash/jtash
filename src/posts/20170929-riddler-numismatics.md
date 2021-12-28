@@ -52,7 +52,7 @@ np.where((X > 0).sum(0) > 0)[0][0] + 1
 
 Why do we check our distribution against the zero line? As long as there is a meaningful probability of $X\leq{0}$, we can't rule out the likelihood that the coins have equal probabilities. However, as soon as 95% of our simulations lie above zero, we can be 95% confident that one of the coins is biased.
 
-<img class="img-fluid mx-auto d-block" src="src/assets/img/riddler-numismatics.png">
+<img src="src/assets/img/riddler-numismatics.png">
 
 We can also extend this problem to test coins with different biases. With $p=60\%$, it takes 143 flips to detect the doctored coin. With higher values of $p$, we can detect the doctored coin sooner. With lower values of $p$ it takes many more trials. In general, we can use the normal approximation of our distribution, with mean $n\times{(p_1-p_2)}$ and variance $n[p_1(1-p_1) + p_2(1-p_2)]$. Using a confidence test at 95%, we can solve for the number of flips it would take to identify a doctored coin with any $p>50\%$.
 

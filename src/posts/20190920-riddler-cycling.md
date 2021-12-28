@@ -64,7 +64,7 @@ $$p=\frac{19}{20}$$
 
 **Therefore, the value of $p$ that maximizes our odds of winning is $\frac{19}{20}=95\%$. When we choose 95% for $p$, our overall chances of winning the event are $f(0.95)>(1-0.95)\times 0.95^{19}=1.89\%$.** In other words, we should pick an extremely risky strategy with a low probability of success in order to have the best odds of winning the entire event. Our odds of completing the time trial are low, but so are everyone else's! As we can see in the chart below, the function hits a maximum value at 95%.
 
-<img class="img-fluid mx-auto d-block" src="src/assets/img/riddler-cycling1.png">
+<img src="src/assets/img/riddler-cycling1.png">
 
 # Extra Credit
 
@@ -114,4 +114,4 @@ def model(teams=20):
 
 Finally, we can plot the win percentages for the team going last among a competition with $n$ competitors. It's a remarkable advantage to go last!
 
-<img class="img-fluid mx-auto d-block" src="src/assets/img/riddler-cycling2.png">
+<img src="src/assets/img/riddler-cycling2.png">

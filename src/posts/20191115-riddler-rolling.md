@@ -70,4 +70,4 @@ Therefore we have proven by mathematical induction that $E(N)=\frac{N}{19}$. Our
 
 Because LaTeX is not my specialty, I also wrote an old-fashioned proof as well. Enjoy!
 
-<img class="img-fluid mx-auto d-block" src="src/assets/img/riddler-rolling.png">
+<img src="src/assets/img/riddler-rolling.png">

@@ -16,7 +16,7 @@ Importantly, the figures may not be to scale, but I have it on <a href="https://
 
 # Riddler Express
 
-<img class="img-fluid mx-auto d-block" src="src/assets/img/riddler-rectangles1.png">
+<img src="src/assets/img/riddler-rectangles1.png">
 
 This puzzle was almost frustratingly simple, and I didn't trust my answer at first. But it is easy to show that $ ? = 4 $.
 
@@ -30,7 +30,7 @@ $$ \therefore\ ? = 4 $$
 
 ### Riddler Classic
 
-<img class="img-fluid mx-auto d-block" src="src/assets/img/riddler-rectangles2.png">
+<img src="src/assets/img/riddler-rectangles2.png">
 
 This puzzle took a bit more effort, but it can be solved in several unique ways. At first, I solved for the size of the "missing" rectangle in the upper right in order to calculate the area of the entire rectangle. Later, I simplified this solution by writing two equations in terms of $x$ and $y$, which are the bottom and left edges of $?$, respectively. From there, with two equations and two missing variables, we can solve for our missing piece.
 
@@ -59,7 +59,7 @@ line1 = y1(x)
 line2 = y2(x)
 ```
 
-<img class="img-fluid mx-auto d-block" src="src/assets/img/riddler-rectangles3.png">
+<img src="src/assets/img/riddler-rectangles3.png">
 
 $$ x = \frac{64}{11},\ y = \frac{11}{2},\ xy = 32 $$
 

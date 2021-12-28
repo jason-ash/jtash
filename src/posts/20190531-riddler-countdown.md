@@ -44,7 +44,7 @@ The second part of the question asked us to identify which three-digit numbers w
 2. Higher target numbers are harder to solve for. In fact, several values, like 967 and 863 are more difficult to solve, regardless of the number of large cards we choose.
 3. "Round" numbers, like 200, 250, 300, etc. are much easier to solve consistently when we choose more large cards. This makes sense, given that we're more likely to find the 50 or 100 card when we select more from that pool, but isn't enough of an incentive to sacrifice the valuable "small" numbers that help us fill in the gaps.
 
-<img class="img-fluid mx-auto d-block" src="src/assets/img/riddler-countdown.png">
+<img src="src/assets/img/riddler-countdown.png">
 
 Here is a table of the most difficult numbers to solve, given a starting number of large cards. For example, if we choose 1 large card and 5 small cards, and our target number is 941, then across all the different combinations of numbers we could be given, we will be able to solve the puzzle just 84% of the time.
 

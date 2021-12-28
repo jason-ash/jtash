@@ -92,6 +92,6 @@ print((results > 0).sum() / trials)
 
 Our result based on one million trials is **7.038671**, which is remarkably close to our analytical solution above! Looks like everything worked out the way it should. In addition to the expected value, we can also plot the full distribution of results, shown below.
 
-<img class="img-fluid mx-auto d-block" src="src/assets/img/riddler-gift-cards.png">
+<img src="src/assets/img/riddler-gift-cards.png">
 
 Overall I was surprised the expected value is so low. There's a nearly a 50% chance that you end up with no more than 5 drinks on one of the cards using this approach! It looks like organizing and tracking gift cards may not be quite as important as one might think. Could this be a new life-hack? I doubt it, but it was a fun problem regardless.

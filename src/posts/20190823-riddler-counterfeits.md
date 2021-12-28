@@ -32,7 +32,7 @@ Let’s assume the bank randomly chooses two fake notes and one real note for it
 
 For the 30 fake, 25 real strategy, the probability of success is 64.3%, and the probability of detection is 35.7%. Therefore, the expected profit is $64.3\%\times3000-35.7\%\times2500=1038$. That’s a decent payday, but we can do better. The chart below shows the profit for strategies with up to 200 fake notes, and it confirms the maximum is achieved when we use 55.
 
-<img class="img-fluid mx-auto d-block" src="src/assets/img/riddler-counterfeits.png">
+<img src="src/assets/img/riddler-counterfeits.png">
 
 We can see two patterns above. First, as we move to the right, we enter the “greedy danger zone,” where the bank becomes more likely to discover our fraud and seize the starting capital, resulting in larger and larger expected losses. Second, we see a sawtooth behavior caused by the bank’s practice of auditing 5% of deposited notes. The effect is significant: 55 is the ideal answer because we deposit 80 total notes, resulting in the bank auditing four. If we use 56 fake notes for a total of 81, then the bank audits five instead, which cuts the expected gain in half! A life of crime only pays if you’re good with numbers.
 

@@ -72,4 +72,4 @@ def win_pct(series_length, p=0.6):
 
 Once we calculate the probability of winning series with lengths 1 through 99, we simply multiply by the prize amount for that series. We then select the series length that maximizes the expected winnings. In this case, a series of length 25, which requires 13 wins, will earn $870,000. The Acme Axegrinders will win a 25 game series 84.6% of the time, which translates to an expected value of **$736,222**.
 
-<img class="img-fluid mx-auto d-block" src="src/assets/img/riddler-squishyball.png">
+<img src="src/assets/img/riddler-squishyball.png">

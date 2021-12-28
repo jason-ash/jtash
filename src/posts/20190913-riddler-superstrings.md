@@ -22,7 +22,7 @@ In the spirit of several prior problems, I elected to tackle this problem with a
 
 Between the 59 states there are 168 connections, which we represent in a graph that looks something like this.
 
-<img class="img-fluid mx-auto d-block" src="src/assets/img/riddler-superstrings1.png">
+<img src="src/assets/img/riddler-superstrings1.png">
 
 As it turns out, computing the longest path from any starting node to any other node is not an easy problem. It is especially difficult because this graph is _cyclical_, meaning that you can find yourself in loops of repeating patterns if you're not careful. For example, a loop occurs between CA -> AS -> SC -> CA. Obviously we don't want loops in our result because we're not allowed to repeat states. Therefore, we want _simple paths_ through the graph: paths that visit a node at most one time.
 
@@ -30,7 +30,7 @@ Fortunately, algorithms exist to calculate simple paths through cyclical graphs,
 
 As it turns out, most paths tend to include at least 20 states, as shown by the chart below. On the other hand, several starting-ending state pairs have no connections, such as Kentucky, that can't connect outward to any other state. The chart below shows a histogram of all the longest paths between each pair of states.
 
-<img class="img-fluid mx-auto d-block" src="src/assets/img/riddler-superstrings2.png">
+<img src="src/assets/img/riddler-superstrings2.png">
 
 # Full Code
 

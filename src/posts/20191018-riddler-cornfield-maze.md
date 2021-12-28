@@ -12,13 +12,13 @@ I'm a sucker for a good maze problem from the <a href="https://fivethirtyeight.c
 
 > The number in each box tells you how many spaces up, down, left or right you must move. (No diagonal moves, people.) Starting at the yellow six in the bottom left corner, can you make your way to the asterisk?
 
-<img class="img-fluid mx-auto d-block" src="src/assets/img/riddler-cornfield-original.png">
+<img src="src/assets/img/riddler-cornfield-original.png">
 
 # Solution
 
 **The shortest path from the highlighted 6 to the target square consists of 8 steps.**
 
-<img class="img-fluid mx-auto d-block" src="src/assets/img/riddler-cornfield-solution.png">
+<img src="src/assets/img/riddler-cornfield-solution.png">
 
 What else can we learn about this maze? I think it would be interesting to see which square has the longest path to the target. Or for that matter, the path length from every square in the maze to the target. By treating the entire maze like a network, we can find the links between each and every square, then use the network to answer these questions. For example, each square is "linked" to up to four other squares moving up, down, left, or right. Using python and the fabulous `networkx` library, which I've used <a href="https://www.jtash.com/riddler-maze">several</a> <a href="https://www.jtash.com/riddler-state-superstrings">times</a> before, we can start to answer some of these other questions. My full code is available below, but I'll show interesting snippets as we go along.
 

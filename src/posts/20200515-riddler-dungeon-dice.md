@@ -50,11 +50,11 @@ For the extra credit, it is easiest to view the results in a table. Below, the b
 
 We can also visualize these results. The first chart shows the probability mass function - the probability of rolling exactly N. Each of the sub-charts' bars sums to 100%. We would use this chart to select the type of roll that gives us the best chance of rolling exactly N.
 
-<img class="img-fluid mx-auto d-block" src="src/assets/img/riddler-dungeon-dice1.png">
+<img src="src/assets/img/riddler-dungeon-dice1.png">
 
 And for the extra credit, we can visualize the probability of rolling at least N. Each sub-chart starts at 100%, because a roll is guaranteed to produce at least 1. Then each type of roll decreases from there, with the curves differing slightly by the type of roll. For situations where we need a number of 14 or above, we should roll a single dice for the best odds. Otherwise, we should roll "disadvantage of advantage".
 
-<img class="img-fluid mx-auto d-block" src="src/assets/img/riddler-dungeon-dice2.png">
+<img src="src/assets/img/riddler-dungeon-dice2.png">
 
 # Methodology
 

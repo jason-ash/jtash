@@ -22,11 +22,11 @@ Gematria is a numerical system that links Hebrew characters to numbers. This wee
 
 The lucky number for this weeks solution is **279**. With a score of 284, it is the largest integer that doesn't exceed its score.
 
-<img class="img-fluid mx-auto d-block" src="src/assets/img/riddler-gematria1.png">
+<img src="src/assets/img/riddler-gematria1.png">
 
 If we test the first million numbers we see clear patterns emerge (well, maybe not crystal clear because rendering a million points doesn't make for the sharpest image.) The cyclical shape tends to range between values of 500-700 for most of the numbers up to one million.
 
-<img class="img-fluid mx-auto d-block" src="src/assets/img/riddler-gematria2.png">
+<img src="src/assets/img/riddler-gematria2.png">
 
 # Full Code
 

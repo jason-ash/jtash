@@ -40,7 +40,7 @@ The following code creates the `State` class by subclassing `namedtuple`, then a
 
 Furthermore, now that we have a framework with flexible inputs, we can also solve for different values of `N` - if the Sultan had a pool of 50 applicants, for example. We can plot the expected rank as the value of `N` changes, and we see a curve that quickly approaches ~3.7, though there has been interesting discussions about the actual <a href="https://twitter.com/dfranke/status/1190710221435473921">limiting behavior</a> of this process.
 
-<img class="img-fluid mx-auto d-block" src="src/assets/img/riddler-dowries.png">
+<img src="src/assets/img/riddler-dowries.png">
 
 # Full Code
 

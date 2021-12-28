@@ -58,4 +58,4 @@ The function tracks the number of occurrences of each birthday in the group. In 
 
 The chart below shows the cumulative curves for two, three, and four matching birthdays. As we know from the classic problem, we reach 50% cumulative likelihood with a group of 23. For three birthdays, we need 88, and for four birthdays we need 188! Therefore the House of Representatives is more likely than not to have at least four matching birthdays.
 
-<img class="img-fluid mx-auto d-block" src="src/assets/img/riddler-birthdays.png">
+<img src="src/assets/img/riddler-birthdays.png">

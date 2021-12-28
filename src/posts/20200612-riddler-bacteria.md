@@ -24,7 +24,7 @@ If you start with a single R. classicum bacterium, what is the probability that 
 
 The survival rate is highly dependent on the doubling rate, as the chart below shows. For doubling rates less than 50%, a colony of bacteria will surely go extinct, but for doubling rates above 50%, the survival odds improve substantially.
 
-<img class="img-fluid mx-auto d-block" src="src/assets/img/riddler-bacteria.png">
+<img src="src/assets/img/riddler-bacteria.png">
 
 This class of problem, called a "birth-death process", can get very complicated, but for this simple case of cells doubling or dying, there is a formula for the survival rate as a function of $p$:
 
