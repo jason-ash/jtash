@@ -67,8 +67,8 @@ export const processPost = (fileName: string): postType => {
 // return an array of posts by reading all files in the posts directory, sorted by date
 export const getAllPosts = (): postType[] => {
   const posts = fs
-    .readdirSync("src/posts")
-    .map((fileName) => processPost(`src/posts/${fileName}`))
+    .readdirSync("posts")
+    .map((fileName) => processPost(`posts/${fileName}`))
     .filter((post) => post.status === "published")
     .sort((first, second) => {
       const a = first.date.split("-").join("");
