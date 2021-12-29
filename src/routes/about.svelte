@@ -7,7 +7,7 @@
     and launch new business initiatives. Seeking to contribute to a team by identifying
     valuable strategic improvements using analytical and predictive models.
   </p>
-  <img alt="headshot" src="src/assets/img/headshot.jpg" />
+  <img alt="headshot" src="/img/headshot.jpg" />
 </section>
 
 <section class="open-source">
