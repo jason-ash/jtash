@@ -7,7 +7,7 @@
     and launch new business initiatives. Seeking to contribute to a team by identifying
     valuable strategic improvements using analytical and predictive models.
   </p>
-  <img alt="headshot" src="src/assets/img/headshot.jpg" />
+  <img alt="headshot" src="/img/headshot.jpg" width="200px" />
 </section>
 
 <section class="open-source">
@@ -88,8 +88,10 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: flex-start;
   }
   img {
     filter: grayscale(75%);
+    border-radius: 0.125rem;
   }
 </style>
