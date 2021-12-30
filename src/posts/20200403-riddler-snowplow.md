@@ -35,34 +35,40 @@ Let's start with what we know.
 We know that the plow's velocity at any time is equal to $\frac{c}{x}$. Therefore, we can solve for the distance covered by a plow by integrating velocity over time. Specifically, we know the plow traveled two miles from time $t_s$ to time $t_s + 1$, and one mile from time $t_s + 1$ to time $t_s + 2$. Now we can write both of those as integrals.
 
 $$
-\int_{t_s}^{t_s + 1} \frac{c}{x} \ dx = 2 \text{  and  } \\
+\int_{t_s}^{t_s + 1} \frac{c}{x} \ dx = 2 \text{  and  }
 \int_{t_s + 1}^{t_s + 2} \frac{c}{x} \ dx = 1
 $$
 
 We can simplify both integrals by pulling the constant, $c$ out of both.
 
 $$
-c \times \int_{t_s}^{t_s + 1} \frac{1}{x} \ dx = 2 \text{  and  } \\
+c \times \int_{t_s}^{t_s + 1} \frac{1}{x} \ dx = 2 \text{  and  }
 c \times \int_{t_s + 1}^{t_s + 2} \frac{1}{x} \ dx = 1
 $$
 
 And solve them both, creating a system of equations with two unknown variables, $c$ and $t_s$.
 
 $$
-c \times ln(x) \Big\vert_{t_s}^{t_s + 1} = 2 \text{  and  } \\
+c \times ln(x) \Big\vert_{t_s}^{t_s + 1} = 2 \text{  and  }
 c \times ln(x) \Big\vert_{t_s + 1}^{t_s + 2} = 1
 $$
 
 If we divide the two equations, the $c$ term cancels out, so we're left with a single equation and a single variable, $t_s$.
 
-$$2 \times ln\Big(\frac{t_s + 2}{t_s + 1}\Big) = ln\Big(\frac{t_s + 1}{t_s}\Big)$$
+$$
+2 \times ln\Big(\frac{t_s + 2}{t_s + 1}\Big) = ln\Big(\frac{t_s + 1}{t_s}\Big)
+$$
 
 Remembering that $a \times ln(b) = ln(b^a)$, and removing the logs on both sides, we arrive at:
 
-$$\Big(\frac{t_s + 2}{t_s + 1}\Big)^2 = \frac{t_s + 1}{t_s}$$
+$$
+\Big(\frac{t_s + 2}{t_s + 1}\Big)^2 = \frac{t_s + 1}{t_s}
+$$
 
 And <a href="https://www.wolframalpha.com/input/?i=%28%28t+%2B+2%29%2F%28t%2B1%29%29%5E2+%3D+%28%28t+%2B+1%29+%2F+t%29+solve+for+t">for the lazy among us</a>, we find that:
 
-$$t_s = \frac{\sqrt{5} - 1}{2} \approx 0.618 \text{ hours}$$
+$$
+t_s = \frac{\sqrt{5} - 1}{2} \approx 0.618 \text{ hours}
+$$
 
 Now we know that noon was roughly 0.618 hours after the snow started. That's about 37 minutes, which means the snow started falling around 11:23am.
