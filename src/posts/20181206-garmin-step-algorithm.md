@@ -126,8 +126,8 @@ where
 $$
 factor_t =
   \begin{cases}
-    10\% & \text{if streak = 1}. \newline
-    20\% & \text{if streak > 1}.
+    10\% & \text{if streak = 1} \\
+    20\% & \text{if streak > 1}
   \end{cases}
 $$
 
