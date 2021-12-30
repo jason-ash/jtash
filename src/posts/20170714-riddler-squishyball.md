@@ -27,10 +27,16 @@ However, the more difficult part of the problem requires us to calculate the pro
 The probability of winning a "series" of 1 game is simply the probability of winning that single game, $p=0.6$. The probability of winning a series of 3 games is the probability of winning two games before our opponent wins two games. There are a few ways this can happen. We can win the first two games with probability $p^2$, or we can win one of the first two games plus the third game, with probability $\binom{2}{1}qp^2$. Therefore the probability of winning the series is $p^2 + \binom{2}{1}qp^2$.
 
 Now we can derive a pattern for the probability of winning a series of length $z$. Let's take a series of 5:
-$$\binom{2}{0}q^0p^3+\binom{3}{1}q^1p^3+\binom{4}{2}q^2p^3$$
+
+$$
+\binom{2}{0}q^0p^3+\binom{3}{1}q^1p^3+\binom{4}{2}q^2p^3
+$$
 
 and a series of 7:
-$$\binom{3}{0}q^0p^4+\binom{4}{1}q^1p^4+\binom{5}{2}q^2p^4+\binom{6}{3}q^3p^4$$.
+
+$$
+\binom{3}{0}q^0p^4+\binom{4}{1}q^1p^4+\binom{5}{2}q^2p^4+\binom{6}{3}q^3p^4
+$$
 
 The pattern consists of four elements:
 
@@ -40,7 +46,10 @@ The pattern consists of four elements:
 4. The bottom term of the binomial sequence starts at zero and continues to one-minus the number number of games required to win the series
 
 Therefore, we can write a function that expresses the probability of winning a series for a given series length by calculating each of the four elements. For example, the probability of winning a series of 17:
-$$\binom{8}{0}q^0p^9+\binom{9}{1}q^1p^9+\binom{10}{2}q^2p^9+\binom{11}{3}q^3p^9+\ ...\ +\binom{16}{8}q^8p^9$$.
+
+$$
+\binom{8}{0}q^0p^9+\binom{9}{1}q^1p^9+\binom{10}{2}q^2p^9+\binom{11}{3}q^3p^9+\ ...\ +\binom{16}{8}q^8p^9
+$$
 
 This isn't the most elegant way of solving it, but it _is_ a fun application of arrays in python:
 
