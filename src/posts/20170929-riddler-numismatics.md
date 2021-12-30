@@ -18,19 +18,35 @@ Extra credit: What if, instead of 60 percent, the doctored coin came up heads so
 
 Let's start with the base case, in which a single coin has a 60% probability of landing on heads. Let's define two probability functions for each coin, $c_1$ and $c_2$.
 
-$$ c_1 = 1\ with\ p=0.6 $$
-$$ c_1 = 0\ with\ p=0.4 $$
+$$
+c_1 = 1\ with\ p=0.6
+$$
 
-$$ c_2 = 1\ with\ p=0.5 $$
-$$ c_2 = 0\ with\ p=0.5 $$
+$$
+c_1 = 0\ with\ p=0.4
+$$
+
+$$
+c_2 = 1\ with\ p=0.5
+$$
+
+$$
+c_2 = 0\ with\ p=0.5
+$$
 
 We are really interested in a new variable, $X$, which is the difference between $c_1$ and $c_2$, tracked cumulatively over time. Therefore, at each point in time, $X$ can be incremented by 1, 0, or -1.
 
-$$ X = 1\ with\ p=p_1\times{(1-p_2)}=0.3 $$
+$$
+X = 1\ with\ p=p_1\times{(1-p_2)}=0.3
+$$
 
-$$ X = 0\ with\ p=p_1\times{p_2} + (1-p_1)\times{(1-p_2)}=0.5 $$
+$$
+X = 0\ with\ p=p_1\times{p_2} + (1-p_1)\times{(1-p_2)}=0.5
+$$
 
-$$ X = -1\ with\ p=(1-p_1)\times{p_2}=0.2 $$
+$$
+X = -1\ with\ p=(1-p_1)\times{p_2}=0.2
+$$
 
 $X$ can be simulated using python extremely efficiently using the following code. We are interested in the number of flips it will take for $X$ to be positive 95% of the time. Because one coin is biased towards heads we know that $X$ will be biased toward positive numbers over time. Therefore, our task is to identify the number of flips it takes for 95% of all scenarios to result in a positive value for $X$.
 

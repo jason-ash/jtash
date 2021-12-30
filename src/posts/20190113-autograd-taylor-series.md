@@ -12,7 +12,9 @@ I've learned that there are many automatic differentiation libraries in the Pyth
 
 The Taylor Series is a way of approximating smooth curves using polynomials. Often, evaluating polynomials is much simpler than evaluating the smooth curves themselves. Technically speaking, the Taylor Series is an infinite sum of polynomial terms, but we typically gather a finite number of terms based on the desired accuracy of our approximation. The more terms we use, the better our approximation becomes. Here is the formula for the infinite series:
 
-$$f(x) = \sum_{n=0}^{\infty} \frac{f^{(n)}(a)}{n!}(x - a)^n$$
+$$
+f(x) = \sum_{n=0}^{\infty} \frac{f^{(n)}(a)}{n!}(x - a)^n
+$$
 
 In python, using the `autograd` library, it is fairly straightforward to implement the Taylor Series up to a given degree. The subtle trick is to import `autograd`'s numpy package, which has differentiable versions of most numpy functions. From there, we can use `elementwise_grad` to differentiate a function with respect to an array.
 

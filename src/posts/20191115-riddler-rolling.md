@@ -30,39 +30,61 @@ Now, let's build on the base case. Suppose we increase the complexity and have a
 
 We can now write an expression for $E(1)$ that takes both of these outcomes into account.
 
-$$E(1) = \frac{1}{2}\times{E(0)} + \frac{1}{2}\times{(\frac{1}{10} + \frac{E(1)}{10})}$$
+$$
+E(1) = \frac{1}{2}\times{E(0)} + \frac{1}{2}\times{(\frac{1}{10} + \frac{E(1)}{10})}
+$$
 
 With 50% probability, we will receive the expected value of 0 and the game will end. With the other 50% probability we will roll a one and add $\frac{1}{10}$ to our total, then move to the next decimal place, where we will expect to add $\frac{E(1)}{10}$ to our score again. We divide $E(1)$ by ten to account for the fact that we move to the next decimal place each time we roll again.
 
 Now, after plugging in $E(0)=0$, we can solve the equation for $E(1)$. We get $E(1)=\frac{1}{19}$.
 
-$$E(1) = \frac{1}{20}\times{(1 + E(1))}$$
-$$20E(1) = 1 + E(1)$$
-$$E(1) = \frac{1}{19}$$
+$$
+E(1) = \frac{1}{20}\times{(1 + E(1))}
+$$
+
+$$
+20E(1) = 1 + E(1)
+$$
+
+$$
+E(1) = \frac{1}{19}
+$$
 
 What about the next case, $E(2)$? With 33% probability we can roll a zero and end the game; with 33% probability we can roll a one, and we'll find ourselves in the $E(1)$ universe again; with 33% probability we can roll a two and stay in the $E(2)$ universe.
 
-$$E(2) = \frac{1}{3}\times{E(0)} + \frac{1}{3}\times{(\frac{1}{10} + \frac{E(1)}{10})} + \frac{1}{3}\times{(\frac{2}{10} + \frac{E(2)}{10})}$$
+$$
+E(2) = \frac{1}{3}\times{E(0)} + \frac{1}{3}\times{(\frac{1}{10} + \frac{E(1)}{10})} + \frac{1}{3}\times{(\frac{2}{10} + \frac{E(2)}{10})}
+$$
 
 With some algebra, we can solve this equation for $E(2)$, which gives $\frac{2}{19}$. See a pattern? It looks like $E(N)=\frac{N}{19}$. Let's attempt to confirm by expanding the equation for $E(N)$. For a dice with $N$ sides we can expand the formula as follows. For simplicity we'll omit the $E(0)$ term because we know it evaluates to zero.
 
-$$E(N) = \frac{1}{N+1}\times{(\frac{1}{10} + \frac{E(1)}{10})} + \frac{1}{N+1}\times{(\frac{2}{10} + \frac{E(2)}{10})} + ... + \frac{1}{N+1}\times{(\frac{N}{10} + \frac{E(N)}{10})}$$
+$$
+E(N) = \frac{1}{N+1}\times{(\frac{1}{10} + \frac{E(1)}{10})} + \frac{1}{N+1}\times{(\frac{2}{10} + \frac{E(2)}{10})} + ... + \frac{1}{N+1}\times{(\frac{N}{10} + \frac{E(N)}{10})}
+$$
 
 We can factor the $N$'s and 10's from the denominator for a simpler expression:
 
-$$E(N) = \frac{\sum_{i=1}^N (i+E(i))}{10(N+1)}$$
+$$
+E(N) = \frac{\sum_{i=1}^N (i+E(i))}{10(N+1)}
+$$
 
 We will attempt to prove $E(N)=\frac{N}{19}$ using induction. We've already verified that $E(1)=\frac{1}{19}$. Now we must verify that $E(N+1)=\frac{N+1}{19}$. We will use the fact that $\sum_{i=1}^N i = \frac{N(N+1)}{2}$ to remove the summations from the numerator.
 
-$$\frac{N+1}{19}=\frac{\frac{(N+1)(N+2)}{2} + \frac{(N+1)(N+2)}{38}}{10(N+2)}$$
+$$
+\frac{N+1}{19}=\frac{\frac{(N+1)(N+2)}{2} + \frac{(N+1)(N+2)}{38}}{10(N+2)}
+$$
 
 Next, we multiply both sides by $10(N+2)$:
 
-$$\frac{10(N+1)(N+2)}{19}=\frac{(N+1)(N+2)}{2} + \frac{(N+1)(N+2)}{38}$$
+$$
+\frac{10(N+1)(N+2)}{19}=\frac{(N+1)(N+2)}{2} + \frac{(N+1)(N+2)}{38}
+$$
 
 Now, remove the common $(N+1)(N+2)$ terms, and verify both sides are equal.
 
-$$\frac{10}{19}=\frac{1}{2} + \frac{1}{38}$$
+$$
+\frac{10}{19}=\frac{1}{2} + \frac{1}{38}
+$$
 
 Therefore we have proven by mathematical induction that $E(N)=\frac{N}{19}$. Our original problem was for $N=9$, so we confirm our answer of $E(9)=\frac{9}{19}$.
 

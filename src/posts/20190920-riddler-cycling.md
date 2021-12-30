@@ -42,25 +42,35 @@ Therefore, we win the time trial if and only if two things happen:
 
 If we express this mathematically, our odds of winning, $f(p)$, look like this.
 
-$$f(p) > p^{19} \times (1 - p)$$
+$$
+f(p) > p^{19} \times (1 - p)
+$$
 
 This equation has the two components we want: our probability of finishing the race, given by $(1-p)$, and the probability of each competitor failing to complete the race, given by $p^{19}$. To find the value of $p$ that maximizes this function, we use calculus: take the derivative, set it to zero, then solve for $p$. This tells us the point at which the function stops rising or falling, which means it is either a minimum or a maximum.
 
 We use the chain rule to differentiate $f(p)$, which gives us the following:
 
-$$\frac{\partial f}{\partial p} = -p^{19} + 19p^{18}(1-p)$$
+$$
+\frac{\partial f}{\partial p} = -p^{19} + 19p^{18}(1-p)
+$$
 
 When we set $\frac{\partial f}{\partial p}$ to zero and simplify the terms on the right, we get:
 
-$$0 = -20p^{19} + 19p^{18}$$
+$$
+0 = -20p^{19} + 19p^{18}
+$$
 
 which evaluates to:
 
-$$20p^{19}=19p^{18}$$
+$$
+20p^{19}=19p^{18}
+$$
 
 and finally:
 
-$$p=\frac{19}{20}$$
+$$
+p=\frac{19}{20}
+$$
 
 **Therefore, the value of $p$ that maximizes our odds of winning is $\frac{19}{20}=95\%$. When we choose 95% for $p$, our overall chances of winning the event are $f(0.95)>(1-0.95)\times 0.95^{19}=1.89\%$.** In other words, we should pick an extremely risky strategy with a low probability of success in order to have the best odds of winning the entire event. Our odds of completing the time trial are low, but so are everyone else's! As we can see in the chart below, the function hits a maximum value at 95%.
 
@@ -89,7 +99,9 @@ Now we have the tools we need to answer the extra credit problem. Suppose team 1
 
 To calculate the odds of team 20 winning the competition, we must account for each of these branching paths, summing the probabilities along the way. We will use the $<$ operator to show the _maximum_ probability that team 20 wins, by assuming they attempt exactly the same $p$ as prior successful teams.
 
-$$P(\text{Team 20 wins})<\frac{1}{20^2} + \frac{19}{20} \times(\frac{1}{19^2} + \frac{18}{19} \times (\frac{1}{18^2} + \frac{17}{18} \times ...$$
+$$
+P(\text{Team 20 wins})<\frac{1}{20^2} + \frac{19}{20} \times(\frac{1}{19^2} + \frac{18}{19} \times (\frac{1}{18^2} + \frac{17}{18} \times ...
+$$
 
 A formula like this lends itself to a recursive implementation using code. **With 20 teams, the team going last has at most a 17.99% chance of winning overall.**
 

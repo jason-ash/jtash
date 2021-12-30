@@ -26,7 +26,9 @@ Often in questions of probability it helps to calculate the odds of the event we
 
 In a group of two people, the probability of distinct birthdays is $\frac{364}{365}$. In other words, we only need to calculate the probability that the second person has any other birthday than the first person. In a group of three people, we need to check that the third person has a different birthday than the first person and the second person, so we get $\frac{364}{365}\times\frac{363}{365}$. We can continue this pattern for any number of people, and we get the following formula for a group of size $n$:
 
-$$\frac{1}{365^n}\times(365\times364\times363\times...\times(365-n+1))$$
+$$
+\frac{1}{365^n}\times(365\times364\times363\times...\times(365-n+1))
+$$
 
 Most people are surprised to learn that a group of 23 people has a 49.3% chance of all unique birthdays, or a 50.7% chance of at least one shared birthday. Fortunately, we can use the same framework to solve the Riddler.
 
@@ -34,7 +36,9 @@ Most people are surprised to learn that a group of 23 people has a 49.3% chance 
 
 Now we have a general purpose formula for the odds of picking $n$ unique elements from a group of size $k$. In the birthday problem we are given $k=365$ and asked to solve for $n$ such that the outcome is 50%. This week's Riddler asks us a related question, where we are given $n=100$ and asked to solve for $k$ such that the outcome is 50%. Therefore we want to solve:
 
-$$0.50 = \frac{1}{k^{100}}\times(k\times(k-1)\times(k-2)\times...\times(k-100+1))$$
+$$
+0.50 = \frac{1}{k^{100}}\times(k\times(k-1)\times(k-2)\times...\times(k-100+1))
+$$
 
 Fortunately, we can delegate the computation to Python and quickly solve for any value of $k$.
 

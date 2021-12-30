@@ -20,7 +20,13 @@ Which four five-letter words would you choose to maximize your chances of victor
 <em>Extra credit:</em> For the four five-letter words you chose, what are your chances of victory?
 </blockquote>
 
-Note: the word pool for this puzzle contains 8636 words. A brute force solution to this puzzle would need to test all combinations of four words. This would mean testing $$8636\times8635\times8634\times8633=5,558,386,740,958,920$$ combinations. That's 5 quadrillion! If each combination took 1 second to test, we'd need to wait around for 176 million years. So... we'll have to try something different!
+Note: the word pool for this puzzle contains 8636 words. A brute force solution to this puzzle would need to test all combinations of four words. This would mean testing
+
+$$
+8636\times8635\times8634\times8633=5,558,386,740,958,920
+$$
+
+combinations. That's 5 quadrillion! If each combination took 1 second to test, we'd need to wait around for 176 million years. So... we'll have to try something different!
 
 # Solution
 

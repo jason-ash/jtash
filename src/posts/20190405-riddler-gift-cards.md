@@ -27,11 +27,15 @@ These two terminating conditions are symmetric - outcome 1 is just as likely as 
 
 If we run out of drinks on card A, we will have $k$ drinks remaining on card B, where $k$ is any number between 0 and our starting number, $n$. We know that for this to happen, we must have purchased $n$ drinks on the first card, $n-k$ drinks on the second card, and attempted $1$ more purchase on the first card, for a total of $2n - k + 1$. Of those purchases, $n$ must have occurred on a single card, which gives us an "n choose k" binomial formula. Here's the probability of our event 1 occurring:
 
-$$P(n, k) = \binom{2n-k}{n}\left(\frac{1}{2}\right)^{2n-k+1}$$
+$$
+P(n, k) = \binom{2n-k}{n}\left(\frac{1}{2}\right)^{2n-k+1}
+$$
 
 Now we account for the fact that either card can run out of drinks, so we multiply this expression by 2 for our final answer. It has the effect of cancelling out the $+1$ in our exponent.
 
-$$2\times P(n, k) = 2\times \binom{2n-k}{n}\left(\frac{1}{2}\right)^{2n-k+1} = \binom{2n-k}{n}\left(\frac{1}{2}\right)^{2n-k} $$
+$$
+2\times P(n, k) = 2\times \binom{2n-k}{n}\left(\frac{1}{2}\right)^{2n-k+1} = \binom{2n-k}{n}\left(\frac{1}{2}\right)^{2n-k}
+$$
 
 # Validation
 
@@ -46,18 +50,27 @@ Let's take our formula for a test drive, where we assume we start with 1 drink o
 
 Adding these up, we see that there is a 50% chance of ending with 1 drink, and a 50% chance of ending with 0 drinks. We can verify with our formula from above that there is a 50% chance of each outcome, so it seems like we've arrived at the right answer.
 
-$$P(1, 1) = \binom{1}{1}\left(\frac{1}{2}\right)^{1} = 0.5$$
-$$P(1, 0) = \binom{2}{1}\left(\frac{1}{2}\right)^{2} = 0.5$$
+$$
+P(1, 1) = \binom{1}{1}\left(\frac{1}{2}\right)^{1} = 0.5
+$$
+
+$$
+P(1, 0) = \binom{2}{1}\left(\frac{1}{2}\right)^{2} = 0.5
+$$
 
 # Expected Value
 
 The question asked us about the expected number of drinks remaining. Using our formula, we can calculate the probability for any combination of $n$ and $k$. Then, for every possible $k$, we multiply by $k$ and sum the results to arrive at the expected value. It looks like this:
 
-$$\text{Expected Value} = \sum_{k=0}^n k\times{\binom{2n-k}{n}\left(\frac{1}{2}\right)^{2n-k}}$$
+$$
+\text{Expected Value} = \sum_{k=0}^n k\times{\binom{2n-k}{n}\left(\frac{1}{2}\right)^{2n-k}}
+$$
 
 Using a bit of mathematical horsepower from <a href="https://www.wolframalpha.com/input/?i=%5Csum_%7Bk%3D0%7D%5En+k%5Ctimes%7B%5Cbinom%7B2n-k%7D%7Bn%7D%5Cleft(%5Cfrac%7B1%7D%7B2%7D%5Cright)%5E%7B2n-k%7D%7D">WolframAlpha</a>, we can simplify this expression to:
 
-$$4^{-n}(2n + 1)\binom{2n}{n}-1$$
+$$
+4^{-n}(2n + 1)\binom{2n}{n}-1
+$$
 
 **When we substitute $n=50$, we calculate an expected value of $\approx7.0385$. This means that when either card runs out, we expect roughly 7 drinks to be available on the other card.**
 

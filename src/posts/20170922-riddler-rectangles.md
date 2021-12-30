@@ -18,33 +18,51 @@ Importantly, the figures may not be to scale, but I have it on <a href="https://
 
 <img src="/img/riddler-rectangles1.png">
 
-This puzzle was almost frustratingly simple, and I didn't trust my answer at first. But it is easy to show that $ ? = 4 $.
+This puzzle was almost frustratingly simple, and I didn't trust my answer at first. But it is easy to show that $? = 4$.
 
-$$ 4x = 24 $$
+$$
+4x = 24
+$$
 
-$$ \therefore\ x = 6 $$
+$$
+\therefore\ x = 6
+$$
 
-$$ (6 + 3 + 2)? = 44 $$
+$$
+(6 + 3 + 2)? = 44
+$$
 
-$$ \therefore\ ? = 4 $$
+$$
+\therefore\ ? = 4
+$$
 
-### Riddler Classic
+# Riddler Classic
 
 <img src="/img/riddler-rectangles2.png">
 
 This puzzle took a bit more effort, but it can be solved in several unique ways. At first, I solved for the size of the "missing" rectangle in the upper right in order to calculate the area of the entire rectangle. Later, I simplified this solution by writing two equations in terms of $x$ and $y$, which are the bottom and left edges of $?$, respectively. From there, with two equations and two missing variables, we can solve for our missing piece.
 
-$$ ? = xy $$
+$$
+? = xy
+$$
 
-$$ x(11-y) = 32 $$
+$$
+x(11-y) = 32
+$$
 
-$$ y(14-x) = 45 $$
+$$
+y(14-x) = 45
+$$
 
 Rearranging these equations, we can plot them as functions of x, set them equal to one another, and solve for the answer(s).
 
-$$ y = 11 - \frac{32}{x} $$
+$$
+y = 11 - \frac{32}{x}
+$$
 
-$$ y = \frac{45}{14-x} $$
+$$
+y = \frac{45}{14-x}
+$$
 
 This yields two pairs of solutions, courtesy of <a href="https://www.wolframalpha.com/input/?i=x(11-y)%3D32,+(14-x)y+%3D45">wolframalpha</a> and verified by Python for good measure.
 
@@ -61,9 +79,13 @@ line2 = y2(x)
 
 <img src="/img/riddler-rectangles3.png">
 
-$$ x = \frac{64}{11},\ y = \frac{11}{2},\ xy = 32 $$
+$$
+x = \frac{64}{11},\ y = \frac{11}{2},\ xy = 32
+$$
 
-$$ x = 7,\ y = \frac{45}{7},\ xy = 45 $$
+$$
+x = 7,\ y = \frac{45}{7},\ xy = 45
+$$
 
 Which one is correct? We know the total area of the rectangle must be $14\times{11} = 154$, which means the $?$ must be less than $154 - 45 - 34 - 32 = 43$. Only one solution meets this criteria, so we conclude that $? = 32$.
 

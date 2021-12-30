@@ -30,7 +30,9 @@ Suppose we have observed the following six serial numbers from a population of t
 
 In other words, we want to develop a formula for the probability that the total population is equal to some number, $N$, given the information we have about the serial numbers we've observed. Interestingly, we don't care about most of the _actual_ serial numbers we've observed, but rather the _number_ of serial numbers we've observed. We'll call the total number of tanks we've seen $K$. The only actual serial number we care about is the maximum value, which we'll call $M$. Given these inputs, we have the following formula.
 
-$$P(N=n|K=k, M=m) = \frac{k-1}{k}\frac{{m-1}\choose{k-1}}{{n}\choose{k}}$$
+$$
+P(N=n|K=k, M=m) = \frac{k-1}{k}\frac{{m-1}\choose{k-1}}{{n}\choose{k}}
+$$
 
 Plugging in our values, we have $m=108$ and $k=6$. Suppose we want to know the probability that total population is $n=108$. We solve $P(N=108|K=6, M=108) = \frac{6-1}{6}\frac{{108-1}\choose{6-1}}{{108}\choose{6}} = 4.6\%$. We could also test $n=500$, where we calculate $~0.0004\%$. Very small, but still possible. The key takeaway is that we can't solve the problem with certainty, but we can develop an understanding of the ranges of values we might expect.
 

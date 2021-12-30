@@ -24,7 +24,9 @@ How many successfully alternating coin flips will it take for you to think there
 
 **It will take 14 consecutive alternating flips before we are at least 99% sure the coin is magical.** This problem is a classic fit for Bayesian methods. (We've seen another great example in a <a href="https://www.jtash.com/who-wants-to-bayes-a-millionaire">prior Riddler</a> based on "Who wants to be a millionaire") Let's start by reviewing Bayes's formula, then we'll parse the problem text to identify the information we need to solve it.
 
-$$P(A|B) \times P(B) = P(B|A) \times P(A)$$
+$$
+P(A|B) \times P(B) = P(B|A) \times P(A)
+$$
 
 Typically, a problem like this will give us three of the four variables, and we'll need to solve for the fourth. As we go, we'll identify what we mean when we say $A$ and $B$ in the context of this problem. Let's write down the information we have:
 
@@ -35,18 +37,26 @@ Typically, a problem like this will give us three of the four variables, and we'
 
 Now we've identified all four variables required for Bayes's formula above. Written out, we have:
 
-$$P(\text{magic | N flips}) \times P(\text{N flips}) = P(\text{N flips | magic}) \times P(\text{magic})$$
+$$
+P(\text{magic | N flips}) \times P(\text{N flips}) = P(\text{N flips | magic}) \times P(\text{magic})
+$$
 
 When we plug in our values, we get:
 
-$$0.99 \times (\frac{0.99}{2^N} + 0.01) = 1 \times 0.01$$
+$$
+0.99 \times (\frac{0.99}{2^N} + 0.01) = 1 \times 0.01
+$$
 
 Rearranging so we have $N$ on one side, we get:
 
-$$2^N = \frac{\frac{99}{100}}{\frac{1}{99} - \frac{1}{100}}$$
+$$
+2^N = \frac{\frac{99}{100}}{\frac{1}{99} - \frac{1}{100}}
+$$
 
 Conveniently, the fraction on the right equals $9801$. So we have:
 
-$$2^N = 9801$$
+$$
+2^N = 9801
+$$
 
 We take the log of both sides to solve for $N$, which gives us $N=13.26$. Because we can't have fractions of coin flips, and we want to be _at least_ 99% sure before stopping, we should err on the side of caution and flip 14 times. This means that after 14 consecutive, alternating flips we can be 99.4% certain the coin is magical.

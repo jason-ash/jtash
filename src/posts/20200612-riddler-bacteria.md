@@ -28,7 +28,9 @@ The survival rate is highly dependent on the doubling rate, as the chart below s
 
 This class of problem, called a "birth-death process", can get very complicated, but for this simple case of cells doubling or dying, there is a formula for the survival rate as a function of $p$:
 
-$$\text{Survival Rate}(p) = max(0, 1 - \frac{1 - p}{p})$$
+$$
+\text{Survival Rate}(p) = max(0, 1 - \frac{1 - p}{p})
+$$
 
 This tells us that the survival rate for a colony with an 80% doubling rate is $1 - \frac{0.2}{0.8}$, or 75%. It also tells us that it's impossible for a colony of bacteria to survive if the doubling rate is less than 50%.
 

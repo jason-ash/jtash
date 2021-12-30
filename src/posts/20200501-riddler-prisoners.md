@@ -38,11 +38,15 @@ In a perfect world, with full communication, a group of prisoners would flip jus
 
 To limit the number of coins, a prisoner only flips if their random number is less than some value, $p$. Then the total number of coins flipped is a <a href="https://en.wikipedia.org/wiki/Binomial_distribution">binomial distribution</a>. For four prisoners and a threshold of $p$, the likelihood of k coins being flipped is:
 
-$$P(k\ \text{coins}\ |\ \text{threshold}=p)={N \choose k}p^k(1-p)^{N-k}$$
+$$
+P(k\ \text{coins}\ |\ \text{threshold}=p)={N \choose k}p^k(1-p)^{N-k}
+$$
 
 So, for example, if $p=0.3$, the probability of 2 coins being flipped is
 
-$$P(2\ \text{coins}\ |\ \text{threshold}=0.3)={4 \choose 2}0.3^2(0.7)^{2} = 0.2646$$
+$$
+P(2\ \text{coins}\ |\ \text{threshold}=0.3)={4 \choose 2}0.3^2(0.7)^{2} = 0.2646
+$$
 
 In python, we do the same thing with the `binom` distribution from `scipy.stats`. Here, the `pmf` method represents the probability mass function, which is the probability that a distribution takes a certain discrete value.
 
@@ -56,7 +60,9 @@ We also know that if we flip 2 coins, the probability of both being heads is 25%
 
 Mathematically, we want to find the value of $p$ that maximizes this function, where $N$ is the number of prisoners.
 
-$$P(\text{success}\ |\ \text{threshold}=p)=\sum_{k=1}^{N} \frac{{N \choose k}p^k(1-p)^{N-k}}{2^k}$$
+$$
+P(\text{success}\ |\ \text{threshold}=p)=\sum_{k=1}^{N} \frac{{N \choose k}p^k(1-p)^{N-k}}{2^k}
+$$
 
 Usually, we find the maximum of a function by taking its derivative and solving for the point where the derivative equals zero. However, this equation is somewhat unwieldy. We can turn to a <a href="https://www.wolframalpha.com/input/?i=maximize+4p*%281-p%29%5E3%2F2+%2B+6p%5E2*%281-p%29%5E2%2F4+%2B+4p%5E3*%281-p%29%2F8+%2B+p%5E4%2F16">calculator</a> instead. We find that four prisoners maximize their odds of success when $p\approx0.342$.
 
