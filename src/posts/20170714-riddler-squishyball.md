@@ -29,13 +29,13 @@ The probability of winning a "series" of 1 game is simply the probability of win
 Now we can derive a pattern for the probability of winning a series of length $z$. Let's take a series of 5:
 
 $$
-\binom{2}{0}q^0p^3+\binom{3}{1}q^1p^3+\binom{4}{2}q^2p^3
+\binom{2}{0}q^0p^3 + \binom{3}{1}q^1p^3 + \binom{4}{2}q^2p^3
 $$
 
 and a series of 7:
 
 $$
-\binom{3}{0}q^0p^4+\binom{4}{1}q^1p^4+\binom{5}{2}q^2p^4+\binom{6}{3}q^3p^4
+\binom{3}{0}q^0p^4 + \binom{4}{1}q^1p^4 + \binom{5}{2}q^2p^4 + \binom{6}{3}q^3p^4
 $$
 
 The pattern consists of four elements:
@@ -48,7 +48,7 @@ The pattern consists of four elements:
 Therefore, we can write a function that expresses the probability of winning a series for a given series length by calculating each of the four elements. For example, the probability of winning a series of 17:
 
 $$
-\binom{8}{0}q^0p^9+\binom{9}{1}q^1p^9+\binom{10}{2}q^2p^9+\binom{11}{3}q^3p^9+\ ...\ +\binom{16}{8}q^8p^9
+\binom{8}{0}q^0p^9 + \binom{9}{1}q^1p^9 + \binom{10}{2}q^2p^9 + \binom{11}{3}q^3p^9 + \ ...\ + \binom{16}{8}q^8p^9
 $$
 
 This isn't the most elegant way of solving it, but it _is_ a fun application of arrays in python:
@@ -79,6 +79,6 @@ def win_pct(series_length, p=0.6):
     return c.sum()
 ```
 
-Once we calculate the probability of winning series with lengths 1 through 99, we simply multiply by the prize amount for that series. We then select the series length that maximizes the expected winnings. In this case, a series of length 25, which requires 13 wins, will earn $870,000. The Acme Axegrinders will win a 25 game series 84.6% of the time, which translates to an expected value of **$736,222**.
+Once we calculate the probability of winning series with lengths 1 through 99, we simply multiply by the prize amount for that series. We then select the series length that maximizes the expected winnings. In this case, a series of length 25, which requires 13 wins, will earn \$870,000. The Acme Axegrinders will win a 25 game series 84.6% of the time, which translates to an expected value of **\$736,222**.
 
 <img src="/img/riddler-squishyball.png">
