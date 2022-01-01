@@ -79,44 +79,46 @@
       <th>Put Option Value</th>
     </tr>
   </thead>
-  <tr>
-    <td>Option Value</td>
-    <td>{callOption.value}</td>
-    <td>{putOption.value}</td>
-  </tr>
-  <tr>
-    <td>Delta</td>
-    <td>{callOption.delta}</td>
-    <td>{putOption.delta}</td>
-  </tr>
-  <tr>
-    <td>Gamma</td>
-    <td>{callOption.gamma}</td>
-    <td>{putOption.gamma}</td>
-  </tr>
-  <tr>
-    <td>Strike Greek</td>
-    <td>{callOption.strikeGreek}</td>
-    <td>{putOption.strikeGreek}</td>
-  </tr>
-  <tr>
-    <td>Rho</td>
-    <td>{callOption.rho}</td>
-    <td>{putOption.rho}</td>
-  </tr>
-  <tr>
-    <td>Vega</td>
-    <td>{callOption.vega}</td>
-    <td>{putOption.vega}</td>
-  </tr>
-  <tr>
-    <td>Epsilon</td>
-    <td>{callOption.epsilon}</td>
-    <td>{putOption.epsilon}</td>
-  </tr>
-  <tr>
-    <td>Theta</td>
-    <td>{callOption.theta}</td>
-    <td>{putOption.theta}</td>
-  </tr>
+  <tbody>
+    <tr>
+      <td>Option Value</td>
+      <td>{callOption.value}</td>
+      <td>{putOption.value}</td>
+    </tr>
+    <tr>
+      <td>Delta</td>
+      <td>{callOption.delta}</td>
+      <td>{putOption.delta}</td>
+    </tr>
+    <tr>
+      <td>Gamma</td>
+      <td>{callOption.gamma}</td>
+      <td>{putOption.gamma}</td>
+    </tr>
+    <tr>
+      <td>Strike Greek</td>
+      <td>{callOption.strikeGreek}</td>
+      <td>{putOption.strikeGreek}</td>
+    </tr>
+    <tr>
+      <td>Rho</td>
+      <td>{callOption.rho}</td>
+      <td>{putOption.rho}</td>
+    </tr>
+    <tr>
+      <td>Vega</td>
+      <td>{callOption.vega}</td>
+      <td>{putOption.vega}</td>
+    </tr>
+    <tr>
+      <td>Epsilon</td>
+      <td>{callOption.epsilon}</td>
+      <td>{putOption.epsilon}</td>
+    </tr>
+    <tr>
+      <td>Theta</td>
+      <td>{callOption.theta}</td>
+      <td>{putOption.theta}</td>
+    </tr>
+  </tbody>
 </table>
