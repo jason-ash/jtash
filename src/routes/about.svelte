@@ -1,3 +1,7 @@
+<svelte:head>
+  <title>Jason Ash - About</title>
+</svelte:head>
+
 <section class="profile">
   <h2>profile</h2>
   <p>

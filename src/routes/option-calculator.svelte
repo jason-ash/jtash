@@ -19,6 +19,10 @@
   console.log(putOption);
 </script>
 
+<svelte:head>
+  <title>Option Calculator</title>
+</svelte:head>
+
 <h1>Option Calculator</h1>
 <lead>Calculate the price of a European call or put option.</lead>
 <ul>

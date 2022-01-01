@@ -18,6 +18,10 @@
   export let posts: postType[];
 </script>
 
+<svelte:head>
+  <title>Jason Ash - Thought Archive</title>
+</svelte:head>
+
 <Hero />
 {#each posts as post}
   <PostCard {post} />
