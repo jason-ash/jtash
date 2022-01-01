@@ -1,6 +1,5 @@
 <script lang="ts">
   import type { postType } from "$lib/posts";
-  import { formatDateString } from "$lib/posts";
   import { base } from "$app/paths";
 
   export let post: postType;
@@ -10,7 +9,7 @@
   <div class="card">
     <div class="header">
       <h2>{post.title}</h2>
-      <p>{formatDateString(post.date)}</p>
+      <p>{post.date}</p>
     </div>
     <p class="excerpt">{@html post.excerpt}</p>
   </div>

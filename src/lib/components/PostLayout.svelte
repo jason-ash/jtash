@@ -1,6 +1,5 @@
 <script lang="ts">
   import type { postType } from "$lib/posts";
-  import { formatDateString } from "$lib/posts";
 
   export let post: postType;
 </script>
@@ -24,7 +23,7 @@
 <div>
   <div class="title">
     <h1>{post.title}</h1>
-    <p>{formatDateString(post.date)}</p>
+    <p>{post.date}</p>
   </div>
   <hr />
   <div class="post">

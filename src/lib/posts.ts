@@ -21,7 +21,7 @@ export interface postType {
 }
 
 // reformat a date from "YYYY-MM-DD" to "month dd, YYYY"
-export const formatDateString = (date: string): string => {
+const formatDateString = (date: string): string => {
   const months = [
     "Jan",
     "Feb",
@@ -76,7 +76,7 @@ export const getAllPosts = (): postType[] => {
       const b = second.date.split("-").join("");
       return a > b ? -1 : a < b ? 1 : 0;
     });
-  return posts;
+  return posts.map((post) => ({ ...post, date: formatDateString(post.date) }));
 };
 
 // return a single post by matching its slug
