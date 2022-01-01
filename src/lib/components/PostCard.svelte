@@ -55,6 +55,7 @@
 
   .excerpt {
     color: var(--text-color-secondary);
+    line-height: 1.3em;
     margin-block-start: 0rem;
   }
 </style>

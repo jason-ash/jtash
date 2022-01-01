@@ -48,21 +48,4 @@
   .post :global(h1) {
     font-size: 1.35em;
   }
-  .post :global(pre) {
-    border-left-width: 0.25rem;
-    border-left-style: solid;
-    border-left-color: #e5e5e5;
-    display: block;
-    margin: auto;
-    max-width: 95%;
-  }
-  .post :global(img) {
-    display: block;
-    margin: auto;
-    max-width: 95%;
-    max-height: 100%;
-  }
-  .post :global(p) {
-    line-height: 1.5;
-  }
 </style>

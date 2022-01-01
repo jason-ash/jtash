@@ -61,8 +61,14 @@ blockquote {
   display: block;
   margin: auto;
 }
-code {
-  font-size: 1.1em;
+img {
+  display: block;
+  margin: auto;
+  max-width: 95%;
+  max-height: 100%;
+}
+p {
+  line-height: 1.5;
 }
 
 table {
@@ -85,6 +91,18 @@ tbody tr:nth-child(odd) {
 }
 tbody tr:hover {
   background: #e5e5e5;
+}
+/* code block formatting */
+code {
+  font-size: 1.1em;
+}
+pre {
+  border-left-width: 0.25rem;
+  border-left-style: solid;
+  border-left-color: #e5e5e5;
+  display: block;
+  margin: auto;
+  max-width: 95%;
 }
 
 .katex {
