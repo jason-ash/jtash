@@ -8,11 +8,8 @@
   --hr-color: #e5e5e5;
 }
 
-html {
-  -webkit-font-smoothing: antialiased;
-}
-
 body {
+  -webkit-font-smoothing: antialiased;
   background-color: var(--background-color);
   color: var(--text-color-primary);
   font-family: "Source Sans Pro", sans-serif;
