@@ -1,20 +1,18 @@
 <script context="module" lang="ts">
   import type { Load } from "@sveltejs/kit";
-  import type { postType } from "$lib/posts";
+  import type { snippetType } from "$lib/snippets";
   import { base } from "$app/paths";
 
   export const load: Load = async ({
     fetch,
-  }): Promise<{ props: { snippets: postType[] } }> => {
-    const posts = await fetch(`${base}/index.json`).then((r) => r.json());
-    const snippets = await posts.filter((post) => post.tags.includes("snippet"));
+  }): Promise<{ props: { snippets: snippetType[] } }> => {
+    const snippets = await fetch(`${base}/snippets.json`).then((r) => r.json());
     return { props: { snippets } };
   };
 </script>
 
 <script lang="ts">
-  export let snippets: postType[];
-  console.log(snippets);
+  export let snippets: snippetType[];
 </script>
 
 <svelte:head>
@@ -34,8 +32,8 @@
   <tbody>
     {#each snippets as snippet}
       <tr>
-        <td><a href="/{snippet.slug}">{snippet.title}</a></td>
-        <td>{snippet.excerpt}</td>
+        <td><a href={snippet.src}>{snippet.title}</a></td>
+        <td>{snippet.description}</td>
         <td>{snippet.date}</td>
       </tr>
     {/each}
