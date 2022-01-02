@@ -12,12 +12,16 @@ Computers continue to fascinate me. The <a href="https://fivethirtyeight.com/fea
 
 Here is the complete problem text.
 
-> My favorite game show is “Countdown” on Channel 4 in the UK. I particularly enjoy its Numbers Game. Here is the premise: There are 20 “small” cards, two of each numbered 1 through 10. There are also four “large” cards numbered 25, 50, 75 and 100. The player asks for six cards in total: zero, one, two, three or four “large” numbers, and the rest in “small” numbers. The hostess selects that chosen number of “large” and “small” at random from the deck. A random-number generator then selects a three-digit number, and the players have 30 seconds to use addition, subtraction, multiplication and division to combine the six numbers on their cards into a total as close to the selected three-digit number as they can.
-> <br><br>
-> There are four basic rules: You can only use a number as many times as it comes up in the six-number set. You can only use the mathematical operations given. At no point in your calculations can you end on something that isn’t a counting number. And you don’t have to use all of the numbers.
-> <br><br>
-> For example, say you ask for one large and five smalls, and you get 2, 3, 7, 8, 9 and 75. Your target is 657. One way to solve this would be to say 7×8×9 = 504, 75×2 = 150, 504+150 = 654 and 654+3 = 657. You could also say 75+7 = 82, 82×8 = 656, 3-2 = 1 and 656+1 = 657.
-> <br><br> > **This riddle is twofold. One: What number of “large” cards is most likely to produce a solvable game and what number of “large” cards is least likely to be solvable? Two: What three-digit numbers are most or least likely to be solvable?**
+<blockquote>
+My favorite game show is “Countdown” on Channel 4 in the UK. I particularly enjoy its Numbers Game. Here is the premise: There are 20 “small” cards, two of each numbered 1 through 10. There are also four “large” cards numbered 25, 50, 75 and 100. The player asks for six cards in total: zero, one, two, three or four “large” numbers, and the rest in “small” numbers. The hostess selects that chosen number of “large” and “small” at random from the deck. A random-number generator then selects a three-digit number, and the players have 30 seconds to use addition, subtraction, multiplication and division to combine the six numbers on their cards into a total as close to the selected three-digit number as they can.
+
+There are four basic rules: You can only use a number as many times as it comes up in the six-number set. You can only use the mathematical operations given. At no point in your calculations can you end on something that isn’t a counting number. And you don’t have to use all of the numbers.
+
+For example, say you ask for one large and five smalls, and you get 2, 3, 7, 8, 9 and 75. Your target is 657. One way to solve this would be to say 7×8×9 = 504, 75×2 = 150, 504+150 = 654 and 654+3 = 657. You could also say 75+7 = 82, 82×8 = 656, 3-2 = 1 and 656+1 = 657.
+
+**This riddle is twofold. One: What number of “large” cards is most likely to produce a solvable game and what number of “large” cards is least likely to be solvable? Two: What three-digit numbers are most or least likely to be solvable?**
+
+</blockquote>
 
 Thanks to Laurent Lessard who <a href="https://twitter.com/LaurentLessard/status/1135601818296365064?s=20">pointed out</a> a bug in an earlier version of my code. It's since been updated.
 

@@ -10,13 +10,16 @@ status: published
 
 Based on actual statistics from World War II, this week's <a href="https://fivethirtyeight.com/features/youve-been-marooned-by-kidnappers-can-you-escape-at-dawn/">Riddler</a> asks us to estimate the number of German tanks given uncertain information about the tanks we've observed. Fortunately, despite the uncertainty in our observations, we can still provide reasonably accurate estimates for the total German tank population. We'll rely heavily on Bayesian analysis to solve this problem. Let's continue with the full problem.
 
-> Mathematician Dr. Lana Gurtin has a problem to solve. She was hired by British intelligence for a top-secret assignment, but things have not gone according to plan. The year is 1942 and the Germans are rolling out a new and powerful tank, the Uberpanzer. Prominently displayed on the back of each Uberpanzer is its serial number, which is simply the number of tanks that had been built when it rolled off the line. So the first tank built has the serial number 1, the second one built has a 2, and so on.
-> <br><br>
-> Recently, a number of these new tanks were spotted by British scouts who recorded the serial numbers that they saw. They immediately sent this information to British intelligence, hoping that the serial number data could be used to estimate the total number of Uberpanzers the Germans have built. This is when Dr. Gurtin was brought on to head the project.
-> <br><br>
-> But then the unexpected happened. A German spy intercepted the dossier with the data before it could reach MI6. By the time British agents caught up with the spy, most of the data had been destroyed. However, two pieces of information were recovered from the debris. One: The lowest serial number recorded was 22. Two: The highest serial number recorded was 114.
-> <br><br>
-> Luckily, Dr. Gurtin knows exactly what to do. Assuming that the original data set was a random sample of serial numbers, what is Dr. Gurtin’s best estimate of the total number of Uberpanzers the Germans have built?
+<blockquote>
+Mathematician Dr. Lana Gurtin has a problem to solve. She was hired by British intelligence for a top-secret assignment, but things have not gone according to plan. The year is 1942 and the Germans are rolling out a new and powerful tank, the Uberpanzer. Prominently displayed on the back of each Uberpanzer is its serial number, which is simply the number of tanks that had been built when it rolled off the line. So the first tank built has the serial number 1, the second one built has a 2, and so on.
+
+Recently, a number of these new tanks were spotted by British scouts who recorded the serial numbers that they saw. They immediately sent this information to British intelligence, hoping that the serial number data could be used to estimate the total number of Uberpanzers the Germans have built. This is when Dr. Gurtin was brought on to head the project.
+
+But then the unexpected happened. A German spy intercepted the dossier with the data before it could reach MI6. By the time British agents caught up with the spy, most of the data had been destroyed. However, two pieces of information were recovered from the debris. One: The lowest serial number recorded was 22. Two: The highest serial number recorded was 114.
+
+Luckily, Dr. Gurtin knows exactly what to do. Assuming that the original data set was a random sample of serial numbers, what is Dr. Gurtin’s best estimate of the total number of Uberpanzers the Germans have built?
+
+</blockquote>
 
 # The German Tank Problem
 
