@@ -52,10 +52,15 @@
       flex-direction: column;
     }
   }
-
   .excerpt {
     color: var(--text-color-secondary);
     line-height: 1.3em;
     margin-block-start: 0rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    -webkit-box-orient: vertical;
   }
 </style>
