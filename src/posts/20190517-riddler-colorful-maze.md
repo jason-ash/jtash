@@ -12,9 +12,9 @@ This was a colorful <a href="https://fivethirtyeight.com/features/how-many-soldi
 
 <blockquote>
 In grade school, you may have learned about the three primary colors — blue, yellow and red — and the three secondary colors — green (blue + yellow), purple (red + blue) and orange (yellow + red).
-<br><br>
+
 And now it’s time to put that knowledge to use. Try to get through the maze below, a nine-by-nine grid of lines, three times: once as blue, once as yellow, and once as red. If you are blue, you may only travel on lines that include the color blue. So you may travel on lines that are blue, green, purple or white (which contains all colors). You may not travel on orange, yellow, red or black (which contains no colors). The analogous rules hold for your trips as yellow and red.
-<br><br>
+
 <img height=50%, width=50%, src="https://fivethirtyeight.com/wp-content/uploads/2019/05/roeder-RIDDLER-0517-01-1.png?w=575">
 </blockquote>
 

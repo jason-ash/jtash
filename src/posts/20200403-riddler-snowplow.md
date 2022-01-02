@@ -12,12 +12,13 @@ This week's <a href="https://fivethirtyeight.com/features/can-you-tell-when-the-
 
 <blockquote>
 One morning, it starts snowing. The snow falls at a constant rate, and it continues the rest of the day.
-<br><br>
+
 At noon, a snowplow begins to clear the road. The more snow there is on the ground, the slower the plow moves. In fact, the plow’s speed is inversely proportional to the depth of the snow — if you were to double the amount of snow on the ground, the plow would move half as fast.
-<br><br>
+
 In its first hour on the road, the plow travels 2 miles. In the second hour, the plow travels only 1 mile.
-<br><br>
+
 When did it start snowing?
+
 </blockquote>
 
 # Solution

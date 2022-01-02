@@ -12,20 +12,20 @@ We take all the "guess work" out of a classic board game in this week's <a href=
 
 <blockquote>
 In the game of “Guess Who,” each player first randomly (and independently of their opponent) selects one of N character tiles. While it’s unlikely, both players can choose the same character. Each of the N characters is distinct in appearance — for example, characters have different skin tones, hair color, hair length and accessories like hats or glasses.
-<br><br>
+
 Each player also has access to a board with images of all N characters. The players alternate taking turns, and during each turn a player has two options:
-<br>
-<ul>
-  <li>Make a specific guess as to their opponent’s selected character. If correct, the player who made the guess immediately wins. Otherwise, that player immediately loses.</li>
-  <li>Ask a yes-or-no question about their opponent’s chosen character, in order to eliminate some of the candidates. Importantly, if only one possible character is left after the question, the player must still wait until their next turn to officially guess that character.</li>
-</ul>
+
+- Make a specific guess as to their opponent’s selected character. If correct, the player who made the guess immediately wins. Otherwise, that player immediately loses.
+- Ask a yes-or-no question about their opponent’s chosen character, in order to eliminate some of the candidates. Importantly, if only one possible character is left after the question, the player must still wait until their next turn to officially guess that character.
+
 Assume both players are highly skilled at choosing yes-or-no questions, so that they can always craft a question to potentially rule out (or in) any desired number of candidates. Also, both are playing to maximize their own probability of winning.
-<br><br>
+
 Let’s keep things (relatively) simple, and suppose that N = 4. How likely is it that the player who goes first will win?
-<br><br>
-<strong>Extra credit:</strong> If N is instead 24 (the number of characters in the original “Guess Who” game), now how likely is it that the player who goes first will win?
-<br><br>
-<strong>Extra extra credit:</strong> If N is instead 14, now how likely is it that the player who goes first will win?
+
+**Extra credit:** If N is instead 24 (the number of characters in the original “Guess Who” game), now how likely is it that the player who goes first will win?
+
+**Extra extra credit:** If N is instead 14, now how likely is it that the player who goes first will win?
+
 </blockquote>
 
 # Solution

@@ -12,14 +12,15 @@ This week's <a href="https://fivethirtyeight.com/features/can-you-flip-your-way-
 
 <blockquote>
 You are locked in the dungeon of a faraway castle with three fellow prisoners (i.e., there are four prisoners in total), each in a separate cell with no means of communication. But it just so happens that all of you are logicians (of course).
-<br><br>
+
 To entertain themselves, the guards have decided to give you all a single chance for immediate release. Each prisoner will be given a fair coin, which can either be fairly flipped one time or returned to the guards without being flipped. If all flipped coins come up heads, you will all be set free! But if any of the flipped coins comes up tails, or if no one chooses to flip a coin, you will all be doomed to spend the rest of your lives in the castle’s dungeon.
-<br><br>
+
 The only tools you and your fellow prisoners have to aid you are random number generators, which will give each prisoner a random number, uniformly and independently chosen between zero and one.
-<br><br>
+
 What are your chances of being released?
-<br><br>
-<i>Extra credit:</i> Instead of four prisoners, suppose there are N prisoners. Now what are your chances of being released?
+
+**Extra credit:** Instead of four prisoners, suppose there are N prisoners. Now what are your chances of being released?
+
 </blockquote>
 
 # Solution

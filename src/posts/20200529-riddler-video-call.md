@@ -12,12 +12,13 @@ Suppose everyone in the United States wanted to join the same video call? If eac
 
 <blockquote>
 One Friday morning, suppose everyone in the U.S. (about 330 million people) joins a single Zoom meeting between 8 a.m. and 9 a.m. — to discuss the latest Riddler column, of course. This being a virtual meeting, many people will join late and leave early.
-<br><br>
+
 In fact, the attendees all follow the same steps in determining when to join and leave the meeting. Each person independently picks two random times between 8 a.m. and 9 a.m. — not rounded to the nearest minute, mind you, but any time within that range. They then join the meeting at the earlier time and leave the meeting at the later time.
-<br><br>
+
 What is the probability that at least one attendee is on the call with everyone else (i.e., the attendee’s time on the call overlaps with every other person’s time on the call)?
-<br><br>
-<strong>Extra credit:</strong> What is the probability that at least two attendees are on the call with everyone else?
+
+**Extra credit:** What is the probability that at least two attendees are on the call with everyone else?
+
 </blockquote>
 
 # Solution

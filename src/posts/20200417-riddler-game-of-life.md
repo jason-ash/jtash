@@ -12,16 +12,17 @@ In memory of John Conway, we explore a modified version of the famous "Game of L
 
 <blockquote>
 Riddler Nation was deeply saddened to hear of the loss of John Conway last week. It is only fitting that this week’s Classic is a spin on Conway’s Game of Life.
-<br><br>
+
 In the most common version of the game, there is an infinite grid of square cells, which are initially either alive or dead. Each square has eight neighbors — the eight squares that surround it. And after every step in time, or “tick,” all the cells are simultaneously updated according to the following rules:
-<ul>
-<li>A living cell with two or three living neighbors remains living.</li>
-<li>A living cell with any other number of living neighbors dies (due to under- or overpopulation).</li>
-<li>A dead cell with exactly three living neighbors comes alive (due to reproduction).</li>
-</ul>
+
+- A living cell with two or three living neighbors remains living.
+- A living cell with any other number of living neighbors dies (due to under- or overpopulation).
+- A dead cell with exactly three living neighbors comes alive (due to reproduction).
+
 These relatively simple rules lead to some startlingly complex, emergent behaviors. For example, some formations of living cells are known as “oscillators,” which change form from one tick to the next, ultimately returning back to their original formation.
-<br><br>
+
 Now suppose we were to replace the infinite grid with a finite grid that has periodic boundary conditions, so that cells in the first row are neighbors with cells in the last row, and cells in the first column are neighbors with cells in the last column. If there are three rows and N columns, what is the smallest value of N that can support an oscillator?
+
 </blockquote>
 
 # Solution

@@ -12,12 +12,13 @@ It's the 256th edition of the <a href="https://fivethirtyeight.com/features/can-
 
 <blockquote>
 You are a contestant on the game show Lingo, where your objective is to determine a five-letter mystery word. You are told this word’s first letter, after which you have five attempts to guess the word. You can guess any five-letter word, even one that has a different first letter. After each of your guesses, you are told which letters of your guess are also in the mystery word and whether any of the letters are in the correct position.
-<br><br>
+
 As a contestant, your plan is to make a mockery of the game show by adopting a bold strategy: No matter what, before you are even told what the first letter of the mystery word is, you have decided what your first four guesses will be. Then, with your fifth guess, you will use the results of your first four guesses (and your encyclopedic knowledge of five-letter words!) to determine all remaining possibilities for the mystery word. If multiple mystery words are still possible, you will pick one of these at random.
-<br><br>
+
 Which four five-letter words would you choose to maximize your chances of victory? Assume that the mystery word is selected randomly from this word list, which is also the list your guesses must be chosen from.
-<br><br>
-<em>Extra credit:</em> For the four five-letter words you chose, what are your chances of victory?
+
+**Extra credit:** For the four five-letter words you chose, what are your chances of victory?
+
 </blockquote>
 
 Note: the word pool for this puzzle contains 8636 words. A brute force solution to this puzzle would need to test all combinations of four words. This would mean testing

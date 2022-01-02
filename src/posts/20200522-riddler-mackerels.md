@@ -12,12 +12,13 @@ This week's <a href="https://fivethirtyeight.com/features/somethings-fishy-in-th
 
 <blockquote>
 Ohio is the only state whose name doesn’t share any letters with the word “mackerel.” It’s strange, but it’s true.
-<br><br>
+
 But that isn’t the only pairing of a state and a word you can say that about — it’s not even the only fish! Kentucky has “goldfish” to itself, Montana has “jellyfish” and Delaware has “monkfish,” just to name a few.
-<br><br>
+
 What is the longest “mackerel?” That is, what is the longest word that doesn’t share any letters with exactly one state? (If multiple “mackerels” are tied for being the longest, can you find them all?)
-<br><br>
-<strong>Extra credit:</strong> Which state has the most “mackerels?” That is, which state has the most words for which it is the only state without any letters in common with those words?
+
+**Extra credit:** Which state has the most “mackerels?” That is, which state has the most words for which it is the only state without any letters in common with those words?
+
 </blockquote>
 
 # Solution

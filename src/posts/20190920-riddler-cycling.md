@@ -13,14 +13,14 @@ This week's <a href="https://fivethirtyeight.com/features/can-you-win-the-tour-d
 <blockquote>
 You are the coach for Team Riddler at the Tour de FiveThirtyEight, where there are 20 teams (including yours). Your objective is to win the Team Time Trial race, which has the following rules:
 
-- Each team rides as a group throughout the course at some fixed pace, specified by that team’s coach. Teams that can’t maintain their pace are said to have “cracked,” and don’t finish the course.<br>
-- The team that finishes the course with the fastest pace is declared the winner.<br>
+- Each team rides as a group throughout the course at some fixed pace, specified by that team’s coach. Teams that can’t maintain their pace are said to have “cracked,” and don’t finish the course.
+- The team that finishes the course with the fastest pace is declared the winner.
 - Teams ride the course one at a time. After each team completes its attempt, the next team quickly consults with its coach (who assigns a pace) and then begins its ride. Coaches are aware of the results of all previous teams when choosing their own team’s pace.
 
 Assume that all teams are of equal ability: At any given pace, they have the exact same probability of cracking, and the faster the pace, the greater the probability of cracking. Teams’ chances of cracking are independent, and each team’s coach knows exactly what a team’s chances of cracking are for each pace.
-<br><br>
+
 Team Riddler is the first team to attempt the course. To maximize your chances of winning, what’s the probability that your team will finish the course? What’s the probability you’ll ultimately win?
-<br><br>
+
 **Extra Credit:** If Team Riddler is the last team to attempt the course (rather than the first), what are its chances of victory?
 
 </blockquote>

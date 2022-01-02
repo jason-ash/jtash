@@ -12,10 +12,11 @@ We're studying simulated petri dishes in this week's <a href="https://fivethirty
 
 <blockquote>
 You are studying a new strain of bacteria, Riddlerium classicum (or R. classicum, as the researchers call it). Each R. classicum bacterium will do one of two things: split into two copies of itself or die. There is an 80 percent chance of the former and a 20 percent chance of the latter.
-<br><br>
+
 If you start with a single R. classicum bacterium, what is the probability that it will lead to an everlasting colony (i.e., the colony will theoretically persist for an infinite amount of time)?
-<br><br>
-<strong>Extra credit:</strong> Suppose that, instead of 80 percent, each bacterium divides with probability p. Now what’s the probability that a single bacterium will lead to an everlasting colony?
+
+**Extra credit:** Suppose that, instead of 80 percent, each bacterium divides with probability p. Now what’s the probability that a single bacterium will lead to an everlasting colony?
+
 </blockquote>
 
 # Solution

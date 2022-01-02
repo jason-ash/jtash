@@ -12,12 +12,13 @@ I can never resist a good dice problem, and this week's <a href="https://fivethi
 
 <blockquote>
 There’s a technique for rolling dice called “bowling,” in which you place your index finger and thumb on two opposite sides of the die and roll it along the table. If done correctly, the die will never land on the faces on which you were holding the die, leaving you with a 25 percent chance of landing on each of the remaining four faces.
-<br><br>
+
 You’d like to apply this technique to improve your chances of winning a simplified game of craps, in which your goal is simply to roll a 7 or 11 using two dice. With a standard rolling technique, your chances of rolling a 7 or 11 are 2/9, or about 22.2 percent.
-<br><br>
+
 Now suppose you’re using your bowling technique, and you roll the dice one at a time (i.e., you know the outcome of the first die before rolling the second). If you play to maximize your chances of rolling a 7 or 11, what will be your chances of winning?
-<br><br>
-<strong>Extra credit:</strong> Suppose you get one point for rolling a 7 or 11, but now you lose a point for rolling a 2, 3 or 12. With a standard rolling technique, you’d average 1/9 of a point. But if you “bowl” to maximize your expected score, what will that average be?
+
+**Extra credit:** Suppose you get one point for rolling a 7 or 11, but now you lose a point for rolling a 2, 3 or 12. With a standard rolling technique, you’d average 1/9 of a point. But if you “bowl” to maximize your expected score, what will that average be?
+
 </blockquote>
 
 # Solution

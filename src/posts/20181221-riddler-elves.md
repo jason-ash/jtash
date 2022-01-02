@@ -12,10 +12,11 @@ This week's holiday <a href="https://fivethirtyeight.com/features/santa-needs-so
 
 <blockquote>
 In Santa’s workshop, elves make toys during a shift each day. On the overhead radio, Christmas music plays, with a program randomly selecting songs from a large playlist.
-<br><br>
+
 During any given shift, the elves hear 100 songs. A cranky elf named Cranky has taken to throwing snowballs at everyone if he hears the same song twice. This has happened during about half of the shifts. One day, a mathematically inclined elf named Mathy tires of Cranky’s sodden outbursts. So Mathy decides to use what he knows to figure out how large Santa’s playlist actually is.
-<br><br>
+
 Help Mathy out: How large is Santa’s playlist?
+
 </blockquote>
 
 # The Birthday Problem

@@ -12,8 +12,9 @@ This was a challenging <a href="https://fivethirtyeight.com/features/can-you-eat
 
 <blockquote>
 A certain 2-year-old is eating his favorite snack: an apple. But he eats it in a very particular way. When he first receives the apple, and every minute thereafter, he rotates the apple to a random position and then looks down. If there’s any skin of the apple left in the spot where he plans to take a bite, then he will indeed take that bite. But if there’s no skin there (i.e., he’s already taken bites at that spot), he won’t take a bite and will rotate the apple for another minute. Once he has bitten off all the skin of the apple, he’s done eating.
-<br><br>
+
 Suppose the apple is a sphere with a radius of 4 centimeters, and that each bite of the apple is a circle of the sphere whose radius, as measured along the apple’s curved surface, is 1 centimeter. On average, how many minutes will it take this 2-year-old to eat the apple?
+
 </blockquote>
 
 # Solution

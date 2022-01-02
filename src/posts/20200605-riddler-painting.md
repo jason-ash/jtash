@@ -12,14 +12,15 @@ We are carefully coloring a poster in this week's <a href="https://fivethirtyeig
 
 <blockquote>
 Some friends have invited you to a protest, and you’ll be making a sign with large lettering. You’re filling in the sign’s letters by drawing horizontal lines with a marker. The marker has a flat circular tip with a radius of 1 centimeter, and you’re holding the marker so that it’s upright, perpendicular to the sign.
-<br><br>
+
 Since the diameter of the marker’s tip is 2 centimeters, you decide to fill in the letters by drawing lines every 2 centimeters. However, this is the pattern you get:
-<br><br>
+
 <img src="https://fivethirtyeight.com/wp-content/uploads/2020/06/poster.png" width=30% />
-<br><br>
+
 The shading doesn’t look very uniform — each stroke is indeed 2 centimeters wide, but there appear to be gaps between the strokes. Of course, if you drew many, many lines all bunched together, you’d have a rather uniform shading.
-<br><br>
+
 But you don’t have all day to make this sign. If the lines can’t overlap by more than 1 centimeter — half the diameter of the marker tip — what should this overlap be, in order to achieve a shading that’s as uniform as possible? And how uniform will this shading be, say, as measured by the standard deviation in relative ink on the sign?
+
 </blockquote>
 
 # Solution

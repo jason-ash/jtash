@@ -12,10 +12,11 @@ I've taken a short break from solving the Riddlers because I've recently become 
 
 <blockquote>
 I have 10 chocolates in a bag: Two are milk chocolate, while the other eight are dark chocolate. One at a time, I randomly pull chocolates from the bag and eat them — that is, until I pick a chocolate of the other kind. When I get to the other type of chocolate, I put it back in the bag and start drawing again with the remaining chocolates. I keep going until I have eaten all 10 chocolates.
-<br><br>
+
 For example, if I first pull out a dark chocolate, I will eat it. (I’ll always eat the first chocolate I pull out.) If I pull out a second dark chocolate, I will eat that as well. If the third one is milk chocolate, I will not eat it (yet), and instead place it back in the bag. Then I will start again, eating the first chocolate I pull out.
-<br><br>
+
 What are the chances that the last chocolate I eat is milk chocolate?
+
 </blockquote>
 
 # Solution

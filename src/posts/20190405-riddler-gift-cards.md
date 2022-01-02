@@ -12,13 +12,14 @@ This week's Riddler falls into one of my favorite categories: a problem that can
 
 <blockquote>
 Lucky you! You’ve won two gift cards, each loaded with 50 free drinks from your favorite coffee shop, Riddler Caffei-Nation. The cards look identical, and because you’re not one for record-keeping, you randomly pick one of the cards to pay with each time you get a drink. One day, the clerk tells you that he can’t accept the card you presented to him because it doesn’t have any drink credits left on it.
-<br><br>
+
 What is the probability that the other card still has free drinks on it? How many free drinks can you expect are still available?
+
 </blockquote>
 
 # Analytical Solution
 
-Let's define some terms first. Both cards start with $n$ drinks. The question specifically asks about $n=50$ but we can generalize to any $n$. We are interested in the number $k$ drinks remaining on either card when we try (and fail) to buy a drink with one of our cards. Note that $k$ can be zero, as in the case where we draw down each card equally after buying 100 drinks total. When we frame the question like this, it lets us define the only two possible outcomes, which are: <br>
+Let's define some terms first. Both cards start with $n$ drinks. The question specifically asks about $n=50$ but we can generalize to any $n$. We are interested in the number $k$ drinks remaining on either card when we try (and fail) to buy a drink with one of our cards. Note that $k$ can be zero, as in the case where we draw down each card equally after buying 100 drinks total. When we frame the question like this, it lets us define the only two possible outcomes, which are:
 
 1. Card A runs out of drinks first; card B has $k$ drinks remaining.
 2. Card B runs out of drinks first; card A has $k$ drinks remaining.
