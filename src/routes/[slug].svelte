@@ -17,7 +17,9 @@
 
 <script lang="ts">
   import PostLayout from "$lib/components/PostLayout.svelte";
+  import TwitterSummaryCard from "$lib/components/SEO/TwitterSummaryCard.svelte";
   export let post: postType;
 </script>
 
+<TwitterSummaryCard {post} />
 <PostLayout {post} />
