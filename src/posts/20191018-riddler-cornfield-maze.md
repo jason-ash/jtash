@@ -10,7 +10,9 @@ status: published
 
 I'm a sucker for a good maze problem from the <a href="https://fivethirtyeight.com/features/can-you-break-the-riddler-bank/">Riddler Express</a>. Let's over-engineer it using networkx and python to extend the problem and see what we can learn!
 
-> The number in each box tells you how many spaces up, down, left or right you must move. (No diagonal moves, people.) Starting at the yellow six in the bottom left corner, can you make your way to the asterisk?
+<blockquote>
+The number in each box tells you how many spaces up, down, left or right you must move. (No diagonal moves, people.) Starting at the yellow six in the bottom left corner, can you make your way to the asterisk?
+</blockquote>
 
 <img src="/img/riddler-cornfield-original.png">
 

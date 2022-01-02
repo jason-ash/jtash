@@ -10,9 +10,12 @@ status: published
 
 This week's <a href="https://fivethirtyeight.com/features/how-many-pennies-should-you-pinch/">Riddler Classic</a> explores ideal strategy in a two-player game. We take turns removing coins from two piles, and the last one to remove a coin wins. I'll use pen and paper to sketch out the logical framework, then code a flexible solution using python and dynamic programming.
 
-> The game starts with somewhere between 20 and 30 pennies, which I then divide into two piles any way I like. Then we alternate taking turns, with you first, until someone wins the game. For each turn, a player may take any number of pennies he or she likes from either pile, or instead take the same number of pennies from both piles. Each player must also take at least one penny every turn. The winner of the game is the one who takes the last penny.
-> <br><br>
-> If we both play optimally, what starting numbers of pennies (again, between 20 and 30) guarantee that you can win the game?
+<blockquote>
+The game starts with somewhere between 20 and 30 pennies, which I then divide into two piles any way I like. Then we alternate taking turns, with you first, until someone wins the game. For each turn, a player may take any number of pennies he or she likes from either pile, or instead take the same number of pennies from both piles. Each player must also take at least one penny every turn. The winner of the game is the one who takes the last penny.
+
+If we both play optimally, what starting numbers of pennies (again, between 20 and 30) guarantee that you can win the game?
+
+</blockquote>
 
 # Solution
 

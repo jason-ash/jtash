@@ -10,16 +10,18 @@ status: published
 
 This week's <a href="https://fivethirtyeight.com/features/can-you-solve-the-vexing-vexillology/">Riddler Classic</a> was a fun way to welcome the new year. We're asked to find seven letters that maximize the score from the New York Times <a href="https://www.nytimes.com/puzzles/spelling-bee">Spelling Bee</a> puzzle. I use pure Python (lists, sets, and dictionaries only) to find the optimum pool of seven words.
 
-> The New York Times recently launched some new word puzzles, one of which is <a href="https://www.nytimes.com/puzzles/spelling-bee">Spelling Bee</a>. In this game, seven letters are arranged in a honeycomb lattice, with one letter in the center.
-> <br><br>
-> The goal is to identify as many words that meet the following criteria:
->
-> <ol>
-> <li>The word must be at least four letters long.</li>
-> <li>The word must include the central letter.</li>
-> <li>The word cannot include any letter beyond the seven given letters.</li>
-> </ol>
-> Which seven-letter honeycomb results in the highest possible game score? To be a valid choice of seven letters, no letter can be repeated, it must not contain the letter S (that would be too easy) and there must be at least one pangram.
+<blockquote>
+The New York Times recently launched some new word puzzles, one of which is <a href="https://www.nytimes.com/puzzles/spelling-bee">Spelling Bee</a>. In this game, seven letters are arranged in a honeycomb lattice, with one letter in the center.
+
+The goal is to identify as many words that meet the following criteria:
+
+- The word must be at least four letters long.
+- The word must include the central letter.
+- The word cannot include any letter beyond the seven given letters.
+
+Which seven-letter honeycomb results in the highest possible game score? To be a valid choice of seven letters, no letter can be repeated, it must not contain the letter S (that would be too easy) and there must be at least one pangram.
+
+</blockquote>
 
 # Solution
 

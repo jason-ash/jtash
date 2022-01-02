@@ -10,7 +10,9 @@ status: published
 
 Forgive the pun - this was a fantastic <a href="https://fivethirtyeight.com/features/who-wants-to-be-a-riddler-millionaire/">Riddler Express</a> challenging you to calculate your odds of winning a million dollars!
 
-> You’ve made it to the &#36;1 million question, but it’s a tough one. Out of the four choices, A, B, C and D, you’re 70 percent sure the answer is B, and none of the remaining choices looks more plausible than another. You decide to use your final lifeline, the 50:50, which leaves you with two possible answers, one of them correct. Lo and behold, B remains an option! How confident are you now that B is the correct answer?
+<blockquote>
+You’ve made it to the $1 million question, but it’s a tough one. Out of the four choices, A, B, C and D, you’re 70 percent sure the answer is B, and none of the remaining choices looks more plausible than another. You decide to use your final lifeline, the 50:50, which leaves you with two possible answers, one of them correct. Lo and behold, B remains an option! How confident are you now that B is the correct answer?
+</blockquote>
 
 # Solution
 

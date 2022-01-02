@@ -10,9 +10,12 @@ status: published
 
 This week's <a href="https://fivethirtyeight.com/features/who-wants-to-be-a-riddler-millionaire/">Riddler</a> is a twist on the classic <a href="https://en.wikipedia.org/wiki/Birthday_problem">birthday problem</a>. The birthday problem tells us that among a group of just 23 people, we are 50% likely to find at least one pair of matching birthdays. But what if we want to find three matching birthdays instead?
 
-> In the U.S. Senate, three senators happen to share the same birthday of October 20: Kamala Harris, Brian Schatz and Sheldon Whitehouse.
-> <br><br>
-> How many people do you need to have better-than-even odds that at least three of them have the same birthday? (Again, ignore leap years.)
+<blockquote>
+In the U.S. Senate, three senators happen to share the same birthday of October 20: Kamala Harris, Brian Schatz and Sheldon Whitehouse.
+
+How many people do you need to have better-than-even odds that at least three of them have the same birthday? (Again, ignore leap years.)
+
+</blockquote>
 
 # Solution
 
