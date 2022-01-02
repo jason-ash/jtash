@@ -9,17 +9,19 @@ status: published
 
 I often want to create objects that hold several related pieces of data together in the same place - like a `Book` object that has an `author`, `title`, etc. Python offers several methods to do this, but it's not always clear which one to use. I'll show different patterns that I use and discuss the advantages and disadvantages of each.
 
-| Name               | Description                                                      |
-| ------------------ | ---------------------------------------------------------------- |
-| Vanilla Class)     | A plain Python class                                             |
-| Dictionary         | A plain Python dictionary                                        |
-| (Typed) Dictionary | A Python dictionary with typed fields                            |
-| Simple Namespace   | A Python namespace object                                        |
-| NamedTuple         | A tuple with names, from the `collections` module                |
-| Dataclass          | A container class from the `dataclasses` module                  |
-| `attrs` Class      | The only non-standard-library solution, from the `attrs` library |
+I call these container classes because they're mostly used to hold information.
 
-# Vanilla Class
+| Name                                       | Description                                                      |
+| ------------------------------------------ | ---------------------------------------------------------------- |
+| <a href="#vanilla-class">Vanilla Class</a> | A plain Python class                                             |
+| Dictionary                                 | A plain Python dictionary                                        |
+| (Typed) Dictionary                         | A Python dictionary plus a `TypedDict` schema                    |
+| Simple Namespace                           | A Python namespace object                                        |
+| <a href="#namedtuple">NamedTuple</a>       | A tuple with names, from the `collections` module                |
+| Dataclass                                  | A container class from the `dataclasses` module                  |
+| `attrs` Class                              | The only non-standard-library solution, from the `attrs` library |
+
+<h1 id="vanilla-class">Vanilla Class</h1>
 
 ```python
 class Book:
@@ -73,7 +75,7 @@ brothers_karamazov: Book = {
 
 # SimpleNamespace
 
-# NamedTuple
+<h1 id="namedtuple">NamedTuple</h1>
 
 ```python
 from typing import NamedTuple
@@ -86,6 +88,14 @@ class Book(NamedTuple):
     publication_year: int
     isbn_10: Optional[str]
     isbn_13: Optional[str]
+
+brothers_karamazov = Book(
+    author="Fyodor Dostoevsky",
+    title="The Brothers Karamazov",
+    publication_year=1880,
+    isbn_10="0374528373",
+    isbn_13="978-0374528379",
+)
 ```
 
 # Dataclass
@@ -102,4 +112,14 @@ class Book:
     publication_year: int
     isbn_10: Optional[str]
     isbn_13: Optional[str]
+
+brothers_karamazov = Book(
+    author="Fyodor Dostoevsky",
+    title="The Brothers Karamazov",
+    publication_year=1880,
+    isbn_10="0374528373",
+    isbn_13="978-0374528379",
+)
 ```
+
+# Attrs Class
