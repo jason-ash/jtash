@@ -13,7 +13,6 @@
 
 <script lang="ts">
   export let snippets: snippetType[];
-  console.log(snippets);
 </script>
 
 <svelte:head>
