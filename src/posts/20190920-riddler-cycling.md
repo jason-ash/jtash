@@ -33,7 +33,9 @@ Let's call the probability of cracking $p$. This value will be a number between 
 
 Suppose we pick a value of $p=50\%$. If we complete the race, our competitors will choose a probability of cracking that is _slightly_ higher, resulting in a pace that is _slightly_ faster. If they also complete the race, they will move ahead of us in the rankings. This will continue for each subsequent team. On the other hand, if we fail to complete the race, then our competitors could choose any new value of $p$ they want, but it won't matter for us, because we would already have been eliminated.
 
-> A note about choosing values of $p$: we can set aside the fact that later teams will select slightly higher values of $p$, and instead assume they pick exactly $p$. If we do this, then the answers we calculate will be the _limit_ on the odds of winning, as the delta between values of $p$ decreases to zero.
+<aside class="remark">
+A note about choosing values of $p$: we can set aside the fact that later teams will select slightly higher values of $p$, and instead assume they pick exactly $p$. If we do this, then the answers we calculate will be the _limit_ on the odds of winning, as the delta between values of $p$ decreases to zero.
+</aside>
 
 Therefore, we win the time trial if and only if two things happen:
 

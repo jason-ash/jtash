@@ -78,7 +78,9 @@ Another benefit of our dice game is that we don't have to deal with complicated 
 |        Triple |        1        | Everyone on base scores; batter advances to third base                                       |
 |      Home run |        1        | Everyone on base plus the batter scores                                                      |
 
-> Note: there are some obvious simplifying assumptions in my "outcomes" above. It's possible to get different answers to this Riddler if you treat game events differently. For example, "double play" and "base on error" have the most embedded assumptions about who is tagged out, who scores, and how runners advance. Most of the other events are fairly straightforward. Please let me know if you think my algorithmic team management style should be adjusted!
+<aside class="remark">
+Note: there are some obvious simplifying assumptions in my "outcomes" above. It's possible to get different answers to this Riddler if you treat game events differently. For example, "double play" and "base on error" have the most embedded assumptions about who is tagged out, who scores, and how runners advance. Most of the other events are fairly straightforward. Please let me know if you think my algorithmic team management style should be adjusted!
+</aside>
 
 # Coding the Game Actions in Python
 

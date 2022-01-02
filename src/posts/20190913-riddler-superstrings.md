@@ -10,7 +10,9 @@ status: published
 
 The <a href="https://fivethirtyeight.com/features/can-you-help-dakota-jones-raid-the-lost-arc/">fivethirtyeight riddler</a> this week asks us to make connections between states. Specifically, we want to map the connections between state abbreviations (e.g. CA for California). We've been tasked with finding the longest string of connections where the last letter from one state is the first letter from another, without repeating any states. With 59 state abbreviations to choose from, what is the longest string we can create?
 
-> The challenge is to find the longest string of letters in which (1) every pair of consecutive letters is a two-letter state or territory abbreviation, and (2) no state abbreviation occurs more than once. For example, Guam, Utah and Texas can be combined into the valid four-letter string GUTX. Another valid string is ALAK (Alabama, Louisiana and Alaska), while ALAL (Alabama, Louisiana and Alabama) is invalid because it includes the same state, Alabama, twice.
+<blockquote>
+The challenge is to find the longest string of letters in which (1) every pair of consecutive letters is a two-letter state or territory abbreviation, and (2) no state abbreviation occurs more than once. For example, Guam, Utah and Texas can be combined into the valid four-letter string GUTX. Another valid string is ALAK (Alabama, Louisiana and Alaska), while ALAL (Alabama, Louisiana and Alabama) is invalid because it includes the same state, Alabama, twice.
+</blockquote>
 
 # Solution
 
