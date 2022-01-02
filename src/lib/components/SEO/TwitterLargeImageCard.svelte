@@ -13,6 +13,6 @@
   <meta name="twitter:creator" content="@ashjasont" />
   <meta name="twitter:title" content={post.title.slice(0, titleLength)} />
   <meta name="twitter:description" content={post.excerpt.slice(0, descriptionLength)} />
-  <meta name="twitter:image" content="/headshot.jpg" />
+  <meta name="twitter:image" content="/img/headshot.jpg" />
   <meta name="twitter:image:alt" content="headshot" />
 </svelte:head>
