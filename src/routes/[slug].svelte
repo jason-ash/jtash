@@ -4,11 +4,10 @@
   import { base } from "$app/paths";
 
   export const load: Load = async ({
-    page,
+    params,
     fetch,
   }): Promise<{ props: { post: postType } }> => {
-    const slug = page.params.slug;
-    const post = await fetch(`${base}/${slug}.json`).then((r) => r.json());
+    const post = await fetch(`${base}/${params.slug}.json`).then((r) => r.json());
     return {
       props: { post },
     };
@@ -19,6 +18,7 @@
   import PostLayout from "$lib/components/PostLayout.svelte";
   import TwitterSummaryCard from "$lib/components/SEO/TwitterSummaryCard.svelte";
   export let post: postType;
+  console.log(post);
 </script>
 
 <TwitterSummaryCard {post} />
