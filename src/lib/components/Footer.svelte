@@ -25,12 +25,6 @@
     justify-content: space-between;
     margin-top: 1rem;
     margin-bottom: 1rem;
-    font-size: 0.9em;
-  }
-  @media (max-width: 640px) {
-    footer {
-      font-size: 0.7em;
-    }
   }
   ul {
     list-style: none;
