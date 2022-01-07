@@ -35,6 +35,7 @@ export interface postType {
   slug: string;
   excerpt: string;
   tags: postTag[];
+  relatedPosts: string[];
   status: "draft" | "published";
   content: string;
 }
@@ -79,6 +80,7 @@ export const processPost = (fileName: string): postType => {
     slug: metadata.slug,
     excerpt: metadata.excerpt,
     tags: metadata.tags || [],
+    relatedPosts: metadata.relatedPosts || [],
     status: metadata.status,
     content,
   };
