@@ -111,14 +111,21 @@ tbody tr:hover {
 code {
   font-size: 1.1em;
 }
+p code {
+  padding: 0.25em 0.25em;
+  color: #c9d1d9;
+  background-color: #0d1117;
+  border-radius: 3px;
+}
 pre code.hljs {
   display: block;
   overflow-x: auto;
   padding: 1em;
-  border-radius: 5px;
+  border-radius: 3px;
 }
 code.hljs {
   padding: 3px 5px;
+  display: inline;
 }
 .hljs {
   color: #c9d1d9;
