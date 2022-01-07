@@ -4,6 +4,7 @@ slug: riddler-cycling
 date: "2019-09-20"
 excerpt: This week's riddler was an entertaining blend of probability and one of my favorite sports, cycling. We're asked to choose the ideal pace for a team time trial - trying to balance the rewards of a competitive time with the risks of pushing our riders too hard and having them crack due to the effort. Plus, there's a bonus extra credit problem!
 tags: ["puzzles", "python"]
+relatedPosts: ["riddler-flips"]
 status: published
 ---
 

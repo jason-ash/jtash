@@ -4,6 +4,8 @@ slug: riddler-pennies
 date: "2020-01-24"
 excerpt: This week's Riddler Classic explores ideal strategy in a two-player game. We take turns removing coins from two piles, and the last one to remove a coin wins. I'll use pen and paper to sketch out the logical framework, then code a flexible solution using python and dynamic programming.
 tags: ["dynamic programming", "puzzles", "python"]
+relatedPosts:
+  ["riddler-flips", "riddler-guess-who", "riddler-bowling-dice", "riddler-chocolates"]
 status: published
 ---
 

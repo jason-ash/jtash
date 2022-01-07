@@ -4,6 +4,14 @@ slug: riddler-guess-who
 date: "2020-03-06"
 excerpt: We take all the "guess work" out of a classic board game in this week's Riddler - solving for the optimal strategy in Guess Who! My trusted technique of dynamic programming makes a (predictable) reappearance.
 tags: ["dynamic programming", "puzzles", "python"]
+relatedPosts:
+  [
+    "riddler-flips",
+    "riddler-dowries",
+    "riddler-pennies",
+    "riddler-bowling-dice",
+    "riddler-chocolates",
+  ]
 status: published
 ---
 

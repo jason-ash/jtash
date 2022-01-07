@@ -4,6 +4,7 @@ slug: riddler-lingo
 date: "2021-01-29"
 excerpt: It's the 256th edition of the Riddler, and though I've taken many weekends off to spend time with my newborn, I became obsessed with this week's puzzle! We're asked to play the word guessing game from Lingo, a game show. It reminds me of another one of my favorite Riddlers where we identify the best strategy for playing the math game from Countdown, another game show. The puzzle is extremely challenging, and I couldn't find an exact solution. Instead, I used Python to implement the game engine, and used some heuristics to choose words that resulted in a high score.
 tags: ["puzzles", "python"]
+relatedPosts: ["riddler-countdown"]
 status: published
 ---
 

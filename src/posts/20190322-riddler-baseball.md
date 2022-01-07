@@ -4,7 +4,7 @@ slug: riddler-baseball
 date: "2019-03-22"
 excerpt: This week's riddler asks us to simulate a game of baseball using rolls of a dice. To solve this problem, we're going to treat the game of Baseball like a markov chain. Under the simplified dice framework, we identify various states of the game, a set of transition probabilities to subsequent states, and associated payoffs (runs scored) when certain states are reached as a result of game events. Using this paradigm, we can simulate innings probabilistically, count the runs scored by each team, and determine the winner.
 tags: ["puzzles", "python"]
-relatedPosts: ["riddler-league-baseball"]
+relatedPosts: ["riddler-league-baseball", "riddler-delirious-ducks", "riddler-bacteria"]
 status: published
 ---
 

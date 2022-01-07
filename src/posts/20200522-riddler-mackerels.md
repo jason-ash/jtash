@@ -4,6 +4,7 @@ slug: riddler-mackerels
 date: "2020-05-22"
 excerpt: This week's Riddler starts with a peculiar fact - "Ohio" doesn't share any letters with the word "mackerel", and it's the only state for which that is true. How many other state/word combinations can we find, and which states match with the longest words? We'll use python's super efficient sets, lists, and dictionaries to crunch millions of combinations in under two seconds to find the answer.
 tags: ["puzzles", "python"]
+relatedPosts: ["riddler-spelling-hexagons"]
 status: published
 ---
 

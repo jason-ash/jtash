@@ -4,6 +4,13 @@ slug: riddler-delirious-ducks
 date: "2020-01-17"
 excerpt: This week's Riddler Classic is a delightful diversion - tracking delirious ducks as they randomly swim from rock to rock in a pond. How long will it take them to end up on the same rock? We'll use markov chains in Python to solve it.
 tags: ["puzzles", "python"]
+relatedPosts:
+  [
+    "riddler-baseball",
+    "riddler-card-collecting",
+    "riddler-state-superstrings",
+    "riddler-bacteria",
+  ]
 status: published
 ---
 

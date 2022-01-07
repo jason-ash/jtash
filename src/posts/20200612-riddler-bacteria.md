@@ -4,6 +4,13 @@ slug: riddler-bacteria
 date: "2020-06-12"
 excerpt: We're studying simulated petri dishes in this week's Riddler! We want to figure out how likely a colony of bacteria is to survive, given what we know about how often its cells divide. This is a classic problem that can be modeled with a stochastic process, but we'll try a different approach with very large markov transition matrices built in python and numpy.
 tags: ["puzzles", "python"]
+relatedPosts:
+  [
+    "riddler-delirious-ducks",
+    "riddler-card-collecting",
+    "riddler-baseball",
+    "riddler-unstable-dice",
+  ]
 status: published
 ---
 

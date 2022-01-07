@@ -4,6 +4,7 @@ slug: riddler-bayes-millionaire
 date: "2019-10-04"
 excerpt: Forgive the pun - this was a fantastic Riddler Express challenging you to calculate your odds of winning a million dollars!
 tags: ["bayesian inference", "puzzles", "python"]
+relatedPosts: ["riddler-solstice-coin"]
 status: published
 ---
 
