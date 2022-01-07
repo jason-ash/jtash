@@ -3,7 +3,7 @@ title: Column Transformer
 slug: column-transformer
 date: "2022-01-01"
 excerpt: Implement custom feature engineering code as a `scikit-learn` column transformer.
-tags: [snippet, python, data science]
+tags: ["data science", "python", "software engineering"]
 status: published
 ---
 

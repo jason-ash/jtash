@@ -3,6 +3,7 @@ title: Riddler Birthdays
 slug: riddler-birthdays
 date: "2019-10-04"
 excerpt: This week's Riddler is a twist on the classic birthday problem. The birthday problem tells us that among a group of just 23 people, we are 50% likely to find at least one pair of matching birthdays. But what if we want to find three matching birthdays instead?
+tags: ["puzzles", "python"]
 status: published
 ---
 

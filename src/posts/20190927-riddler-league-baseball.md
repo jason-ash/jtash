@@ -3,6 +3,7 @@ title: Riddler League Baseball
 slug: riddler-league-baseball
 date: "2019-09-27"
 excerpt: What happens when you create a baseball league from three teams with peculiar specialties? That's the objective of this week's Riddler. We're asked to determine whether it's better to specialize in home runs, doubles, or walks as a strategy to tally the most wins from a season of baseball in the Riddler League.
+tags: ["puzzles", "python"]
 status: published
 ---
 

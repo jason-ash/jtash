@@ -3,6 +3,7 @@ title: Riddler Apples
 slug: riddler-apples
 date: "2020-05-08"
 excerpt: This was a challenging Riddler about a toddler's inefficient eating habits. Our picky toddler takes a bite from an Apple once every minute, and only if the randomly chosen spot has skin left on it. How long will it take to eat the entire apple? Spoiler - it's likely to outlast the toddler's attention span by quite some time.
+tags: ["puzzles", "python"]
 status: published
 ---
 

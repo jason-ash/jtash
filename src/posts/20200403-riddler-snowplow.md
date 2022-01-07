@@ -3,6 +3,7 @@ title: Riddler Snowplow
 slug: riddler-snowplow
 date: "2020-04-03"
 excerpt: This week's Riddler was a fun calculus problem. Time to brush off our integrals! On a snowy day we try to pinpoint the moment the snow started based on how long it takes the plows to clear the roads.
+tags: ["math", "puzzles", "python"]
 status: published
 ---
 

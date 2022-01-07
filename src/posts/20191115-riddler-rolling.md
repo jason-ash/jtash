@@ -3,6 +3,7 @@ title: Riddler Rolling
 slug: riddler-rolling
 date: "2019-11-15"
 excerpt: This week's Riddler tested our ability to think recursively, but surprisingly not of the coding variety. Instead, we'll use a series of equations to solve the problem analytically. Brings back memories of high school proofs... which I may or may not remember with complete fidelity.
+tags: ["puzzles", "python"]
 status: published
 ---
 

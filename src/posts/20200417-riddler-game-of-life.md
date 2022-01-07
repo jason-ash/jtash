@@ -3,6 +3,7 @@ title: Riddler Game of Life
 slug: riddler-game-of-life
 date: "2020-04-17"
 excerpt: In memory of John Conway, we explore a modified version of the famous "Game of Life" in this week's Riddler. I implemented the Game in python, which ended up being so much fun that many of the features aren't strictly required to solve the problem. Instead, they were amusing diversions that helped me explored this surprisingly nuanced game. It's probably just as Conway would have intended.
+tags: ["puzzles", "python"]
 status: published
 ---
 

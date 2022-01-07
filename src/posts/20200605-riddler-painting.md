@@ -3,6 +3,7 @@ title: Riddler Painting
 slug: riddler-painting
 date: "2020-06-05"
 excerpt: We are carefully coloring a poster in this week's Riddler. We want to draw horizontal lines with a marker in order to fill the poster with ink as evenly as possible. How far apart should each marker line be? We'll use numpy for a computational approach that minimizes the standard deviation of our coloring scheme.
+tags: ["puzzles", "python"]
 status: published
 ---
 

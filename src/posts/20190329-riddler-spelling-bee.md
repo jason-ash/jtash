@@ -3,6 +3,7 @@ title: Riddler Spelling Bee
 slug: riddler-spelling-bee
 date: "2019-03-29"
 excerpt: I have a distinct memory of participating in my elementary school's spelling bee when I was in second grade. I was the unlikely runner-up, even though I was competing against children in third and fourth grade. What was the secret to my over-performance? Not my natural spelling ability, but rather the rules of the game - a participant is eliminated from the spelling bee after failing to spell a word correctly, which means that going last is an advantage. I was lucky enough to be the near the tail-end of the participants in my spelling bee, which surely improved my final ranking. This week's Riddler asks us to quantify that advantage.
+tags: ["puzzles", "python"]
 status: published
 ---
 

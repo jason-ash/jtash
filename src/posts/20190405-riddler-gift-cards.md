@@ -3,6 +3,7 @@ title: Riddler Gift Cards
 slug: riddler-gift-cards
 date: "2019-04-05"
 excerpt: Another weekly Riddler, this time with both an analytical and simulated solution!
+tags: ["puzzles", "python"]
 status: published
 ---
 

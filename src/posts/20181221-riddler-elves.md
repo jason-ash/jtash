@@ -3,6 +3,7 @@ title: Riddler Elves
 slug: riddler-elves
 date: "2018-12-21"
 excerpt: This week's holiday Riddler is a twist on the classic "birthday problem". The birthday problem asks us to calculate the probability that at least two people at a party have the same birthday. Most people hearing this problem for the first time are surprised at how few people you need - roughly 23 people results in 50% odds of finding at least one pair of birthdays! For this problem, we're interested in calculating how likely we are to hear the same song more than once from a shuffled playlist. Moreover, what can we infer about the size of the playlist, given that we hear repeats roughly half the time?
+tags: ["puzzles", "python"]
 status: published
 ---
 

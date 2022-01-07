@@ -3,6 +3,7 @@ title: Riddler Dungeon Dice
 slug: riddler-dungeon-dice
 date: "2020-05-15"
 excerpt: This week's Riddler asks us to determine the best dice-rolling strategy for our weekly Dungeons and Dragons game. With the option to roll once, or roll multiple times with various combinations of maximums and minimums, how can we optimize the odds of rolling the number we want?
+tags: ["puzzles", "python"]
 status: published
 ---
 

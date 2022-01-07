@@ -3,6 +3,7 @@ title: Riddler Countdown
 slug: riddler-countdown
 date: "2019-05-31"
 excerpt: Computers continue to fascinate me. The Riddler this week deals with an explosion of combinations and math that is nearly impossible to grasp without the help of a computer. Specifically, we're interested in crafting an ideal strategy for the "numbers game" from the UK television show Countdown. The numbers game asks contestants to use four mathematical operations (addition, subtraction, multiplication, and division) with six numbers as inputs to solve for a single, three digit target. Most of the time, this can be quite difficult, especially with a 30-second time limit. However, with the help of a computer, we can solve for every possible combination of input and output to identify the strategy that gives the humans the best chance to win!
+tags: ["puzzles", "python"]
 status: published
 ---
 

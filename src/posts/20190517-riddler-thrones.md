@@ -3,6 +3,7 @@ title: Riddler Thrones
 slug: riddler-thrones
 date: "2019-05-17"
 excerpt: This week's Riddler pits the army of the dead vs. the army of the living. As the two armies battle, any fallen soldiers from the living army rise to fight with the dead. How many soldiers would each side need to make it a fair fight?
+tags: ["puzzles", "python"]
 status: published
 ---
 

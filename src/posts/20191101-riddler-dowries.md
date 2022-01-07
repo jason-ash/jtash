@@ -3,6 +3,7 @@ title: Riddler Dowries
 slug: riddler-dowries
 date: "2019-11-01"
 excerpt: A small twist on a classic problem is this week's challenge from the Riddler. We're going to tackle an extension of the secretary problem - also known as the Sultan's Dowry problem. This classic puzzle has led to fascinating research in optimal stopping theory, which we will use to help our Sultan choose the best possible suitor. Let's dive in!
+tags: ["dynamic programming", "puzzles", "python"]
 status: published
 ---
 

@@ -3,6 +3,7 @@ title: Riddler Video Call
 slug: riddler-video-call
 date: "2020-05-29"
 excerpt: Suppose everyone in the United States wanted to join the same video call? If each of the 330 million participants joins and drops at a random time, how likely is it that at least one person overlaps with everyone else? This problem easily exceeds the limits of a practical simulation, but we'll write some code to develop intuition about the results before attempting to solve it analytically.
+tags: ["puzzles", "python"]
 status: published
 ---
 

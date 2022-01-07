@@ -3,6 +3,7 @@ title: Riddler Counterfeits
 slug: riddler-counterfeits
 date: "2019-08-23"
 excerpt: This week's fivethirtyeight riddler was created by yours truly! It was the first puzzle I've submitted to the riddler, and I hope you enjoyed it. This week we attempt to fool a bank with counterfeit hundred dollar bills.
+tags: ["puzzles", "python"]
 status: published
 ---
 

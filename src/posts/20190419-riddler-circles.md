@@ -3,6 +3,7 @@ title: Riddler Circles
 slug: riddler-circles
 date: "2019-04-19"
 excerpt: The Riddler this week asks us about random points on the edge of a circle. Specifically, if we generate $n$ random points around the circumference of a circle, how likely are those points to fall on only one side?
+tags: ["puzzles", "python"]
 status: published
 ---
 

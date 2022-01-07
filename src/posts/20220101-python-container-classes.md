@@ -3,7 +3,7 @@ title: Python Container Classes
 slug: python-container-classes
 date: "2022-01-01"
 excerpt: Several methods of creating a data container class in Python.
-tags: [snippet, python]
+tags: ["data science", "python", "software engineering"]
 status: published
 ---
 

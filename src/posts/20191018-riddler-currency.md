@@ -3,6 +3,7 @@ title: Riddler Currency Conversion
 slug: riddler-currency
 date: "2019-10-18"
 excerpt: This was a clever version of a classic problem for this week's Riddler Classic. With just two denominations of currency, what is the largest amount we can't create from a combination of bills?
+tags: ["puzzles", "python"]
 status: published
 ---
 

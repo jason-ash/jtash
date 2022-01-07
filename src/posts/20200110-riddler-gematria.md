@@ -3,6 +3,7 @@ title: Riddler Gematria
 slug: riddler-gematria
 date: "2020-01-10"
 excerpt: Gematria is a numerical system that links Hebrew characters to numbers. This week's Riddler Classic explores the "score" of a number, and asks us to identify any patterns that emerge.
+tags: ["puzzles", "python"]
 status: published
 ---
 

@@ -3,6 +3,7 @@ title: Riddler Tanks
 slug: riddler-tanks
 date: "2019-06-07"
 excerpt: Based on an actual statistical analysis problem from World War II, this week's Riddler asks us to estimate the population of German tanks given uncertain information about the tanks we've observed. Fortunately, despite the uncertainty in our observations, we can still provide reasonably accurate estimates for the total German tank population. We'll rely heavily on Bayesian analysis to solve this problem.
+tags: ["bayesian inference", "puzzles", "python"]
 status: published
 ---
 

@@ -3,6 +3,7 @@ title: Riddler Colorful Maze
 slug: riddler-colorful-maze
 date: "2019-05-17"
 excerpt: This was a colorful Riddler Express. We start with a maze comprised of edges of different colors. Our task is to identify the shortest path from start to finish using only edges of certain colors. This was a great opportunity to take python's networkx library for a spin! We can build the maze as a network, where each edge has a "color" attribute, and use powerful solvers to do the path-finding for us!
+tags: ["puzzles", "python"]
 status: published
 ---
 

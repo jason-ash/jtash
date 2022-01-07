@@ -3,6 +3,7 @@ title: Riddler Haircuts
 slug: riddler-haircuts
 date: "2020-02-28"
 excerpt: This week's Riddler asks us to estimate how long it takes to get a haircut with our favorite barber. Rather than scheduling an appointment, we roll the dice and hope we won't have to wait too long if we drop by unannounced. How long exactly? We'll use probability distributions and monte carlo simulation to estimate our idle time.
+tags: ["puzzles", "python"]
 status: published
 ---
 

@@ -3,6 +3,7 @@ title: Riddler Prisoners
 slug: riddler-prisoners
 date: "2020-05-01"
 excerpt: This week's Riddler uses probability to design the ultimate jailbreak. Prisoners are given the opportunity to flip coins, and if all flipped coins are heads, each prisoner is released. Without communicating, what strategy should the prisoners use to maximize their odds of success?
+tags: ["puzzles", "python"]
 status: published
 ---
 

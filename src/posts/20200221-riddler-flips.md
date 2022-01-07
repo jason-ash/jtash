@@ -3,6 +3,7 @@ title: Riddler Flips
 slug: riddler-flips
 date: "2020-02-21"
 excerpt: We tackle a solitaire game of coin flipping in this week's Riddler Classic. Using dynamic programming, we build a tree to explore all possible game states and work backwards to identify the ideal move at each state.
+tags: ["dynamic programming", "puzzles", "python"]
 status: published
 ---
 
