@@ -3,6 +3,7 @@ title: Riddler Squishyball
 slug: riddler-squishyball
 date: "2017-07-14"
 excerpt: As the owner of a dominant team looking to establish a dynasty, how can you stack the odds against your opponent? This week's fivethirtyeight Riddler Classic has a heavy dose of combinatorics.
+tags: ["puzzles", "python"]
 status: published
 ---
 

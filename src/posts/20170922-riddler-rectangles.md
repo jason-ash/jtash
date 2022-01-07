@@ -3,6 +3,7 @@ title: Riddler Rectangles
 slug: riddler-rectangles
 date: "2017-09-22"
 excerpt: This week's riddler reminds me of a cross between sudoku or kakuro puzzles and some good old fashioned geometry... you might call them geometric sudoku puzzles!
+tags: ["puzzles", "python"]
 status: published
 ---
 

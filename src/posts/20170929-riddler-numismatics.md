@@ -3,6 +3,7 @@ title: Riddler Numistmatics
 slug: riddler-numismatics
 date: "2017-09-29"
 excerpt: It turns out you can identify a doctored coin with a fairly high degree of certainty... It just takes lots and lots of trials.
+tags: ["puzzles", "python"]
 status: published
 ---
 

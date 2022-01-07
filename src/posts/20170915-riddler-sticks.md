@@ -3,6 +3,7 @@ title: Riddler Sticks
 slug: riddler-sticks
 date: "2017-09-15"
 excerpt: Before you build your campfire, what shapes can you make by breaking the sticks?
+tags: ["puzzles", "python"]
 status: published
 ---
 

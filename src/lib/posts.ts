@@ -10,12 +10,29 @@ import remarkParse from "remark-parse";
 import remarkRehype from "remark-rehype";
 import { unified } from "unified";
 
+type postTag =
+  | "actuarial"
+  | "analytics engineering"
+  | "bayesian inference"
+  | "data engineering"
+  | "data science"
+  | "finance"
+  | "fintech"
+  | "insurtech"
+  | "machine learning"
+  | "math"
+  | "modernization"
+  | "puzzles"
+  | "python"
+  | "startups"
+  | "software engineering";
+
 export interface postType {
   title: string;
   date: string;
   slug: string;
   excerpt: string;
-  tags: string[];
+  tags: postTag[];
   status: "draft" | "published";
   content: string;
 }

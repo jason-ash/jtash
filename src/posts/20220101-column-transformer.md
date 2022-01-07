@@ -7,7 +7,7 @@ tags: [snippet, python, data science]
 status: published
 ---
 
-This is an example of implementing a custom feature engineer as a `scikit-learn` column transformer object.
+This is an example of implementing a custom feature engineer as an `sklearn` column transformer object.
 
 ```python
 # modeling/feature_engineering.py
