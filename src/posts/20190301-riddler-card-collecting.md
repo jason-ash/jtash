@@ -114,7 +114,7 @@ print(results.mean())
 # 3995.78149
 ```
 
-Good news! Our simulated result is very close to our analytical result above, at roughly $3996. The simulation also gives us information about the full distribution of results as well. For example, while it is theortically possible to collect 144 unique cards by drawing 144 unique cards in a row, the odds are extremely slim. What was the lowest cost from our simulation? What was the highest? This can all be seen by analyzing the results directly, or visualized as a density plot, which shows how likely it is that we would pay a certain amount to collect the full set of cards.
+Good news! Our simulated result is very close to our analytical result above, at roughly $3996. The simulation also gives us information about the full distribution of results as well. For example, while it is theoretically possible to collect 144 unique cards by drawing 144 unique cards in a row, the odds are extremely slim. What was the lowest cost from our simulation? What was the highest? This can all be seen by analyzing the results directly, or visualized as a density plot, which shows how likely it is that we would pay a certain amount to collect the full set of cards.
 
 ```python
 >>> results.min()
