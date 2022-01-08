@@ -39,7 +39,7 @@ Here is a snippet that shows the odds of winning a game with a single, fair coin
 0.46086
 ```
 
-Now how do we solve the game with two coins? I'll turn to dynamic programming, a technique I've used on <a href="https://www.jtash.com/riddler-dowries">several</a> <a href="https://www.jtash.com/riddler-pennies">other</a> <a href="https://www.jtash.com/riddler-cycling">problems</a>. That is, in order to model the probability of winning from our current position, we model the probability of winning from all the positions we could reach from our position, then choose the action that gives us the best expected result.
+Now how do we solve the game with two coins? I'll turn to dynamic programming, a technique I've used on <a href="/riddler-dowries">several</a> <a href="/riddler-pennies">other</a> <a href="/riddler-cycling">problems</a>. That is, in order to model the probability of winning from our current position, we model the probability of winning from all the positions we could reach from our position, then choose the action that gives us the best expected result.
 
 For this problem, the state of the game is expressed by the number of flips we've completed so far, which falls between 0 and 100, and the current score of the game, which falls between 0 and 200. Not every flip and score combination is valid - for example we can't have a score of 10 if we have only flipped twice, but these two variables completely express the state of our game. In python, we store the state of the game in an object called `GameState`. For example, `GameState(n_flip=30, score=-10)` means we have flipped 30 coins so far and our cumulative score is -10.
 

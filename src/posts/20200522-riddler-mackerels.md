@@ -34,7 +34,7 @@ As for the extra credit, the mackereliest (not a valid scrabble word) state is..
 
 # Methodology
 
-Like <a href="https://www.jtash.com/riddler-spelling-hexagons">other word puzzles</a> we've seen before, I was amazed at the power of my computer to solve this problem using brute force. The brute force approach tests the overlap between each word (263k) and each state (50) for more than 13 million comparisons in total. Fortunately, on my computer, these comparisons took less than two seconds! Here's how to solve it with efficient python code.
+Like <a href="/riddler-spelling-hexagons">other word puzzles</a> we've seen before, I was amazed at the power of my computer to solve this problem using brute force. The brute force approach tests the overlap between each word (263k) and each state (50) for more than 13 million comparisons in total. Fortunately, on my computer, these comparisons took less than two seconds! Here's how to solve it with efficient python code.
 
 First, the setup: we need to download the word list. I'll use `urllib` to request the words and parse them into a list.
 

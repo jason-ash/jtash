@@ -34,7 +34,7 @@ When we factor in losing numbers, we want to change strategy. Low numbers hurt u
 
 # Methodology
 
-We want to work this problem backwards, from end to start. This technique is called dynamic programming, which I've used to solve <a href="https://www.jtash.com/riddler-guess-who">several</a> <a href="https://www.jtash.com/riddler-pennies">prior</a> <a href="https://www.jtash.com/riddler-flips">puzzles</a>.
+We want to work this problem backwards, from end to start. This technique is called dynamic programming, which I've used to solve <a href="/riddler-guess-who">several</a> <a href="/riddler-pennies">prior</a> <a href="/riddler-flips">puzzles</a>.
 
 We want to determine what strategy to use, conditioned on the fact that we roll a particular starting number. For example, if our first number is 5, then we know how likely we will be to win or lose for each of the bowling arrangements. We do this for each possible starting number until we have a table like this (the expected value here is for the extra credit, with both winning and losing numbers.)
 
