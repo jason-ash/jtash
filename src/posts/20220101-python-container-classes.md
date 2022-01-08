@@ -4,6 +4,8 @@ slug: python-container-classes
 date: "2022-01-01"
 excerpt: Several methods of creating a data container class in Python.
 tags: ["data science", "python", "software engineering"]
+relatedPosts:
+  ["unit-test-basics", "data-science-unit-tests", "sklearn-column-transformer"]
 status: published
 ---
 

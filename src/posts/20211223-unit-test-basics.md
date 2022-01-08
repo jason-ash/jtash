@@ -4,6 +4,8 @@ slug: unit-testing-basics
 date: "2021-12-23"
 excerpt: Unit tests are a critical part of quality code. However, it's not always clear how or what you should be testing in your code. I'll walk through a unit testing example, then outline three reasons why I think unit testing will improve your code.
 tags: ["data science", "python", "software engineering"]
+relatedPosts:
+  ["sklearn-column-transformer", "data-science-unit-tests", "python-container-classes"]
 status: published
 ---
 

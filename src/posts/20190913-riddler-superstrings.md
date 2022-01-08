@@ -4,6 +4,7 @@ slug: riddler-state-superstrings
 date: "2019-09-13"
 excerpt: The fivethirtyeight riddler this week asks us to make connections between states. Specifically, we want to map the connections between state abbreviations (e.g. CA for California). We've been tasked with finding the longest string of connections where the last letter from one state is the first letter from another, without repeating any states. With 59 state abbreviations to choose from, what is the longest string we can create?
 tags: ["puzzles", "python"]
+relatedPosts: ["riddler-cornfield-maze", "riddler-delirious-ducks"]
 status: published
 ---
 

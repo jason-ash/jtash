@@ -4,6 +4,7 @@ slug: riddler-cornfield-maze
 date: "2019-10-18"
 excerpt: I'm a sucker for a good maze problem from the Riddler Express. Let's over-engineer it using networkx and python to extend the problem and see what we can learn!
 tags: ["puzzles", "python"]
+relatedPosts: ["riddler-colorful-maze", "riddler-state-superstrings"]
 status: published
 ---
 

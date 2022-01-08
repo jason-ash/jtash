@@ -4,6 +4,7 @@ slug: riddler-card-collecting
 date: "2019-03-01"
 excerpt: The Riddler Express this week asks us about collecting sets of cards. In particular, we're interested in collecting a complete set of 144 unique cards. We purchase one random card at a time for $5 each. How many purchases should we expect to make - and how much money should we expect to spend - in order to collect at least one of every card?
 tags: ["puzzles", "python"]
+relatedPosts: ["riddler-delirious-ducks", "riddler-bacteria"]
 status: published
 ---
 

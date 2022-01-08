@@ -4,6 +4,7 @@ slug: riddler-solstice-coin
 date: "2020-06-19"
 excerpt: As a self-professed Bayesian enthusiast, this week's Riddler Express is right up my alley! We want to calculate the odds that a coin is magical after flipping it a given number of times. Specifically, we want to calculate the number of flips before we're 99% certain the coin is actually magical. We'll use Bayes's formula to find an exact solution.
 tags: ["bayesian inference", "puzzles", "python"]
+relatedPosts: ["riddler-bayes-millionaire"]
 status: published
 ---
 

@@ -4,6 +4,7 @@ slug: garmin-step-algorithm
 date: "2018-12-06"
 excerpt: I wrote yesterday about tracking my steps with a Garmin watch. Perhaps to keep me motivated and active, Garmin provides a daily step goal that moves up or down based on my activity. I've always been curious about how this algorithm works, but I couldn't find any resources that described it. Let's see if I can reverse engineer it instead.
 tags: ["math", "python"]
+relatedPosts: ["puppy-steps"]
 status: published
 ---
 

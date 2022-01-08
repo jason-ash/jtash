@@ -4,6 +4,7 @@ slug: riddler-unstable-dice
 date: "2020-03-27"
 excerpt: Rolling and re-rolling dice is our task for this week's Riddler Classic. Each time we roll, we replace the sides of the dice with the values of our previous roll. This makes for a tricky probability space, but a very fun Python class to write and some markov chain analysis to crunch in order to solve it.
 tags: ["puzzles", "python"]
+relatedPosts: ["riddler-bacteria"]
 status: published
 ---
 

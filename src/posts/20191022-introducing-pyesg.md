@@ -4,6 +4,8 @@ slug: introducing-pyesg
 date: "2019-10-31"
 excerpt: I've started a new project called pyesg - Python Economic Scenario Generator. Economic Scenario Generators, or ESGs, are used to simulate possible future markets, like stock prices, interest rates, or volatility. Actuaries use ESGs to determine the potential values of insurance portfolios in the future. This helps them ensure that their companies will have enough money to pay claims even under the worst scenarios. Other professionals might use ESGs to understand how business decisions today could affect company value in the future. The Python ecosystem has amazing libraries for data analysis, machine learning, and many other fields, but not for generating economic scenarios. I hope that an ESG library for Python will make this type of analysis easier and more widely adopted.
 tags: ["actuarial", "finance", "math", "open source", "software engineering"]
+relatedPosts:
+  ["autograd-taylor-series", "pytorch-black-scholes", "pytorch-exotic-options"]
 status: published
 ---
 
