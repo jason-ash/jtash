@@ -28,7 +28,7 @@ Fortunately, the pond is small enough that our delirious ducks are expected to m
 
 # Methodology
 
-We can use <a href="https://en.wikipedia.org/wiki/Markov_chain">Markov Chains</a> to solve this problem - a highly effective tool in our probabilistic arsenal that I've used <a href="https://www.jtash.com/riddler-baseball">several</a> <a href="https://www.jtash.com/riddler-card-collecting">times</a> <a href="https://www.jtash.com/riddler-state-superstrings">before</a>. In a markov chain, we specify the probability of moving from one state to the next - in this case, from one rock in the pond to the next.
+We can use <a href="https://en.wikipedia.org/wiki/Markov_chain">Markov Chains</a> to solve this problem - a highly effective tool in our probabilistic arsenal that I've used <a href="/riddler-baseball">several</a> <a href="/riddler-card-collecting">times</a> <a href="/riddler-state-superstrings">before</a>. In a markov chain, we specify the probability of moving from one state to the next - in this case, from one rock in the pond to the next.
 
 Because there are two ducks, each state will need to encode both ducks' positions. We can exploit the rotational symmetry of the problem and cover all possible positions with just five states, shown below. Each blue box represents the position of one duck (it doesn't matter which duck.)
 

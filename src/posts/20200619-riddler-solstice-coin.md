@@ -24,7 +24,7 @@ How many successfully alternating coin flips will it take for you to think there
 
 # Solution
 
-**It will take 14 consecutive alternating flips before we are at least 99% sure the coin is magical.** This problem is a classic fit for Bayesian methods. (We've seen another great example in a <a href="https://www.jtash.com/who-wants-to-bayes-a-millionaire">prior Riddler</a> based on "Who wants to be a millionaire") Let's start by reviewing Bayes's formula, then we'll parse the problem text to identify the information we need to solve it.
+**It will take 14 consecutive alternating flips before we are at least 99% sure the coin is magical.** This problem is a classic fit for Bayesian methods. (We've seen another great example in a <a href="/riddler-bayes-millionaire">prior Riddler</a> based on "Who wants to be a millionaire") Let's start by reviewing Bayes's formula, then we'll parse the problem text to identify the information we need to solve it.
 
 $$
 P(A|B) \times P(B) = P(B|A) \times P(A)

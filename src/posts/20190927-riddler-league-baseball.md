@@ -11,7 +11,7 @@ status: published
 
 What happens when you create a baseball league from three teams with peculiar specialties? That's the objective of this week's <a href="https://fivethirtyeight.com/features/which-baseball-team-will-win-the-riddler-fall-classic/">Riddler</a>. We're asked to determine whether it's better to specialize in home runs, doubles, or walks as a strategy to tally the most wins from a season of baseball in the Riddler League.
 
-We've seen <a href="https://www.jtash.com/riddler-baseball">similar problems</a> from the Riddler about baseball simulations, but this one has a competitive twist - simulating an entire season of games among a full League of teams. Here's the full problem text.
+We've seen <a href="/riddler-baseball">similar problems</a> from the Riddler about baseball simulations, but this one has a competitive twist - simulating an entire season of games among a full League of teams. Here's the full problem text.
 
 <blockquote>
 Riddler League Baseball, also known as the RLB, consists of three teams: the Mississippi Moonwalkers, the Delaware Doubloons and the Tennessee Taters.
