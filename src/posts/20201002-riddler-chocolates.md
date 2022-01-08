@@ -5,7 +5,13 @@ date: "2020-10-02"
 excerpt: I've taken a short break from solving the Riddlers because I've recently become a father! Our daughter, Emerson, was born in September, and I've been working on a new set of puzzles related to parenthood. However, a classic probability question from the Riddler drew me back in with the prospect of writing a dynamic programming solution.
 tags: ["dynamic programming", "puzzles", "python"]
 relatedPosts:
-  ["riddler-bowling-dice", "riddler-guess-who", "riddler-pennies", "riddler-flips"]
+  [
+    "riddler-bowling-dice",
+    "riddler-guess-who",
+    "riddler-pennies",
+    "riddler-flips",
+    "riddler-car-salesman",
+  ]
 status: published
 ---
 

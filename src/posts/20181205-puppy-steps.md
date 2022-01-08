@@ -4,6 +4,7 @@ slug: puppy-steps
 date: "2018-12-05"
 excerpt: Without a doubt, getting a puppy changes your life for the better. But I wanted to quantify this somehow. I used Bayesian inference to identify whether I logged more steps in the days since our puppy arrived.
 tags: ["bayesian inference", "math", "python"]
+relatedPosts: ["garmin-step-algorithm"]
 status: published
 ---
 

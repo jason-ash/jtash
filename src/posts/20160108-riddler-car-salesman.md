@@ -4,6 +4,15 @@ slug: riddler-car-salesman
 date: "2016-01-08"
 excerpt: This was a fun dynamic programming exercise to try to identify a strategy that outsmarts a car salesman's game.
 tags: ["dynamic programming", "puzzles", "python"]
+relatedPosts:
+  [
+    "riddler-bowling-dice",
+    "riddler-chocolates",
+    "riddler-dowries",
+    "riddler-flips",
+    "riddler-guess-who",
+    "riddler-pennies",
+  ]
 status: published
 ---
 

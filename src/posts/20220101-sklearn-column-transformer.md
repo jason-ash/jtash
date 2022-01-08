@@ -1,9 +1,10 @@
 ---
-title: Column Transformer
-slug: column-transformer
+title: Scikit Learn Column Transformer
+slug: sklearn-column-transformer
 date: "2022-01-01"
 excerpt: Implement custom feature engineering code as a `scikit-learn` column transformer.
 tags: ["data science", "python", "software engineering"]
+relatedPosts: ["unit-test-basics", "data-science-unit-tests", "python-container-classes"]
 status: published
 ---
 

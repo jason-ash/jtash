@@ -12,6 +12,7 @@ relatedPosts:
     "riddler-guess-who",
     "riddler-bowling-dice",
     "riddler-chocolates",
+    "riddler-car-salesman",
   ]
 status: published
 ---

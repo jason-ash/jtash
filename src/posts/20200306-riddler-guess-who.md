@@ -11,6 +11,7 @@ relatedPosts:
     "riddler-pennies",
     "riddler-bowling-dice",
     "riddler-chocolates",
+    "riddler-guess-who",
   ]
 status: published
 ---

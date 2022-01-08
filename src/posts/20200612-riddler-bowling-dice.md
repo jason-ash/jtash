@@ -5,7 +5,13 @@ date: "2020-06-12"
 excerpt: I can never resist a good dice problem, and this week's Riddler Express is no different. In a technique called "bowling", you can try to throw a dice so it lands on one of four sides, rather than six. How could we use this to our advantage in a simplified game of craps? We'll solve this with a bit of dynamic programming - my favorite!
 tags: ["dynamic programming", "puzzles", "python"]
 relatedPosts:
-  ["riddler-guess-who", "riddler-pennies", "riddler-flips", "riddler-chocolates"]
+  [
+    "riddler-guess-who",
+    "riddler-pennies",
+    "riddler-flips",
+    "riddler-chocolates",
+    "riddler-car-salesman",
+  ]
 status: published
 ---
 

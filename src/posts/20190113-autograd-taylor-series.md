@@ -4,6 +4,7 @@ slug: autograd-taylor-series
 date: "2019-01-13"
 excerpt: I've learned that there are many automatic differentiation libraries in the Python ecosystem. Often these libraries are also machine learning libraries, where automatic differentiation serves as a means to an end - for example in optimizing model parameters in a neural network. However, the autograd library might be one of the purest, "simplest" (relatively speaking) options out there. Its goal is to efficiently compute derivatives of numpy code, and its API is as close to numpy as possible. This means it's easy to get started right away if you're comfortable using numpy. In particular autograd claims to be able to differentiate as many times as one likes, and I thought a great way to test this would be to apply the Taylor Series approximation to some interesting functions.
 tags: ["finance", "machine learning", "math", "software engineering"]
+relatedPosts: ["pytorch-black-scholes", "pytorch-exotic-options", "introducing-pyesg"]
 status: published
 ---
 
