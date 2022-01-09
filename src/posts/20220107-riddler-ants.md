@@ -8,7 +8,7 @@ relatedPosts: []
 status: published
 ---
 
-I decided a great way to start 2022 was to solve this year's first Riddler! This is an optimization problem, where we solve for the strategy that minimizes the distance we travel to visit three points along the edges of a triangle.
+I decided a great way to start 2022 was to solve <a href="https://fivethirtyeight.com/features/can-you-trek-the-triangle/">this year's first Riddler</a>! This is an optimization problem, where we solve for the strategy that minimizes the distance we travel to visit three points along the edges of a triangle.
 
 <blockquote>
 Amare the ant is traveling within Triangle ABC, as shown below. Angle A measures 15 degrees, and sides AB and AC both have length 1.
@@ -44,7 +44,7 @@ $$
 distance(a, b, \theta) = \sqrt{(a - b\times\cos(\theta)) ^ 2 + (b\times\sin(\theta)) ^ 2}
 $$
 
-This formula calculates the difference in x-coordinates and y-coordinates of the two points, and uses the Euclidean distance formula to calculate the distance between them. For example, the distance between the start point, $a = 1$, and the end point of the top line, $b = 1$, with an angle, $\theta = 15°$, gives us $\approx{0.26105}$. We can write this in Python as follows:
+For example, the distance between the start point, $a = 1$, and the end point of the top line, $b = 1$, with an angle, $\theta = 15°$, gives us $\approx{0.26105}$. We can write this in Python as follows:
 
 ```python
 import math
@@ -97,6 +97,26 @@ def total_distance(points: Tuple[float, ...], theta: float = 15) -> float:
 <strong>Using an optimization engine, we find that the ant needs to travel a distance of ≈0.7071 by selecting the set of points (0.8165, 0.7321, 0.7071).</strong>
 
 It turns out that the setup to the problem was 99% of the work. Rather than trudging through formulas and calculus, we can use the powerful `scipy.optimize.minimize` solver to do the heavy lifting. We pass our `total_distance` function to the optimization engine, along with a set of initial guesses. The engine then calculates the derivative of our function with respect to all input values, and solves for the points at which all partial derivatives are zero.
+
+```python
+from scipy.optimize import minimize
+
+result = minimize(total_distance, x0=(1.0, 1.0, 1.0), args=15)
+#       fun: 0.7071067811865541
+#  hess_inv: array([[0.3980166 , 0.35710939, 0.34512563],
+#        [0.35710939, 0.55406504, 0.53529042],
+#        [0.34512563, 0.53529042, 0.70655101]])
+#       jac: array([ 7.45058060e-08, -4.47034836e-08, -1.49011612e-08])
+#   message: 'Optimization terminated successfully.'
+#      nfev: 40
+#       nit: 7
+#      njev: 10
+#    status: 0
+#   success: True
+#         x: array([0.81649653, 0.73205072, 0.70710669])
+```
+
+# Extending the Problem
 
 An interesting extension of the problem is to solve for the points Amare would select if he had to make 4 stops, or 5, or 6... At some point, as the number of stops increases, Amare should walk directly to the lines' intersection, then trivially bounce between them to complete his scavenging mission. The table below shows the distance he needs to walk for a given number of stops until that happens. We can see that once the Queen asks for 6 or more stops, Amare should walk directly to the intersection of the lines. Finally, we can also visualize the paths Amare would take, and we can see the first line heads further and further to the left as the number of stops increases.
 
