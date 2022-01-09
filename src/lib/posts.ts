@@ -24,6 +24,7 @@ type postTag =
   | "math"
   | "modernization"
   | "open source"
+  | "optimization"
   | "puzzles"
   | "python"
   | "startups"
