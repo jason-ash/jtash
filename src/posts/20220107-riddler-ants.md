@@ -94,11 +94,11 @@ def total_distance(points: Tuple[float, ...], theta: float = 15) -> float:
 
 # Solution
 
+<strong>Using an optimization engine, we find that the ant needs to travel a distance of ≈0.7071 by selecting the set of points (0.8165, 0.7321, 0.7071).</strong>
+
 It turns out that the setup to the problem was 99% of the work. Rather than trudging through formulas and calculus, we can use the powerful `scipy.optimize.minimize` solver to do the heavy lifting. We pass our `total_distance` function to the optimization engine, along with a set of initial guesses. The engine then calculates the derivative of our function with respect to all input values, and solves for the points at which all partial derivatives are zero.
 
-<strong>As a result, we find that the ant, acting optimally, needs to travel a distance of ≈0.7071 by selecting the set of points (0.8165, 0.7321, 0.7071).</strong>
-
-An interesting extension of the problem is to solve for the points Amare would select if he had to make 4 stops, or 5, or 6... At some point, as the number of stops increases, Amare would be best served by walking directly to the lines' intersection, and then trivially bouncing between them to complete his scavenging mission. The table below shows the distance he needs to walk for any number of stops until that happens. Once the Queen asks for 6 or more stops, then Amare should walk directly to the intersection of the lines.
+An interesting extension of the problem is to solve for the points Amare would select if he had to make 4 stops, or 5, or 6... At some point, as the number of stops increases, Amare should walk directly to the lines' intersection, then trivially bounce between them to complete his scavenging mission. The table below shows the distance he needs to walk for a given number of stops until that happens. We can see that once the Queen asks for 6 or more stops, Amare should walk directly to the intersection of the lines. Finally, we can also visualize the paths Amare would take, and we can see the first line heads further and further to the left as the number of stops increases.
 
 | Number of stops | Total Distance |
 | --------------- | -------------- |
@@ -108,8 +108,6 @@ An interesting extension of the problem is to solve for the points Amare would s
 | 4               | 0.86603        |
 | 5               | 0.96593        |
 | 6               | 1.0            |
-
-And finally, here is a visualization of the path Amare would take to optimize each number of stops.
 
 <img src="/img/riddler-ants2.png" />
 
