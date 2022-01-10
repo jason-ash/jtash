@@ -22,8 +22,8 @@
 
 <style>
   .construction-banner {
-    padding-left: 3rem;
-    padding-right: 3rem;
+    padding-left: 7rem;
+    padding-right: 7rem;
     background: repeating-linear-gradient(
       45deg,
       #fffbeb,
