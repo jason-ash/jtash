@@ -4,7 +4,7 @@ slug: column-transformer
 date: "2022-01-01"
 excerpt: Implement custom feature engineering code as a `scikit-learn` column transformer.
 tags: ["data science", "python", "software engineering"]
-status: published
+status: draft
 ---
 
 This is an example of implementing a custom feature engineer as an `sklearn` column transformer object.
