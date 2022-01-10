@@ -3,8 +3,7 @@ title: Riddler Ants
 slug: riddler-ants
 date: "2022-01-07"
 excerpt: I decided a great way to start 2022 was to solve this year's first Riddler! This is an optimization problem, where we solve for the strategy that minimizes the travel distance between three points along the edges of a triangle.
-tags: ["dynamic programming", "math", "optimization", "puzzles", "python"]
-relatedPosts: []
+tags: ["math", "optimization", "puzzles", "python"]
 status: published
 ---
 
