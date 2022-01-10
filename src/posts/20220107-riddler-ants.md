@@ -2,13 +2,13 @@
 title: Riddler Ants
 slug: riddler-ants
 date: "2022-01-07"
-excerpt: I decided a great way to start 2022 was to solve this year's first Riddler! This is an optimization problem, where we solve for the strategy that minimizes the distance we travel to visit three points along the edges of a triangle.
+excerpt: I decided a great way to start 2022 was to solve this year's first Riddler! This is an optimization problem, where we solve for the strategy that minimizes the travel distance between three points along the edges of a triangle.
 tags: ["dynamic programming", "math", "optimization", "puzzles", "python"]
 relatedPosts: []
 status: published
 ---
 
-I decided a great way to start 2022 was to solve <a href="https://fivethirtyeight.com/features/can-you-trek-the-triangle/">this year's first Riddler</a>! This is an optimization problem, where we solve for the strategy that minimizes the distance we travel to visit three points along the edges of a triangle.
+I decided a great way to start 2022 was to solve <a href="https://fivethirtyeight.com/features/can-you-trek-the-triangle/">this year's first Riddler</a>! This is an optimization problem, where we solve for the strategy that minimizes the travel distance between three points along the edges of a triangle.
 
 <blockquote>
 Amare the ant is traveling within Triangle ABC, as shown below. Angle A measures 15 degrees, and sides AB and AC both have length 1.
