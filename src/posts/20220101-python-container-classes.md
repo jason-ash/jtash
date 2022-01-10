@@ -2,7 +2,7 @@
 title: Python Container Classes
 slug: python-container-classes
 date: "2022-01-01"
-excerpt: Several methods of creating a data container class in Python.
+excerpt: I often want to create objects that hold several related pieces of data together in the same place - like a `Book` object that has an `author`, `title`, etc. Python offers several methods to do this, but it's not always clear which one to use. I'll show different patterns that I use and discuss the advantages and disadvantages of each.
 tags: ["data science", "python", "software engineering"]
 status: published
 ---

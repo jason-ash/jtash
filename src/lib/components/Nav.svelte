@@ -6,8 +6,8 @@
     <li><a href="/">Jason Ash</a></li>
   </ul>
   <ul>
-    <li><a href="/snippets">Snippets</a></li>
-    <li><a href="/about">About</a></li>
+    <!-- <li><a href="/snippets">Snippets</a></li> -->
+    <!-- <li><a href="/about">About</a></li> -->
   </ul>
 </nav>
 
