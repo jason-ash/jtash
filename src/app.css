@@ -116,6 +116,7 @@ p code {
   color: #c9d1d9;
   background-color: #0d1117;
   border-radius: 3px;
+  white-space: nowrap;
 }
 pre code.hljs {
   display: block;
