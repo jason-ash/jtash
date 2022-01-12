@@ -47,7 +47,13 @@ Now that we know the optimal win percentages, what moves should we actually play
 
 Perhaps my solutions have become a bit too predictable? Friendly Riddler Nation member James Chapman intuited my problem solving process before I had even put pen to paper!
 
-<blockquote class="twitter-tweet tw-align-center"><p lang="en" dir="ltr">Have a feeling I know how <a href="https://twitter.com/ashjasont?ref_src=twsrc%5Etfw">@ashjasont</a> will approach this one! Luckily I&#39;ve learnt from following his solutions in recent weeks :)</p>&mdash; James Chapman (@chapmajw) <a href="https://twitter.com/chapmajw/status/1235929432260521984?ref_src=twsrc%5Etfw">March 6, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<blockquote>
+
+Have a feeling I know how <a href="https://twitter.com/ashjasont?ref_src=twsrc%5Etfw">@ashjasont</a> will approach this one! Luckily I've learnt from following his solutions in recent weeks :)
+
+&mdash; James Chapman (@chapmajw) <a href="https://twitter.com/chapmajw/status/1235929432260521984?ref_src=twsrc%5Etfw">March 6, 2020</a>
+
+</blockquote>
 
 Undeterred, (and flattered) I proceeded as predicted with my <a href="/riddler-flips">trusted</a> <a href="/riddler-dowries">puzzling</a> <a href="/riddler-pennies">technique</a>: dynamic programming. In dynamic programming, we evaluate simple sub-problems, often repeatedly, in order to solve more complex problems.
 
