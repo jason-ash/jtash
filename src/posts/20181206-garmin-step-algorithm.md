@@ -1,5 +1,5 @@
 ---
-title: Garmin Goals
+title: Garmin Step Algorithm
 slug: garmin-step-algorithm
 date: "2018-12-06"
 excerpt: I wrote yesterday about tracking my steps with a Garmin watch. Perhaps to keep me motivated and active, Garmin provides a daily step goal that moves up or down based on my activity. I've always been curious about how this algorithm works, but I couldn't find any resources that described it. Let's see if I can reverse engineer it instead.
@@ -14,9 +14,9 @@ I know from simple observation that if I exceed my goal on a given day, the goal
 1. "difference" - the actual steps minus goal steps for each day
 2. "goal delta" - how much the goal changed from one day to the next
 
-<hr></hr>
-<p class="font-italic">Note that throughout this analysis it can sometimes be difficult to keep track of which data fields correspond to a given day vs. the prior day. For example, the actual recorded steps belong to the day they were recorded. On the other hand, by convention, I assign most variables that track changes to the second day. This includes fields like "goal delta", "difference", etc., where the difference for a given day is defined as "today minus yesterday".</p>
-<hr></hr>
+<aside class="remark">
+Note that throughout this analysis it can sometimes be difficult to keep track of which data fields correspond to a given day vs. the prior day. For example, the actual recorded steps belong to the day they were recorded. On the other hand, by convention, I assign most variables that track changes to the second day. This includes fields like "goal delta", "difference", etc., where the difference for a given day is defined as "today minus yesterday".
+</aside>
 
 ```python
 import numpy as np
