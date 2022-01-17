@@ -91,7 +91,7 @@ Rather than follow a true dynamic programming approach, which would have taken t
 
 Next, assuming that I chose TRACE as my first word, I went through each of the 150 partitions and chose the second word that splits each one into the most sub-partitions. Finally, I calculated the win probability based on the partition size for each of my third guesses.
 
-**This strategy produces a win rate of $\frac{1327}{2315}$, or roughly 57.3%.**
+**This strategy produces a win rate of $\frac{1383}{2315}$, or roughly 59.7%.**
 
 At various points in my code I trimmed the list of words to search, hoping to produce results in a reasonable amount of time. However, I believe these shortcuts likely led to suboptimal performance. A true solution would consider the full set of valid guess words at each stage, and would result in a truly optimal strategy.
 
@@ -99,7 +99,7 @@ Given a bit more time and some more careful code, I think there is more performa
 
 # Fun Facts
 
-Here are some of the best and worst words, based on the number of partitions they create as a first guess.
+Here are some of the best and worst words, based on the number of partitions they create as a first guess. Spoiler alert: don't use SQUIZ as your first guess! It provides the least possible information among all words that still have 5 unique letters.
 
 | Word       | Partitions |
 | ---------- | ---------- |
@@ -118,4 +118,38 @@ Here are some of the best and worst words, based on the number of partitions the
 
 # Full Code
 
-Fortunately I was able to reuse much of the code I wrote to solve <a href="/riddler-lingo">Riddler Lingo</a> a year ago. But a single weekend wasn't quite enough to write the polished code I would have preferred. Instead, I have a lot of scratch work that I'll try to clean up when I have a moment and add it here.
+Fortunately I was able to reuse much of the code I wrote to solve <a href="/riddler-lingo">Riddler Lingo</a> a year ago. I wasn't able to write the polished code I would have preferred, but here are some of the useful helper functions I used this week.
+
+The basic idea is to create a set of partitions for a given first guess, then find the "best splitting word" for your second guess - the word that splits the first partition into as many sub-partitions as possible. Finally, we can calculate the probability of winning by summing the number of partitions from all branching paths and dividing by the number of total answers.
+
+```python
+# `solutions` is a function from riddler-lingo that returns a list of words
+# that are still potential solutions to the puzzle, based on guesses so far
+from riddler.lingo import solutions
+
+
+def partitions(guess: str, words: Iterable[str]) -> List[Tuple[str, ...]]:
+    """Return a list of partitions - words that are grouped together."""
+    wordset = set(words)
+    out = []
+
+    while len(wordset) > 0:
+        word = sorted(wordset)[0]
+        partition = set(solutions(word, guess, words=words))
+        out.append(tuple(sorted(partition)))
+        wordset = wordset - partition
+    return out
+
+
+def best_splitting_word(
+    partition: Iterable[str], words: Iterable[str]
+) -> Tuple[str, int]:
+    """Return the word that splits a partition into the most sub-partitions."""
+    out = {}
+    for word in words:
+        p = partitions(word, partition)
+        out[word] = len(p)
+        if len(p) == len(partition):
+            break
+    return sorted(out.items(), key=lambda x: x[1], reverse=True)[0]
+```
