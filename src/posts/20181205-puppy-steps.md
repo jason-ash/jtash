@@ -37,7 +37,7 @@ The first step was to gather the data from my Garmin watch. Unsurprisingly, this
 
 <img title="Daily Step Count" alt="step count" src="/img/puppy-steps1.png" />
 
-You can find the complete data - all 119 days of it - <a href="/step-data.txt">here</a>. Please feel free to replicate or expand this analysis as you wish, but I'd love to hear about what you do. Find me on <a href="https://twitter.com/ashjasont">Twitter</a> or <a href="mailto:jason@ashanalytics.com">email me</a> your results!
+You can find the complete data - all 119 days of it - <a href="/step-data.txt" rel=external>here</a>. Please feel free to replicate or expand this analysis as you wish, but I'd love to hear about what you do. Find me on <a href="https://twitter.com/ashjasont">Twitter</a> or <a href="mailto:jason@ashanalytics.com">email me</a> your results!
 
 # The priors:
 
