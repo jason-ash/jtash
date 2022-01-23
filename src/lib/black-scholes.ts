@@ -67,7 +67,7 @@ const delta = ({
   };
   const d1_ = d1(params);
   if (optionType === "call") {
-    return 0.0;
+    return Math.exp(-d * t) * normal.cdf(d1_, 0, 1);
   }
   return -Math.exp(-d * t) * normal.cdf(-d1_, 0, 1);
 };
@@ -116,7 +116,7 @@ const rho = ({
   };
   const d2_ = d2(params);
   if (optionType === "call") {
-    return 0.0;
+    return k * t * Math.exp(-r * t) * normal.cdf(d2_, 0, 1);
   }
   return -k * t * Math.exp(-r * t) * normal.cdf(-d2_, 0, 1);
 };
@@ -141,9 +141,6 @@ const vega = ({
     optionType,
   };
   const d1_ = d1(params);
-  if (optionType === "call") {
-    return 0.0;
-  }
   return s * Math.exp(-d * t) * normal.pdf(d1_, 0, 1) * Math.sqrt(t);
 };
 
@@ -169,11 +166,15 @@ const theta = ({
   const d1_ = d1(params);
   const d2_ = d2(params);
   if (optionType === "call") {
-    return 0.0;
+    return (
+      -(s * Math.exp(-d * t) * normal.pdf(d1_, 0, 1) * v) / (2 * Math.sqrt(t)) -
+      r * k * Math.exp(-r * t) * normal.cdf(d2_, 0, 1) +
+      d * s * Math.exp(-d * t) * normal.cdf(d1_, 0, 1)
+    );
   }
-  return -(
+  return (
+    -(s * Math.exp(-d * t) * normal.pdf(d1_, 0, 1) * v) / (2 * Math.sqrt(t)) +
     r * k * Math.exp(-r * t) * normal.cdf(-d2_, 0, 1) -
-    (s * Math.exp(-d * t) * normal.pdf(d1_, 0, 1) * v) / (2 * Math.sqrt(t)) -
     d * s * Math.exp(-d * t) * normal.cdf(-d1_, 0, 1)
   );
 };
@@ -199,9 +200,9 @@ const epsilon = ({
   };
   const d1_ = d1(params);
   if (optionType === "call") {
-    return 0.0;
+    return -s * t * Math.exp(-d * t) * normal.cdf(d1_, 0, 1);
   }
-  return s * t * Math.exp(-d * t) * normal.cdf(-d1_, 0, 1);
+  return -s * t * Math.exp(-d * t) * normal.cdf(-d1_, 0, 1);
 };
 
 // strikeGreek sensitivity of the black scholes formula
@@ -225,7 +226,7 @@ const strikeGreek = ({
   };
   const d2_ = d2(params);
   if (optionType === "call") {
-    return 0.0;
+    return -Math.exp(-r * t) * normal.cdf(d2_, 0, 1);
   }
   return Math.exp(-r * t) * normal.cdf(-d2_, 0, 1);
 };
