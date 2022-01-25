@@ -1,5 +1,5 @@
 ---
-title: Learning from Failure
+title: Learning from Failure - Why Unit Tests Matter
 slug: learning-from-failure
 date: "2022-01-24"
 excerpt: After 18 months of development on our team's shared Python library, we had our first production pipeline failure. Here are my thoughts on what we can learn from it, and why it's good for our team's growth.
@@ -8,7 +8,7 @@ relatedPosts: ["unit-test-basics", "data-science-unit-testing"]
 status: published
 ---
 
-I often tell my team that tests lead to better code. In my experience tests provide a net benefit far greater than the time it takes to write them. For example, good tests make it easier and faster to debug issues, and allow us to refactor code more confidently and quickly. The entire test suite should be run every time we propose changes to our production code, and ideally this happens automatically as part of a Continuous Integration / Continuous Deployment process like Github Actions or Azure Pipelines.
+I often tell my team that tests lead to better code. In my experience, tests provide a net benefit far greater than the time it takes to write them. For example, good tests make it easier and faster to debug issues, and allow us to refactor code more confidently and quickly. The entire test suite should be run every time we propose changes to our production code, and ideally this happens automatically as part of a Continuous Integration / Continuous Deployment process like Github Actions or Azure Pipelines.
 
 # Swiftly, our shared Python library
 
@@ -40,4 +40,4 @@ I wanted to share this for a few reasons. First, because I, like a lot of people
 
 Second, I want our team to embrace and be comfortable sharing failure openly and asking for help when needed. I want everyone on the team to hold themselves to a high standard, but permit themselves the grace to deal with the inevitable bumps that happen along the way.
 
-I am incredibly energized by what we have built in 18 months as a team. In some ways, I was worried that our project's perfect record actually created a barrier to entry - people shying away from contributing because they worried they couldn't meet the project's high bar. Now that the first failure on record is mine, and I own it proudly, I hope we can all feel more comfortable taking risks and learning and growing together as a team.
+I am incredibly energized by what we have built in 18 months as a team. In some ways, I was worried that our project's perfect record actually created a barrier to entry - people shying away from contributing because they worried they couldn't meet the project's high bar. Now that the first failure on record is mine, and I own it proudly. I hope we can all feel more comfortable taking risks and learning and growing together as a team.
