@@ -2,9 +2,9 @@
 title: Learning from Failure
 slug: learning-from-failure
 date: "2022-01-24"
-excerpt: TBD
-tags: []
-relatedPosts: []
+excerpt: After 18 months of development on our team's shared Python library, we had our first production pipeline failure. Here are my thoughts on what we can learn from it, and why it's good for our team's growth.
+tags: ["actuarial", "data science", "modernization", "python", "software development"]
+relatedPosts: ["unit-test-basics", "data-science-unit-testing"]
 status: published
 ---
 
@@ -23,6 +23,8 @@ I had lots of confidence in our code, and we had an outstanding track record of 
 # What happened?
 
 While the details of this particular failure aren't the key takeaway from this post, it is interesting to understand what happened. Our unit tests run on every merge to the production branch. Those unit tests continued to work on the commit that I broke. Instead, I have been working on different continuous deployment pipelines that will deploy our code as an API hosted on AWS. Those pipelines are only run manually, and I usually run them on feature branches if I want to make changes. Last week I changed the pipelines to [blah]. [keep going with this.]
+
+Fortunately, our continuous deployment process makes it easy to diagnose failures like this, and the mistake was fixed minutes later.
 
 # What to learn from it
 
