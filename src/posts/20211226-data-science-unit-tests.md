@@ -4,6 +4,7 @@ slug: data-science-unit-tests
 date: "2021-12-26"
 excerpt: I've written before about how unit tests lead to better code. Some data scientists may not understand how or why unit testing should be used in their work. I'll outline steps you can take to incorporate unit testing into your data science projects and the key benefits you will get as a result.
 tags: ["data science", "python", "software engineering"]
+relatedPosts: ["learning-from-failure", "unit-test-basics"]
 status: published
 ---
 
