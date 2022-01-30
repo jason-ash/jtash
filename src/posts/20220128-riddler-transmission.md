@@ -23,7 +23,7 @@ You keep up this process for many, many years. One day, immediately after replac
 
 # Solution
 
-<strong>This process will eventually result in 35.2% of the transmission fluid being "old".</strong> In fact, this will happen after just 12 months, and the transmission will reach a steady state, where this ratio never changes, provided we continue to replace one liter of fluid each month.
+<strong>This process will eventually result in 35.2% of the transmission fluid being "old".</strong> In fact, this will happen after just 12 months! At that point, the transmission will reach a steady state where the proportion of "old" oil in the transmission will never change, provided we continue to replace a liter of fluid each month.
 
 I first solved this problem by writing several functions in Python to model the process. We can model the transmission as an array of values representing the amount of oil of each age. This array will have 13 values, for ages 0, 1, 2, ..., 11 months, and a final value for oil that is "old" - at least 12 months in age. Each of the steps of removing oil, refilling oil, and moving us forward in time are handled by separate functions. Finally, we compose the functions together and repeat the process in a loop until we reach the steady state.
 
@@ -36,7 +36,7 @@ The `simulate` function returns the array of transmission fluid ages after a num
 
 This array shows us that we have 1.0 liter of fluid that is brand new, represented by the first element in the array. We have 0.92 liters of fluid that is one month old, and 4.22 liters of fluid that is at least 12 months old. The total amount of fluid stays a constant 12.0 liters, so we know the proportion of "old" fluid is 4.22 / 12, or 35.2%.
 
-Of course, we only reach this steady state after a number of times repeating this process. But how many times? The output below shows that we reach the steady state after just 12 months of the process, which is faster than I would have guessed before starting the problem. (We know we've reached a steady state after 12 months because the 13th month produces the same array as the 12th month.)
+Of course, we only reach this steady state after a number of months repeating this process. But how many months? The output below shows that we reach the steady state after just 12 months, which is faster than I would have guessed before starting the problem. (We know we've reached a steady state after 12 months because the 13th month produces the same array as the 12th month.)
 
 ```
  0: [0.0, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 12.0]
@@ -57,13 +57,13 @@ Of course, we only reach this steady state after a number of times repeating thi
 
 # Observations
 
-One thing I observed about this problem is that the series of numbers appears to follow a pattern: $(\frac{11}{12})^{i}$ for values of $i$ starting at zero. This makes sense: because we remove oil proportionally from all ages, the value of the oil at each timestep is $\frac{11}{12}$ of its prior value. The only difference is that the problem lumps all oil greater than 12 months into a single bucket, rather than tracking the exact age of each liter. But if we remove this constraint, and instead track the age of all liters exactly, then we would get the infinite series of $(\frac{11}{12})^{i}$. Therefore, another way of answering this problem is to solve the following equation, which tells us the amount of oil at least 12 months old.
+One thing I observed about this problem is that the series of numbers appears to follow a pattern: $(\frac{11}{12})^{i}$ for values of $i$ starting at zero. This makes sense: because we remove oil proportionally from all ages, the value of the oil at each timestep is $\frac{11}{12}$ of its prior value. The only difference is that the problem lumps all oil greater than 12 months into a single bucket, rather than tracking the exact age of each liter. But if we remove this constraint, and instead track the age of all liters exactly (even up to infinity in theory), then we would get the infinite series of $(\frac{11}{12})^{i}$. Therefore, another way of answering this problem is to solve the following equation, which tells us the amount of oil at least 12 months old.
 
 $$
 \sum_{i=12}^{\infty} (\frac{11}{12})^i
 $$
 
-The sum of this infinite series when $i$ starts at 0 is $\frac{1}{1 - \frac{11}{12}} = 12$. So to solve for the sum when $i$ starts at 12, we subtract the values from 0 to 11. In python, this can be done with a list comprehension:
+The sum of this infinite series when $i$ starts at 0 is $\frac{1}{1 - \frac{11}{12}} = 12$. So to solve for the sum when $i$ starts at 12, we subtract the values of $i$ from 0 to 11. In python, this can be done with a list comprehension:
 
 ```python
 >>> sum((11 / 12) ** x for x in range(12))
