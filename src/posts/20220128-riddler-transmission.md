@@ -2,15 +2,15 @@
 title: Riddler Transmission
 slug: riddler-transmission
 date: "2022-01-28"
-excerpt: asdf
-tags: []
+excerpt: This week's Riddler reminds me of the Ship of Theseus applied to the oil in a car's transmission. If we remove and replace a small amount of oil each month for many years, how much of the oil will be at least 12 months old?
+tags: ["puzzles", "Python"]
 relatedPosts: []
 status: published
 ---
 
 # Introduction
 
-<a href="https://fivethirtyeight.com/features/can-you-tune-up-the-truck/">Riddler</a>
+This week's <a href="https://fivethirtyeight.com/features/can-you-tune-up-the-truck/">Riddler</a> reminds me of the <a href="https://en.wikipedia.org/wiki/Ship_of_Theseus">Ship of Theseus</a> applied to the oil in a car's transmission. If we remove and replace a small amount of oil each month for many years, how much of the oil will be at least 12 months old?
 
 <blockquote>
 You want to change the transmission fluid in your old van, which holds 12 quarts of fluid. At the moment, all 12 quarts are “old.” But changing all 12 quarts at once carries a risk of transmission failure.
