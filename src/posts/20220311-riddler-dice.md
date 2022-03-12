@@ -12,7 +12,7 @@ status: published
 
 I followed a winding path to solve this week's <a href="https://fivethirtyeight.com/features/can-you-score-some-basketball-tickets/">Riddler</a>. First, I was convinced it was easy; then, I discovered some hidden complexity; finally, I realized there is much more under the surface!
 
-I even started writing this blog post with my first (incorrect) solution before I realized I missed some key details. I quickly went back to correct my mistakes, did a bit of extra work, and got a new answer. Just to be sure I tried a third, more exhaustive approach and finally came to an answer I was happy with. At each stage I enjoyed uncovering the extra layers of complexity that make this Riddler one of my favorites in recent memory.
+I even started writing this blog post with my first (incorrect) solution before I realized I missed some key details and had the wrong answer. The win rate I calculated was far too low. I went back to correct my mistakes, did a bit of extra work, and got a better result. Then, just to be sure, I tried a more exhaustive solution and realized I could improve the strategy even further. Every time I tried a new approach I appreciated the subtle, hidden complexity of this week's puzzle, and it is certainly one of my favorite Riddler's in recent memory.
 
 As usual, I'll start with the solution and then dive deeper into my problem-solving approach. But this time I won't hide any of the wrong turns and false starts I had along the way. I hope you enjoy it! Here's the problem statement.
 
@@ -27,7 +27,7 @@ To maximize your chances of winning, which four numbers should you pick? And wha
 
 # Solution
 
-<strong>We will maximize our odds of winning by choosing the numbers 4, 6, 8, and 10. This strategy wins 97.53% of all games.</strong>
+<strong>We can maximize our odds of winning by choosing the numbers 4, 6, 8, and 10. This strategy wins 97.53% of all games.</strong>
 
 We can prove this is the best strategy by running a brute force search against all sets of four numbers we could pick, evaluating their performance against all rolls we could see, and tallying the results. But before we get to that, let me take you down the winding path of wrong turns I took first.
 
@@ -36,11 +36,11 @@ We can prove this is the best strategy by running a brute force search against a
 At first, I was excited to solve this problem not because it was hard, but because I thought it was a great opportunity to use some of Python's excellent standard library functions. I knew I wanted to iterate through all possible dice rolls, then count the number of pairwise sums created by each roll. Here was the process I followed:
 
 1. Loop through every possible roll, from (1, 1, 1, 1) to (6, 6, 6, 6).
-2. For each roll, calculate the unique pairwise sums.
-3. Add the pairwise sums from this roll to a running total.
+2. For each roll, calculate the unique pairwise sums of the dice.
+3. Keep a running total of the pairwise sums we see across all the rolls.
 4. Find the top four numbers, and divide by the total.
 
-I iterated through a list of the 1296 possible rolls of 4 dice, calculated the pairwise sums, then counted the number of times each number showed up. For example, the number 7 appears in 834 rolls, the numbers 6 and 8 appear in 727 rolls each, and so on. Because the problem asked for the <em>best</em> four numbers, I took the top four numbers, added them up, and divided by the total number of times all the numbers showed up. I calculated $(834 + 727 + 727 + 580) / 3075 = 53.95%$.
+I iterated through a list of the 1296 possible rolls of 4 dice, calculated the pairwise sums, then counted the number of times each number showed up. For example, the number 7 appears in 834 rolls, the numbers 6 and 8 appear in 727 rolls each, and so on. In total, the numbers 2 through 12 showed up 3075 times across all the rolls. (There are 1296 rolls, but each roll can produce multiple pairwise sums.) Because the problem asked for the <em>best</em> four numbers, I took the top four numbers, added them up, and divided by 3075. I calculated $(834 + 727 + 727 + 580) / 3075 = 53.95%$.
 
 I even wrote some nice code to do this, using powerful functions like `itertools.product`, `itertools.combinations`, and `collections.Counter`.
 
@@ -71,9 +71,9 @@ I got my answer and started writing this post, thinking the whole time: "It can'
 
 ## Let's just double check that...
 
-I started by trying to sanity-check my result. I knew there were 1296 possible rolls, but why was my denominator 3075? 3075 was the sum of all the unique pairwise sums produced from all the rolls, but that didn't seem like the right thing to be dividing by.
+The first thing that I knew I needed to justify was my choice of denominator: 3075. I knew there were 1296 possible rolls, and 3075 was the total of all the pairwise sums produced from all the rolls. Each roll was equally likely, but it didn't seem quite right that I was dividing by the total of <em>pairwise sums</em> rather than the <em>number of rolls</em>.
 
-Instead, I created a list of all the rolls and their pairwise sums in Python.
+To chase this down further I created a list of all the rolls and their pairwise sums in Python. I often use an interactive terminal, specifically iPython, when I'm exploring a problem for the first time.
 
 ```python
 def pairwise_sums(*roll: int) -> Set[int]:
@@ -84,26 +84,30 @@ rolls = itertools.product(range(1, 7), repeat=4)
 targets = [pairwise_sums(*roll) for roll in rolls]
 ```
 
-Now I had the list of the pairwise sum values from each of the 1296 rolls. I did a quick check to see how many of the values had a 7 in it, and then divided it by the total number of rolls.
+Now I had the list of the pairwise sum values from each of the 1296 rolls. I did a quick check to see how many of the values had a 7 in them, and then divided it by the total number of rolls.
 
 ```python
 sum(7 in target for target in targets) / len(targets)
 # 0.6435185185185185
 ```
 
-That's strange... if there's a 7 in 64% of all the rolls, then my answer of 53% from earlier couldn't be right. This was my first realization: I was double-counting numbers! There had to be cases where a 7 and an 8 would <em>both</em> be in the roll, so I couldn't just add their values together. I also realized that I should have been thinking about how many rolls I could <em>eliminate</em> by choosing a 7. If 64% of the rolls had a 7 in them, then I should look at the remaining 36% of rolls and choose the number that shows up most often among those. I had it! I had uncovered the twist of this problem and was well on my way to a solution - at least I thought.
+That's strange... if there's a 7 in 64% of all the rolls, then my answer of 53% from earlier couldn't be right. If the <em>only</em> number I was allowed to pick was 7, then I should win 64% of the time. This was my first realization: I was double-counting numbers! There are cases where a 7 and an 8 would <em>both</em> be in the roll, so I can't just add thhose numbers together.
+
+I also realized that I should have been thinking about how many of the 1296 rolls I could <em>eliminate</em> by choosing a 7. If 64% of the rolls had a 7 in them, then I should look at the remaining 36% of rolls and choose the number that shows up most often among those. I had it! I had uncovered the twist of this problem and was well on my way to a solution - or so I thought.
 
 ## Approach #2: Getting closer
 
-I kept working with my list of targets. I removed the 834 rolls that contained a 7, then counted the targets that showed up most in the remaining rolls. Unsurprisingly, the numbers 6 and 8 were at the top of the list. Of the remaining 462 rolls, 6 and 8 showed up 249 times. So if I picked 7 and 6, I should cover $834 + 249 = 1083$ total cases, which was 83.6% of all rolls. I just kept going, choosing the number that had the highest remaining occurrences, which led me to choose 7, 6, 8, and 4.
+I kept working with my list of pairwise sums, which I called "targets". I removed the 834 rolls that contained a 7, then counted the targets that showed up most in the remaining rolls. Unsurprisingly, the numbers 6 and 8 were at the top of the list. Of the remaining 462 rolls, 6 and 8 each showed up 249 times. So if I picked 7 and 6, I should cover $834 + 249 = 1083$ total cases, which was 83.6% of all rolls. I kept going with this approach, eliminating rolls by choosing the number that covered the most remaining occurrences, and I picked the top four values: 7, 6, 8, and 4.
 
-After doing this, I realized I had used the wrong denominator, and oversimplified the problem. But the end result was pretty close to what I had originally: instead of (7, 6, 8, 5), I got an answer of (7, 6, 8, 4). I also updated my win rate calculation. With 7, 6, 8, and 4, we should win in 1235 out of 1296 rolls, for a 95.3% win rate. Case closed! (Almost.)
+After doing this, I realized I had used the wrong denominator, and oversimplified the problem. But my final group of four numbers was pretty close to what I had originally: instead of (7, 6, 8, 5), I got an answer of (7, 6, 8, 4). I also updated my win rate calculation. With 7, 6, 8, and 4, we should win in 1235 out of 1296 rolls, for a 95.3% win rate. Case closed!
+
+(Almost.)
 
 ## Approach #3: It's a Riddler after all
 
-I felt much better about my approach - after all I was predicting a 95% win rate - but I had a nagging feeling that I was still missing something. I made some assumptions, like starting with the number 7 because it occurred the most often. Could I actually prove that was the best strategy? In problems like this, sometimes assumptions like that can be misleading. Sometimes, a group of "sub-optimal" choices can actually outperform what initially appears to be the best strategy.
+I felt much better about my approach - after all I was predicting a 95% win rate - but I had a nagging feeling that I was still missing something. I had made some assumptions, like starting with the number 7 because it occurred the most often. Could I actually prove that was the best strategy? In problems like this, sometimes assumptions like that can be misleading. Sometimes, a group of "sub-optimal" choices can outperform what initially appears to be the intuitive, or "optimal" strategy.
 
-I was reminded of <a href="https://youtu.be/LJS7Igvk6ZM">this scene from "A Beautiful Mind"</a>, when John Nash realizes that in game theory, a group making decisions together may produce better outcomes than individuals acting purely in their own self interests.
+I was reminded of <a href="https://youtu.be/LJS7Igvk6ZM">this scene from "A Beautiful Mind"</a>, when John Nash realizes that in game theory, a group making decisions together may produce better outcomes than individuals acting purely in their own self interests. Perhaps in this case, a group of numbers other than 7 might outperform a strategy that starts by choosing 7...
 
 In this case, with a bit of digging, I realized that even though 7 appears in the most individual rolls, we can actually improve our win rate by choosing a group of other numbers.
 
@@ -114,7 +118,7 @@ In this case, with a bit of digging, I realized that even though 7 appears in th
 
 ## So how does it work?
 
-Finally, I had written enough code and felt like I understood the problem well enough to trust my solution. Instead of assuming or using heuristics, I used a brute force approach to test the win rate of every combination of four numbers we could pick, from (2, 3, 4, 5) through (9, 10, 11, 12). I was surprised by the result at first, especially after the earlier assumptions I had made about this problem, but it's hard to argue with an exhaustive search of all possibilities!
+To test my theory, I created a list of all possible groups of four numbers we could choose, from (2, 3, 4, 5) to (9, 10, 11, 12) and everything in between. I had code that would give me the `win_rate` of a group of numbers, so I looped through each of the groups, calculated their win rates, and returned a sorted list of results. Finally, I had written enough code and felt like I understood the problem well enough to trust my solution. Instead of assuming or using heuristics, I knew that this brute force approach left nothing up for discussion. It's hard to argue with an exhaustive search of all possibilities!
 
 I created a Python dictionary where each key is a group of four numbers I could pick, and the value is the number of wins I would expect out of the 1296 total rolls. Here are the top 10 results:
 
@@ -132,6 +136,10 @@ I created a Python dictionary where each key is a group of four numbers I could 
 ```
 
 Choosing (4, 6, 8, 10) is the clear best strategy, with a 97.53% win rate. This strategy uses a wider spread of numbers, ignoring the high concentration of wins we get from 7, in favor of covering more possible rolls. The result is a slight edge over my second approach.
+
+After going through this process, the answer made sense. There is a high degree of overlap between the rolls that have 7 and the rolls that have 8. In fact, 478 rolls out of 1296 have <em>both</em> a 7 and an 8. So we can improve the spread of our guesses by choosing (4, 6, 8, 10), while still covering almost all the rolls we would have covered if we included the number 7.
+
+It might go without saying, but the best part of solving Riddlers isn't always the answer itself, but the process used to get there. In this case, I went from, "this is too easy," to, "there's some subtle complexity here," and finally, "I learned more than I expected to!" And it's hard to ask much more from a puzzle!
 
 # Full Code
 
