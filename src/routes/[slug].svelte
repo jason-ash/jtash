@@ -63,6 +63,9 @@
     color: var(--text-color-secondary);
   }
   .post :global(h1) {
-    font-size: 1.35em;
+    font-size: 1.5rem;
+  }
+  .post :global(h2) {
+    font-size: 1.25rem;
   }
 </style>

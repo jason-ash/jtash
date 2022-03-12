@@ -67,6 +67,11 @@ img {
   max-width: 95%;
   max-height: 100%;
 }
+figcaption {
+  display: block;
+  margin: auto;
+  text-align: center;
+}
 p {
   line-height: 1.5;
 }
