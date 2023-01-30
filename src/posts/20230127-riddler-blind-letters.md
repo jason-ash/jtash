@@ -2,7 +2,7 @@
 title: Riddler Blind Letters
 slug: riddler-blind-letters
 date: "2023-01-27"
-excerpt: asdf.
+excerpt: With two young kids, I don't have as much time to solve the Riddler as I used to. Nevertheless, when a really challenging or unique puzzle appears, I can't resist. This week's puzzle was a great opportunity to start building my skills writing rust - a lower-level, super fast programming language.
 tags: ["dynamic programming", "puzzles", "rust"]
 relatedPosts: []
 status: published
@@ -10,7 +10,7 @@ status: published
 
 # Introduction
 
-With two young kids, I don't have as much time to solve the Riddler as I used to. Nevertheless, when a really challenging or unique puzzle appears, I can't resist. <a href="https://fivethirtyeight.com/features/can-you-defeat-the-tiktok-meme/">This week's puzzle</a> was a great opportunity to start building my skills writing rust, a lower-level, super fast programming language. As it turns out, the name of the game for this puzzle was running millions and millions of simulations, which was a perfect stress test for the language. Spoiler alert: rust was the perfect choice!
+With two young kids, I don't have as much time to solve the Riddler as I used to. Nevertheless, when a really challenging or unique puzzle appears, I can't resist. <a href="https://fivethirtyeight.com/features/can-you-defeat-the-tiktok-meme/">This week's puzzle</a> was a great opportunity to start building my skills writing rust - a lower-level, super fast programming language. This was a perfect stress test for the language, because I needed to run millions and millions of game simulations. Spoiler alert: rust was the perfect choice!
 
 <blockquote>
 The #blindletterchallenge has recently taken TikTok by storm. In this challenge, you are presented with five letters, one at a time. Letters are picked randomly, but you can assume that no two letters are the same (i.e., letters are picked without replacement). As each letter is presented, you must identify which of five slots you will place it. The goal is for the letters in all five slots to be in alphabetical order at the end.
@@ -21,17 +21,17 @@ If you play with an optimal strategy, always placing letters in slots to maximiz
 
 # Approach
 
-Ultimately the goal is to identify a strategy for where to put each letter, given the other letters we've already placed. But the only way we will know that is to imagine all the next letters we might get and where we might place _those_. It's a combinatorial explosion of possible letters and possible indices. Fortunately, like <a href="/riddler-wordle">many</a> <a href="/riddler-chocolates">other</a> <a href="/riddler-bowling-dice">problems</a> that I find interesting, this problem lends itself well to a dynamic programming approach.
+The goal is to identify the ideal location for each letter we get, given the other letters we've already placed. But the only way we will know that is to imagine all the next letters we might get and where we might place _those_. It's a combinatorial explosion of possible letters and possible indices. Fortunately, like <a href="/riddler-wordle">many</a> <a href="/riddler-chocolates">other</a> <a href="/riddler-bowling-dice">problems</a> that I find interesting, this problem lends itself well to a dynamic programming approach.
 
-We'll write a program that will play the game in reverse: it will evaluate whether we win or lose based on the final letter we get, taking into account all the possible ways we could have arranged the letters we got beforehand. This way, we can identify the letter and index positions that lead to the best outcomes, which will be our optimal strategy.
+We'll write a program that will play the game in reverse: it will evaluate whether we win or lose based on the final letter we get, taking into account all the possible ways we could have arranged the letters we got beforehand. Then it will backtrack to the penultimate letter and decide, given our perfect knowledge of how the game might end, the best location for this letter. We proceed backwards until we identify the best opening move, knowing how we will play at all future steps.
 
 How many possible combinations do we have to check? We need to check every five-letter permutation from the alphabet, and every possible index position for each letter as we get them. For example, we need to check getting the letter "A", then placing it in slot 1. Then we play all future games along that path. Next, we go back and imagine placing the "A" in slot 2 and playing future games from there. We do this for every letter and index.
 
-I believe this means we check all five-letter permutations ($26 * 25 * 24 * 23 * 22 = 7893600$) and all possible indices for the letters as we get them ($5 * 4 * 3 * 2 * 1 = 120$). We multiply those together to get 947,232,000 possible games. (Anyone care to fact check me here?)
+I believe this means we check all five-letter permutations ($26 * 25 * 24 * 23 * 22 = 7,893,600$) and all possible indices for the letters as we get them ($5 * 4 * 3 * 2 * 1 = 120$). We multiply those together to get $947,232,000$ possible games. (Anyone care to fact check me here?)
 
 # Intuition
 
-Before writing the code, I tried to think about what strategies might be reasonable. With 26 letters in the alphabet, it seemed to me like the opening move was pretty straightforward: Divide the letters into four groups of five and one group of 6, according roughly to the quintiles.
+Before writing the code, I tried to think about what strategies might be reasonable. With 26 letters in the alphabet, it seemed to me like the opening move was pretty straightforward: divide the letters into four groups of five and one group of 6, according roughly to the quintiles.
 
 | letters            | slot |
 | ------------------ | ---- |
@@ -41,11 +41,11 @@ Before writing the code, I tried to think about what strategies might be reasona
 | (q, r, s, t, u)    | 4    |
 | (v, w, x, y, z)    | 5    |
 
-However, I'm glad I wrote code without this assumption baked in, because it turns out the ideal strategy didn't match my intuition!
+However, I'm glad I wrote code without this assumption baked in, because it turns out the ideal strategy didn't quite match my intuition!
 
 # Solution
 
-**Skipping ahead to the answer, you should expect to win this game 25.43% of the time.** Somewhat obviously, the best opening letters are A and Z. If you start with those letters, your win probability jumps to 37.37%. The worst letters to start with are D and W, which, as we'll see, are the last letters you would want to include in slots 1 and 5, respectively. If you start with those letters, your win percentage drops to 21.91%. There's a big asymmetry here, in that the best letters improve your odds of winning substantially, and the worst letters are only slightly worse than your expected win rate for a new game.
+**It turns out that you should expect to win this game 25.43% of the time.** Somewhat obviously, the best opening letters are A and Z. If you start with those letters, your win probability jumps to 37.37%. The worst letters to start with are D and W, which, as we'll see, are the last letters you would want to include in slots 1 and 5, respectively. If you start with those letters, your win percentage drops to 21.91%. There's a big asymmetry here, in that the best letters improve your odds of winning substantially, and the worst letters are only slightly worse than your expected win rate at the beginning of the game.
 
 What I found most interesting is that my intuition of the best starting slots was not quite right. It turns out that you want to reserve slots 1 and 5 for the first/last _four_ letters of the alphabet only (at least on the opening move). Then you want to create three groups of six letters for slots 2, 3, and 4. Here are all the starting letters, the best slot, and the win percentage from that point forward:
 
