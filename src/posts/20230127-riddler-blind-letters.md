@@ -2,7 +2,7 @@
 title: Riddler Blind Letters
 slug: riddler-blind-letters
 date: "2023-01-27"
-excerpt: With two young kids, I don't have as much time to solve the Riddler as I used to. Nevertheless, when a really challenging or unique puzzle appears, I can't resist. This week's puzzle was a great opportunity to start building my skills writing rust - a lower-level, super fast programming language.
+excerpt: This week's puzzle was a great opportunity to build my skills writing rust - a lower-level, fast programming language. I ran millions of game simulations to find the optimal strategy!
 tags: ["dynamic programming", "puzzles", "rust"]
 relatedPosts: []
 status: published
