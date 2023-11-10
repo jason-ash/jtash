@@ -97,9 +97,6 @@ especially if they are related to recent events. ChatGPT generally is not aware
 of events from the last one to two years because of its training data cutoff, so
 Google will always have much better information on current events.
 
-I tend to focus my discussion with ChatGPT around "timeless" topics, where I
-want it to [MORE HERE].
-
 ### Creating or Editing
 
 When ChatGPT was first released, I and many others were fascinated by its
@@ -113,25 +110,28 @@ most important think is to understand _how differentiated does my output need to
 be?_ Do I need something that sounds uniquely like me, or do I need something
 that is undifferentiated/standard/common. Here are my rough guidelines:
 
-- I **don't** use ChatGPT to _create_ things that need to sound like I wrote
-  them: emails, powerpoint slides, strategy documents, etc. I find that it takes
-  far more effort to get something even remotely close to my voice than it would
-  have taken for me to write the thing myself.
-- I **do** use ChatGPT to _create_ things that don't need to sound like I wrote
-  them, especially if I expect there is some consensus standard practice for the
-  output I'm looking for. For example, "write me a boilerplate html document,"
-  "generate 12 brainstorming topics for an upcoming discussion", and the
-  classic, "please suggest 12 names for this variable/struct/collection". This
-  is often good enough after the first try, or I'm using the output myself as an
-  input into my own creative process.
-- I **don't** use ChatGPT to _edit_ my own writing. I haven't found the results
-  to be very good, mostly because I think those edits tend to dilute my voice.
-  Maybe with some better prompting I could work on this, but it feels like the
-  effort outweighs the benefits.
-- I **do** use ChatGPT to _edit_ my code, mostly as a second-opinion. Some of my
-  most common questions to ChatGPT involve me pasting a medium-sized chunk of
-  code and asking, "is this idiomatic? are there opportunities to improve it
-  either for readability, performance, or succintness?"
+I **don't** use ChatGPT to _create_ things that need to sound like I wrote
+them: emails, powerpoint slides, strategy documents, etc. I find that it takes
+far more effort to get something even remotely close to my voice than it would
+have taken for me to write the thing myself.
+
+I **do** use ChatGPT to _create_ things that don't need to sound like I wrote
+them, especially if I expect there is some consensus standard practice for the
+output I'm looking for. For example, "write me a boilerplate html document,"
+"generate 12 brainstorming topics for an upcoming discussion", and the
+classic, "please suggest 12 names for this variable/struct/collection". This
+is often good enough after the first try, or I'm using the output myself as an
+input into my own creative process.
+
+I **don't** use ChatGPT to _edit_ my own writing. I haven't found the results
+to be very good, mostly because I think those edits tend to dilute my voice.
+Maybe with some better prompting I could work on this, but it feels like the
+effort outweighs the benefits.
+
+I **do** use ChatGPT to _edit_ my code, mostly as a second-opinion. Some of my
+most common questions to ChatGPT involve me pasting a medium-sized chunk of
+code and asking, "is this idiomatic? are there opportunities to improve it
+either for readability, performance, or succintness?"
 
 I think these guideliness will change over time, as we build large language
 models with more context and better prompts. For example, it's possible that
@@ -161,7 +161,9 @@ Here's a snippet of a recent conversation where I was talking about options for
 handling multiple types of http requests in a single Rest API endpoint:
 
 <blockquote>
+
 Me: what if i had something like this? pseudocode.
+
 ```
 fn handler(header: HeaderType) -> Response {
     match header {
@@ -173,6 +175,7 @@ fn handler(header: HeaderType) -> Response {
 fn handler_json(...) {}
 fn handler_form(...) {}
 ```
+
 </blockquote>
 
 <blockquote>
@@ -180,7 +183,7 @@ ChatGPT: Your pseudocode idea is quite reasonable and reflects a common approach
 to content negotiation in web server design... [truncated]
 </blockquote>
 
-**Takeaway**: this is one of my favorite uses of ChatGPT, and a tiny,
+This is one of my favorite uses of ChatGPT, and a tiny,
 partially-complete example can go a long way toward a productive discussion.
 
 ### 2. Introductions to topics and the relationships between them
