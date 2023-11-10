@@ -26,38 +26,39 @@ then.
 
 Over that time, I've developed a much better sense of how to use ChatGPT
 effectively for the things I do most often: developing software and writing. To
-celebrate ChatGPT's birthday, I wrote some thoughts on a few closely related
-topics.
+celebrate ChatGPT's birthday, I am sharing how I use ChatGPT effectively both
+for work and personal use.
 
 In this post, I'll talk about the framework that I use to decide whether ChatGPT
 is the right tool for the problem I'm trying to solve. Then, I'll share ten
 examples of the types of questions I ask ChatGPT most often, which showcase what
-I consider to be the model's strenghts. Lastly, I share my wishlist for future
+I consider to be the model's strengths. Lastly, I share my wish list for future
 improvements, many of which feel right around the corner.
 
 # Understand your objective.
 
-Whenever I engage with ChatGPT, I get the best results when I'm clear with
-myself about what I'm trying to accomplish. For example, before exploring a
-topic with ChatGPT I find myself subconsciously running through a mental
-checklist of the following questions. These questions help me decide whether
-ChatGPT is the right tool for the problem I'm working on, or whether I should
-use something else, like a search engine.
+Before you start using any tool, you need to be clear about whether it is the
+right tool for the job. Whenever I engage with ChatGPT, I get the best results
+when I'm clear with myself about what I'm trying to accomplish. For example,
+before exploring a topic with ChatGPT I find myself subconsciously running
+through a mental checklist of the following questions. These questions help me
+decide whether ChatGPT is the right tool for the problem I'm working on, or
+whether I should use something else, like a search engine.
 
-### Low risk or High risk
+### Low-risk or High-risk
 
 First, I ask myself what the output is for, and specifically whether it will be
-used in a "high risk" or "low risk" context. For example, "please generate a
-boilerplate html document" is a low risk question - the consequences of getting
+used in a "high-risk" or "low-risk" context. For example, "please generate a
+boilerplate html document" is a low-risk question: the consequences of getting
 it wrong are small, or they might be easily fixed later with a compiler or code
 linter. However, "please tell me where to invest my retirement savings" is a
-high risk question, especially if you follow the advice blindly.
+high-risk question, especially if you follow the advice blindly.
 
 ChatGPT can answer each of those questions, but the answers should be treated
 differently. ChatGPT will almost always give you an answer; it is your job to
 figure out what to do with it.
 
-I will fact-check or get a second opinion on high risk answers, while I will
+I will fact-check or get a second opinion on high-risk answers, while I will
 generally take low risk answers at face value. Either way, I try to ensure I
 know what regime I'm in before pursuing a line of questioning so I can approach
 the conversation with the appropriate level of skepticism.
@@ -67,7 +68,8 @@ the conversation with the appropriate level of skepticism.
 Next, I think about whether I'm asking for something fact-based, or
 opinion-based. For example, "Who signed the United States Declaration of
 Independence" is a fact-based question. I don't generally use ChatGPT for things
-like this: wikipedia or some other authoritative source is a safer bet.
+like this: wikipedia or some other authoritative source is a safer bet to ensure
+you get the correct answer.
 
 On the other hand, I often use ChatGPT for opinion-based discussions, like "can
 you compare the design decisions between React and Solid.js and why someone
@@ -89,8 +91,10 @@ training data?"
 
 "Timeless" questions are those questions that appear over and over in the
 training data, and there is some level of consensus or stability around the
-topic. On the other hand, "topical" subjects are those that appear briefly in
-the training data, might be highly contextual, and then quickly fade away.
+topic. ChatGPT is usually very good at answering these timeless questions.
+
+On the other hand, "topical" subjects are those that appear briefly in the
+training data, might be highly contextual, and then quickly fade away.
 
 I have found that Google is the right place to go for topical subjects,
 especially if they are related to recent events. ChatGPT generally is not aware
@@ -106,32 +110,32 @@ delightful.
 
 After a year of using ChatGPT, I have found that I use it far more often for
 _editing_ than I do for _creating_, but it depends on the situation. For me, the
-most important think is to understand _how differentiated does my output need to
+most important thing is to understand _how differentiated does my output need to
 be?_ Do I need something that sounds uniquely like me, or do I need something
-that is undifferentiated/standard/common. Here are my rough guidelines:
+that is undifferentiated/standard/common? Here are my guidelines:
 
-I **don't** use ChatGPT to _create_ things that need to sound like I wrote
-them: emails, powerpoint slides, strategy documents, etc. I find that it takes
-far more effort to get something even remotely close to my voice than it would
-have taken for me to write the thing myself.
+I **don't** use ChatGPT to _create_ things that need to sound like I wrote them:
+emails, powerpoint slides, strategy documents, etc. I find that it takes far
+more effort to get something even remotely close to my voice than it would have
+taken for me to write the thing myself.
 
 I **do** use ChatGPT to _create_ things that don't need to sound like I wrote
 them, especially if I expect there is some consensus standard practice for the
 output I'm looking for. For example, "write me a boilerplate html document,"
-"generate 12 brainstorming topics for an upcoming discussion", and the
-classic, "please suggest 12 names for this variable/struct/collection". This
-is often good enough after the first try, or I'm using the output myself as an
-input into my own creative process.
+"generate 12 brainstorming topics for an upcoming discussion", and the classic,
+"please suggest 12 names for this variable/struct/collection". This is often
+good enough after the first try, or I'm using the output myself as an input into
+my own creative process.
 
-I **don't** use ChatGPT to _edit_ my own writing. I haven't found the results
-to be very good, mostly because I think those edits tend to dilute my voice.
-Maybe with some better prompting I could work on this, but it feels like the
-effort outweighs the benefits.
+I **don't** use ChatGPT to _edit_ my own writing. I haven't found the results to
+be very good, mostly because I think those edits tend to dilute my voice. Maybe
+with some better prompting I could work on this, but it feels like the effort
+outweighs the benefits.
 
 I **do** use ChatGPT to _edit_ my code, mostly as a second-opinion. Some of my
-most common questions to ChatGPT involve me pasting a medium-sized chunk of
-code and asking, "is this idiomatic? are there opportunities to improve it
-either for readability, performance, or succintness?"
+most common questions to ChatGPT involve me pasting a medium-sized chunk of code
+and asking, "is this idiomatic? are there opportunities to improve it either for
+readability, performance, or succintness?"
 
 I think these guideliness will change over time, as we build large language
 models with more context and better prompts. For example, it's possible that
@@ -142,7 +146,7 @@ These questions help me understand how to use ChatGPT - where it's likely to be
 helpful, or where the effort of getting an answer might not be worth it. Next, I
 will share ten examples showing how I use ChatGPT.
 
-# Usage Patterns
+# Ten Examples
 
 ### 1. Exploring software architecture choices
 
@@ -183,8 +187,8 @@ fn handler_form(...) {}
 to content negotiation in web server design... [truncated]
 </blockquote>
 
-This is one of my favorite uses of ChatGPT, and a tiny,
-partially-complete example can go a long way toward a productive discussion.
+This is one of my favorite uses of ChatGPT, and a tiny, partially-complete
+example can go a long way toward a productive discussion.
 
 ### 2. Introductions to topics and the relationships between them
 
@@ -310,23 +314,24 @@ members to discuss pain points and opportunities for data at our company. I
 asked ChatGPT to generate 12 questions that would cover all relevant
 perspectives. The questions themselves weren't that important: instead I wanted
 to make sure we were likely to prompt _ourselves, the group of humans_
-effectively into having a productive conversation. I changed a few words from
-ChatGPT's output, sent the email, and was done in about five minutes.
+effectively, so we could having a productive conversation. I changed a few words
+from ChatGPT's output, sent the email, and was done in about five minutes.
 
 Another example is coming up with interview questions. I asked ChatGPT, "Can you
 suggest some questions I might ask to a senior technical manager to evaluate
 their technical skills?" I used this as a starting point to think about how I
 wanted to structure the interview, and what kinds of topics I might want to
-cover. Ultimately I rewrote the questions, but I liked using ChatGPT as a
+cover. Ultimately, I rewrote the questions, but I liked using ChatGPT as a
 starting point.
 
 ### 9. Implementing highly specific, well-defined code snippets
 
 I don't often use ChatGPT to write code for me from scratch, but occasionally I
 use it to write well-defined implementations. This is very similar to using
-tools like Github Copilot or Amazon Codewhisperer.
+tools like <a href="https://github.com/features/copilot">Github Copilot</a> or
+<a href="https://aws.amazon.com/codewhisperer/">Amazon CodeWhisperer</a>.
 
-Usually my quesiton will look like this, and I only ask when I expect the
+Usually my question will look like this, and I only ask when I expect the
 implementation to be a few lines. I will delegate the work to ChatGPT, go back
 to what I was doing, and then copy the answer later. I only use this for code
 which is highly undifferentiated - it's fairly obvious what the code should look
@@ -387,14 +392,14 @@ Note, your mileage may vary with this approach, especially for newer libraries
 that aren't well-represented in ChatGPT's training data. But it's low-stakes to
 ask.
 
-### 10. Fricionles rabbit-hole diving
+### 10. Frictionless rabbit-hole diving
 
 Finally, I suppose this is less of a specific example and more of a comment on
 the _interface and process_ of using ChatGPT compared to other resources.
 
 I have found that, compared to Google or Youtube, the dynamic nature of the
 conversation with ChatGPT creates a frictionless learning experience. With
-Google or Youtube, I consume predefined content with no ability to ask followup
+Google or Youtube, I consume predefined content with no ability to ask follow up
 questions or explicitly connect different topics together.
 
 On the other hand, with ChatGPT, I can pursue whatever thread of curiosity
@@ -417,8 +422,8 @@ this year, I think many of them are nearly here already.
    close to this with
    <a href="https://openai.com/blog/custom-instructions-for-chatgpt">custom
    instructions</a>, but I am not aware of a way to keep those instructions
-   updated more or less in realtime as things change. I would also love a way to
-   do that automatically.
+   updated more or less in real-time as things change. I would also love a way
+   to do that automatically.
 
 2. Github Copilot is starting to roll out a
    <a href="https://docs.github.com/en/copilot/github-copilot-chat/using-github-copilot-chat-in-your-ide">chat
@@ -429,7 +434,7 @@ this year, I think many of them are nearly here already.
    answer questions about my code, but still be general enough to help me learn
    about high-level topics as well.
 
-3. I am exctied for models that we can run locally. I have played around with
+3. I am excited for models that we can run locally. I have played around with
    hosting models using <a href="https://ollama.ai/">Ollama</a>. I think the
    idea of having a model running in the background of your computer, always
    aware of what you're doing, is very powerful. It's so powerful, in fact, that
