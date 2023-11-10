@@ -162,7 +162,7 @@ handling multiple types of http requests in a single Rest API endpoint:
 
 <blockquote>
 
-Me: what if i had something like this? pseudocode.
+**Me:** what if i had something like this? pseudocode.
 
 ```
 fn handler(header: HeaderType) -> Response {
@@ -179,7 +179,7 @@ fn handler_form(...) {}
 </blockquote>
 
 <blockquote>
-ChatGPT: Your pseudocode idea is quite reasonable and reflects a common approach
+**ChatGPT:** Your pseudocode idea is quite reasonable and reflects a common approach
 to content negotiation in web server design... [truncated]
 </blockquote>
 
@@ -226,7 +226,7 @@ sharing this type of code with ChatGPT: 95% of the time it's code I'm very sure
 someone else has written and published already, and I just want a quick review:
 
 <blockquote>
-Me: does this look right to you?
+**Me:** does this look right to you?
 
 ```rust
 impl Encode<'_, Sqlite> for UserId {
@@ -249,7 +249,7 @@ impl Type<Sqlite> for UserId {
 
 <blockquote>
 
-ChatGPT: Your implementation looks mostly correct, but I would suggest a few
+**ChatGPT:** Your implementation looks mostly correct, but I would suggest a few
 changes for optimization and to adhere more closely to idiomatic Rust
 practices... [truncated]
 
@@ -333,7 +333,7 @@ like, and I can just save a little time by not having to write it myself.
 
 <blockquote>
 
-Me: Please write the implementation.
+**Me:** Please write the implementation.
 
 ```rust
 pub enum Colors {
@@ -389,7 +389,7 @@ ask.
 ### 10. Fricionles rabbit-hole diving
 
 Finally, I suppose this is less of a specific example and more of a comment on
-the _interface_ and _process_ of using ChatGPT compared to other resources.
+the _interface and process_ of using ChatGPT compared to other resources.
 
 I have found that, compared to Google or Youtube, the dynamic nature of the
 conversation with ChatGPT creates a frictionless learning experience. With
