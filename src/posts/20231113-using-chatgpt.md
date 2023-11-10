@@ -226,6 +226,7 @@ sharing this type of code with ChatGPT: 95% of the time it's code I'm very sure
 someone else has written and published already, and I just want a quick review:
 
 <blockquote>
+
 **Me:** does this look right to you?
 
 ```rust
