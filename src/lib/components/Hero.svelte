@@ -1,8 +1,7 @@
 <div>
   <p>
-    <strong>Hello! I'm Jason.</strong> I'm a data scientist, actuary, and self-taught software
-    engineer based in San Francisco. Currently I lead the data & analytics team at Symetra,
-    an insurance company.
+    <strong>Hello! I'm Jason.</strong> I'm an actuary and software developer based in San
+    Francisco. Currently I'm the Chief of Data at Symetra, an insurance company.
   </p>
   <p>
     I created this site to share the things I'm interested in. You'll find posts
