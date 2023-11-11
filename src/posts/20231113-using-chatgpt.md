@@ -190,7 +190,40 @@ to content negotiation in web server design... [truncated]
 This is one of my favorite uses of ChatGPT, and a tiny, partially-complete
 example can go a long way toward a productive discussion.
 
-### 2. Introductions to topics and the relationships between them
+### 2. Meeting/Discussion prompts
+
+When I need to create _undifferentiated_ content, ChatGPT is usually my first
+stop. For example, I was preparing for a brainstorming session with some team
+members to discuss pain points and opportunities for data at our company. I
+asked ChatGPT to generate 12 questions that would cover all relevant
+perspectives. The questions themselves weren't that important: instead I wanted
+to make sure we were likely to prompt _ourselves, the group of humans_
+effectively, so we could having a productive conversation. I changed a few words
+from ChatGPT's output, sent the email, and was done in about five minutes.
+
+Another example is coming up with interview questions. I asked ChatGPT, "Can you
+suggest some questions I might ask to a senior technical manager to evaluate
+their technical skills?" I used this as a starting point to think about how I
+wanted to structure the interview, and what kinds of topics I might want to
+cover. Ultimately, I rewrote the questions, but I liked using ChatGPT as a
+starting point.
+
+### 3. Debugging
+
+When I'm debugging code - compiler errors in Rust or runtime errors in Python,
+for example, I usually take a two-pronged approach for errors that don't seem
+immediately obvious to me. Usually I will copy a large section of the error
+message and dump it into ChatGPT with a curt message like, "please fix", and
+then switch back to my editor to look at things more closely myself.
+
+If I'm still stumped after a minute or so, I'll return to ChatGPT and see if it
+suggested something I hadn't yet tried. If I'm still struggling, then I like
+writing more detail in the chat about what I'm trying to accomplish. (If this
+sounds like <a href="https://en.wikipedia.org/wiki/Rubber_duck_debugging">rubber
+duck debugging</a>, that's exactly the point.) Usually writing things out this
+way helps me solve my own problem before I've finished writing.
+
+### 4. Introductions to topics and the relationships between them
 
 I often use ChatGPT to learn about new things, just like I used Google or
 Youtube before. However, with Google or Youtube, the learning is direted by the
@@ -216,7 +249,38 @@ Sessions; I knew about Rest APIs, but I wanted to know more about the different
 options I had for implementing Sessions in my API. I used ChatGPT for this, and
 it was a great tool.
 
-### 3. Validating a software design approach
+### 5. Evaluating the structure of a written document
+
+I wrote above in the framework section that I don't use ChatGPT to write content
+that should sound like my own voice. However, as I'm writing, I _do_ use ChatGPT
+to comment on the overall structure, organization, content, and "coverage" of my
+writing.
+
+For example, while writing our company's Data Strategy document, I would copy
+the table of contents, paste it into ChatGPT, and ask things like:
+
+1.  Does the organization of topics make sense? Does it logically flow?
+2.  Are there any gaps or topics that should be in here that aren't?
+3.  Are there opporutnities to consolidate things together?
+
+I found this level of partnership to be really effective. I was relying on
+ChatGPT to ensure I was representing the "standard" parts of a Data Strategy in
+my document, while working on the specific content myself.
+
+### 6. Simple text or data cleanup
+
+ChatGPT is great for taking small amounts of messy data and cleaning it up or
+reformatting it. Here are some common examples that I've used:
+
+1. Please convert this markdown table into html.
+2. Here is some weirdly-delimited data I found online. Can you format it into
+   comma-separated values?
+
+I find myself doing this asynchronously: I'll grab some data, paste it into
+ChatGPT with some quick instructions, go back to what I was doing, and then
+return to the tab later to copy the clean data and continue with my work.
+
+### 7. Validating a software design approach
 
 I use ChatGPT to validate some portions of my code. Usually I have a good idea
 of what I want to do, and I want a quick sanity check, like I would get by
@@ -260,71 +324,7 @@ practices... [truncated]
 
 </blockquote>
 
-### 4. Debugging
-
-When I'm debugging code - compiler errors in Rust or runtime errors in Python,
-for example, I usually take a two-pronged approach for errors that don't seem
-immediately obvious to me. Usually I will copy a large section of the error
-message and dump it into ChatGPT with a curt message like, "please fix", and
-then switch back to my editor to look at things more closely myself.
-
-If I'm still stumped after a minute or so, I'll return to ChatGPT and see if it
-suggested something I hadn't yet tried. If I'm still struggling, then I like
-writing more detail in the chat about what I'm trying to accomplish. (If this
-sounds like <a href="https://en.wikipedia.org/wiki/Rubber_duck_debugging">rubber
-duck debugging</a>, that's exactly the point.) Usually writing things out this
-way helps me solve my own problem before I've finished writing.
-
-### 5. Evaluating the structure of a written document
-
-I wrote above in the framework section that I don't use ChatGPT to write content
-that should sound like my own voice. However, as I'm writing, I _do_ use ChatGPT
-to comment on the overall structure, organization, content, and "coverage" of my
-writing.
-
-For example, while writing our company's Data Strategy document, I would copy
-the table of contents, paste it into ChatGPT, and ask things like:
-
-1.  Does the organization of topics make sense? Does it logically flow?
-2.  Are there any gaps or topics that should be in here that aren't?
-3.  Are there opporutnities to consolidate things together?
-
-I found this level of partnership to be really effective. I was relying on
-ChatGPT to ensure I was representing the "standard" parts of a Data Strategy in
-my document, while working on the specific content myself.
-
-### 6. Simple text or data cleanup
-
-ChatGPT is great for taking small amounts of messy data and cleaning it up or
-reformatting it. Here are some common examples that I've used:
-
-1. Please convert this markdown table into html.
-2. Here is some weirdly-delimited data I found online. Can you format it into
-   comma-separated values?
-
-I find myself doing this asynchronously: I'll grab some data, paste it into
-ChatGPT with some quick instructions, go back to what I was doing, and then
-return to the tab later to copy the clean data and continue with my work.
-
-### 7. Meeting/Discussion prompts
-
-When I need to create _undifferentiated_ content, ChatGPT is usually my first
-stop. For example, I was preparing for a brainstorming session with some team
-members to discuss pain points and opportunities for data at our company. I
-asked ChatGPT to generate 12 questions that would cover all relevant
-perspectives. The questions themselves weren't that important: instead I wanted
-to make sure we were likely to prompt _ourselves, the group of humans_
-effectively, so we could having a productive conversation. I changed a few words
-from ChatGPT's output, sent the email, and was done in about five minutes.
-
-Another example is coming up with interview questions. I asked ChatGPT, "Can you
-suggest some questions I might ask to a senior technical manager to evaluate
-their technical skills?" I used this as a starting point to think about how I
-wanted to structure the interview, and what kinds of topics I might want to
-cover. Ultimately, I rewrote the questions, but I liked using ChatGPT as a
-starting point.
-
-### 9. Implementing highly specific, well-defined code snippets
+### 8. Implementing highly specific, well-defined code snippets
 
 I don't often use ChatGPT to write code for me from scratch, but occasionally I
 use it to write well-defined implementations. This is very similar to using
@@ -412,7 +412,7 @@ makes for a very powerful learning tool.
 
 Just like a
 <a href="https://www.aboutamazon.com/news/company-news/2016-letter-to-shareholders">beautifully,
-wonderfully dissatisfied customer</a>, I have a wishlist of things that I would
+wonderfully dissatisfied customer</a>, I have a wishlist of things that I would still
 love to see from ChatGPT. And, based on the pace of innovation that we've seen
 this year, I think many of them are nearly here already.
 
@@ -459,7 +459,7 @@ For example, about 20% of the time, I will begin writing a question to ChatGPT
 and realize, about halfway through, that I answered my own question. The
 _process_ of writing the question, especially if I explicitly talk about the
 options I'm considering, is often enough for me to realize the answer myself.
-I'm not surprised by this, really: writing is a powerful tool for organizing
+I'm not surprised by this, really: writing is an incredible tool for organizing
 thoughts and creating focus. Forcing myself to describe problems and
 alternatives is powerful by itself, even without a model like ChatGPT.
 
