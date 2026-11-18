@@ -1,8 +1,15 @@
 .DS_Store
 .env
-.vscode
-node_modules
-/.svelte-kit
-/.vercel_build_output
-/build
-/packages
+.env.*
+!.env.example
+.vscode/
+
+# Rust build output and generated website; keep Cargo.lock tracked.
+target/
+/dist/
+
+# Local design mockups, planning notes, screenshots, and review reports.
+/mockups/
+/notes/
+/ARCHITECTURE.md
+/review/

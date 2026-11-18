@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png" />
+    <title>{% block title %}Jason Ash - Thought Archive{% endblock %}</title>
+    {% block metadata %}{% endblock %}
+    <link rel="stylesheet" href="/assets/site.css" />
+    {% block styles %}{% endblock %}
+  </head>
+  <body class="{% block page_class %}{% endblock %}">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="page">
+      <header class="masthead">
+        {% block brand %}<a class="brand" href="/">Jason Ash</a>{% endblock %}
+        <nav aria-label="Main navigation">
+          <a href="/#articles">Articles</a>
+          <a href="https://github.com/jason-ash">GitHub</a>
+          <a href="https://www.linkedin.com/in/jason-ash/">LinkedIn</a>
+        </nav>
+      </header>
+
+      <main id="main" tabindex="-1">
+        {% block content %}{% endblock %}
+      </main>
+
+      <footer class="site-footer">
+        <p>Jason Ash · <a href="https://github.com/jason-ash/jtash">Open source</a></p>
+        <nav aria-label="Footer navigation">
+          <a href="https://github.com/jason-ash">GitHub</a>
+          <a href="https://twitter.com/ashjasont">Twitter</a>
+          <a href="https://www.linkedin.com/in/jason-ash/">LinkedIn</a>
+        </nav>
+      </footer>
+    </div>
+  </body>
+</html>

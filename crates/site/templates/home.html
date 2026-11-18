@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% block metadata %}
+<meta name="description" content="Articles by Jason Ash on software, math, data, and solving puzzles." />
+{% endblock %}
+
+{% block styles %}
+<link rel="stylesheet" href="/assets/home.css" />
+{% endblock %}
+
+{% block page_class %}homepage{% endblock %}
+
+{% block brand %}<h1><a class="brand" href="/">Jason Ash</a></h1>{% endblock %}
+
+{% block content %}
+<section class="intro" aria-label="Introduction">
+  <p>Hello, I'm Jason! I'm an actuary and software developer based in San Francisco. Currently I'm the Chief of Data at Symetra, an insurance company.</p>
+  <p>I created this site to share the things I'm interested in. You'll find posts explaining how I built this site, how I write code and solve puzzles using Python, and how I use math to understand the world - like using Bayesian inference to analyze my daily step count before and after I got a German Shepherd puppy. You can also find me on Twitter or Github - let's start a conversation!</p>
+</section>
+
+<section id="articles" aria-label="Articles, newest first" tabindex="-1">
+  <ul class="article-list">
+    {% for article in articles %}
+    <li>
+      <a class="article-card" href="{{ article.url()? }}">
+        <div class="article-info">
+          <h2>{{ article.metadata.title }}</h2>
+          <time datetime="{{ article.metadata.date }}">{{ article.metadata.date.format("%b %-d, %Y") }}</time>
+        </div>
+        <p class="article-excerpt">{{ article.metadata.excerpt | safe }}</p>
+      </a>
+    </li>
+    {% endfor %}
+  </ul>
+</section>
+{% endblock %}

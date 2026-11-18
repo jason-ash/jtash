@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block title %}{{ article.metadata.title }} — jtash.com{% endblock %}
+
+{% block styles %}
+<link rel="stylesheet" href="/assets/code.css" />
+<link rel="stylesheet" href="/assets/mathmlfixes.css" />
+{% endblock %}
+
+{% block metadata %}
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@ashjasont" />
+<meta name="twitter:title" content="{{ article.metadata.title }}" />
+{% endblock %}
+
+{% block page_class %}article-page{% endblock %}
+
+{% block content %}
+<article>
+  <header class="article-header">
+    <h1>{{ article.metadata.title }}</h1>
+    <p class="article-date">
+      <time datetime="{{ article.metadata.date }}">{{ article.metadata.date.format("%b %-d, %Y") }}</time>
+    </p>
+  </header>
+  <div class="prose">{{ article.html | safe }}</div>
+</article>
+{% endblock %}

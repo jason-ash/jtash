@@ -1,0 +1,289 @@
+:root {
+  color-scheme: light;
+  --font-body: system-ui, sans-serif;
+  --font-code: ui-monospace, monospace;
+  --text-body: 1rem;
+  --text-small: 0.875rem;
+  --line-body: 1.65;
+
+  --color-background: #ffffff;
+  --color-text: #232927;
+  --color-muted: #687069;
+  --color-link: #2453a5;
+  --color-border: #e4e9e4;
+  --color-code-background: #f3f3f3;
+
+  --content-width: 45rem;
+  --space-paragraph: 1rem;
+  --space-section: 3rem;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--color-background);
+  color: var(--color-text);
+  font-family: var(--font-body);
+  font-size: var(--text-body);
+  line-height: var(--line-body);
+}
+
+.page {
+  width: min(var(--content-width), calc(100% - 2.5rem));
+  margin-inline: auto;
+}
+
+main {
+  margin-top: 2.375rem;
+  min-width: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.25;
+  letter-spacing: -0.025em;
+  overflow-wrap: anywhere;
+}
+
+h1 { font-size: 2rem; }
+h2 { font-size: 1.5rem; }
+h3 { font-size: 1.25rem; }
+h4, h5, h6 { font-size: var(--text-body); }
+
+a {
+  color: var(--color-link);
+  text-underline-offset: 0.25em;
+}
+
+a:focus-visible,
+.table-scroll:focus-visible,
+.prose pre:focus-visible,
+.prose .inline-math:focus-visible,
+.prose math[display="block"]:focus-visible {
+  outline: 3px solid var(--color-link);
+  outline-offset: 5px;
+  border-radius: 3px;
+}
+
+.skip-link {
+  position: absolute;
+  top: -5rem;
+  left: 1rem;
+  z-index: 2;
+  padding: 0.5rem 0.75rem;
+  background: var(--color-background);
+}
+
+.skip-link:focus {
+  top: 0.5rem;
+}
+
+.masthead {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.25rem;
+  padding-block: 1.5625rem;
+}
+
+.masthead h1 {
+  margin: 0;
+  font: inherit;
+}
+
+.brand {
+  color: var(--color-text);
+  font-size: var(--text-body);
+  font-weight: 650;
+  line-height: var(--line-body);
+  letter-spacing: -0.03125rem;
+  white-space: nowrap;
+}
+
+.masthead nav,
+.site-footer nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.625rem 1.5rem;
+}
+
+.masthead a,
+.site-footer a {
+  text-decoration: none;
+}
+
+.masthead a:hover,
+.site-footer a:hover {
+  text-decoration: underline;
+}
+
+.masthead nav,
+.site-footer,
+.article-date,
+.article-info time {
+  font-size: var(--text-small);
+  line-height: 1.6;
+}
+
+.article-date,
+.article-info time {
+  color: var(--color-muted);
+  font-variant-numeric: tabular-nums;
+}
+
+.site-footer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem 1.5rem;
+  margin-top: var(--space-section);
+  padding-block: 1.5rem 2rem;
+  border-top: 1px solid var(--color-border);
+  color: var(--color-muted);
+}
+
+.site-footer p {
+  margin: 0;
+}
+
+.site-footer nav {
+  gap: 0.5rem 1rem;
+}
+
+.article-header {
+  margin-bottom: 2rem;
+}
+
+.article-header h1 {
+  margin: 0;
+}
+
+.article-date {
+  margin: 0.75rem 0 0;
+}
+
+.prose {
+  overflow-wrap: break-word;
+}
+
+.prose p,
+.prose ul,
+.prose ol,
+.prose blockquote {
+  margin-block: var(--space-paragraph);
+}
+
+.prose > :first-child {
+  margin-top: 0;
+}
+
+.prose > h2 {
+  margin-block: var(--space-section) var(--space-paragraph);
+  padding-top: var(--space-paragraph);
+  border-top: 1px solid var(--color-border);
+}
+
+.prose :is(h3, h4, h5, h6) {
+  margin-block: 2rem var(--space-paragraph);
+}
+
+code {
+  padding: 0.15em 0.3em;
+  border-radius: 0.25rem;
+  background: var(--color-code-background);
+  font-family: var(--font-code);
+  font-size: 0.9em;
+}
+
+blockquote {
+  margin-inline: 0;
+  padding-inline-start: 1.25rem;
+  border-inline-start: 3px solid var(--color-border);
+  color: var(--color-muted);
+}
+
+.table-scroll {
+  max-width: 100%;
+  overflow-x: auto;
+  margin-block: 1.5rem;
+}
+
+.prose table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.prose th,
+.prose td {
+  padding: 0.65rem 0.8rem;
+  border-bottom: 1px solid var(--color-border);
+  text-align: left;
+}
+
+.prose pre {
+  margin-block: 1.5rem;
+  padding: 1rem 1.25rem;
+  overflow-x: auto;
+  border: 1px solid var(--color-border);
+  border-radius: 0.5rem;
+  font-family: var(--font-code);
+  font-size: var(--text-small);
+  line-height: 1.6;
+  tab-size: 4;
+}
+
+.prose pre code {
+  padding: 0;
+  border-radius: 0;
+  background: transparent;
+  font: inherit;
+}
+
+.prose math {
+  font-family: math;
+}
+
+.prose .inline-math {
+  display: inline-block;
+  max-width: 100%;
+  overflow-x: auto;
+  vertical-align: bottom;
+}
+
+.prose math[display="block"] {
+  max-width: 100%;
+  overflow-x: auto;
+  margin-block: 1.5rem;
+  padding-block: 0.25rem;
+}
+
+.prose img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 1.5rem auto;
+}
+
+@media (max-width: 740px) {
+  .masthead {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+    padding-block: 1.25rem;
+  }
+
+  .masthead nav {
+    gap: 0.5rem 1.25rem;
+  }
+
+  main {
+    margin-top: 1.5rem;
+  }
+}
